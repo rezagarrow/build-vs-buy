@@ -1,0 +1,150 @@
+{
+  "Id": 1,
+  "Name": "Calculate Savings",
+  "Description": "",
+  "IsDebug": false,
+  "ActionList": {
+    "Id": 1,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 1,
+        "Description": "Calculate Cost to Build",
+        "ActionType": "InjectData",
+        "OrderIndex": 0,
+        "ActionParameters": [
+          {
+            "Id": 1,
+            "Name": "Data",
+            "Value": [
+              {
+                "value": "[EmployeesRequired]*[TimetoBuild]*[EmployeeCost]",
+                "name": "CostToBuild",
+                "$$hashKey": "object:14"
+              },
+              {
+                "value": "([DaysOfMaintenance] * ([EmployeeCost]/22)) * 12",
+                "name": "AnnualCost",
+                "$$hashKey": "object:15"
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 1,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_0jpp1ph"
+      },
+      {
+        "Id": 2,
+        "Description": "Calculate Annual Savings",
+        "Condition": "0",
+        "ActionType": "InjectData",
+        "OrderIndex": 1,
+        "ActionParameters": [
+          {
+            "Id": 2,
+            "Name": "Data",
+            "Value": [
+              {
+                "value": "[p_BuyCost]-[AnnualCost]",
+                "name": "AnnualSavings",
+                "$$hashKey": "object:14"
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 2,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_0hzn6d2"
+      },
+      {
+        "Id": 3,
+        "Description": "Calculate Break Even  = [CostToBuild]/([Annual Savings]",
+        "Condition": "0",
+        "ActionType": "InjectData",
+        "OrderIndex": 2,
+        "ActionParameters": [
+          {
+            "Id": 3,
+            "Name": "Data",
+            "Value": [
+              {
+                "value": "[CostToBuild]/[AnnualSavings]",
+                "name": "BreakEven",
+                "$$hashKey": "object:14"
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 3,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_0hbvi6m"
+      }
+    ]
+  },
+  "CreatedBy": "Reza Garrow",
+  "CreatedOn": "2021-01-27T17:00:27.0331659+00:00",
+  "LastModifiedBy": "Reza Garrow",
+  "LastModifiedOn": "2021-01-27T17:00:27.0331659+00:00",
+  "InputFields": [
+    {
+      "Id": 1,
+      "Name": "EmployeesRequired",
+      "InputType": "Integer",
+      "WorkflowId": 1,
+      "IsDeleted": false
+    },
+    {
+      "Id": 2,
+      "Name": "TimeToBuild",
+      "InputType": "Decimal",
+      "WorkflowId": 1,
+      "IsDeleted": false
+    },
+    {
+      "Id": 3,
+      "Name": "EmployeeCost",
+      "InputType": "Decimal",
+      "WorkflowId": 1,
+      "IsDeleted": false
+    },
+    {
+      "Id": 4,
+      "Name": "BuyCost",
+      "InputType": "Decimal",
+      "WorkflowId": 1,
+      "IsDeleted": false
+    },
+    {
+      "Id": 5,
+      "Name": "DaysOfMaintenance",
+      "InputType": "Integer",
+      "WorkflowId": 1,
+      "IsDeleted": false
+    }
+  ],
+  "OutputFields": [
+    {
+      "Value": "[CostToBuild]",
+      "Id": 6,
+      "Name": "CostToBuild",
+      "InputType": "Text",
+      "WorkflowId": 1,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[AnnualCost]",
+      "Id": 7,
+      "Name": "AnnualCost",
+      "InputType": "Text",
+      "WorkflowId": 1,
+      "IsDeleted": false
+    }
+  ]
+}
