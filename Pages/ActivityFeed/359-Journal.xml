@@ -1,0 +1,74 @@
+<module type="Journal" version="09.08.01.00">
+    <contentKey />
+    <moduleID>359</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachemethod>MemoryModuleCachingProvider</cachemethod>
+    <cachetime>0</cachetime>
+    <color />
+    <containersrc>[G]Containers/PlantAnApp/Card.ascx</containersrc>
+    <displayprint>false</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>All Users</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+    </modulepermissions>
+    <title>Journal</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>1396d8ab-8d25-4f38-bf2e-78af371a274e</uniqueId>
+    <visibility>Maximized</visibility>
+    <cultureCode />
+    <modulesettings>
+        <modulesetting>
+            <settingname>Journal_AllowFiles</settingname>
+            <settingvalue>True</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>Journal_PageSize</settingname>
+            <settingvalue>20</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>Journal_AllowPhotos</settingname>
+            <settingvalue>True</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>hideadminborder</settingname>
+            <settingvalue>False</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>Journal_MaxCharacters</settingname>
+            <settingvalue>250</settingvalue>
+        </modulesetting>
+    </modulesettings>
+    <tabmodulesettings>
+        <tabmodulesetting>
+            <settingname>hideadminborder</settingname>
+            <settingvalue>False</settingvalue>
+        </tabmodulesetting>
+    </tabmodulesettings>
+    <definition>Journal</definition>
+    <moduledefinition>Journal</moduledefinition>
+</module>
