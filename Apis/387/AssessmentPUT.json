@@ -166,10 +166,19 @@
       "Validations": []
     },
     {
-      "Name": "foo",
+      "Name": "Status",
       "IsDeleted": false,
       "IsEnabled": false,
-      "OrderIndex": 14,
+      "OrderIndex": 15,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "bar",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 16,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
@@ -194,7 +203,8 @@
         "Annualmaintenance": "[Annualmaintenance]",
         "Annualsavings": "[Annualsavings]",
         "Yearstoprofit": "[Yearstoprofit]",
-        "foo": "[foo]"
+        "Status": "[Status]",
+        "bar": "[bar]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
