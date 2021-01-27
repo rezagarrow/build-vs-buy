@@ -7,6 +7,7 @@
     <cachemethod />
     <cachetime>0</cachetime>
     <color />
+    <containersrc />
     <displayprint>true</displayprint>
     <displaysyndicate>false</displaysyndicate>
     <displaytitle>true</displaytitle>
@@ -866,13 +867,58 @@
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
     &lt;/Field&gt;
     &lt;Field&gt;
-      &lt;Id&gt;&lt;![CDATA[64]]&gt;&lt;/Id&gt;
-      &lt;Title&gt;&lt;![CDATA[foo]]&gt;&lt;/Title&gt;
+      &lt;Id&gt;&lt;![CDATA[74]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[Status]]&gt;&lt;/Title&gt;
       &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
       &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
       &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
-      &lt;OverrideName&gt;p_foo&lt;/OverrideName&gt;
-      &lt;Name&gt;p_foo&lt;/Name&gt;
+      &lt;OverrideName&gt;r_StatusId&lt;/OverrideName&gt;
+      &lt;Name&gt;r_StatusId&lt;/Name&gt;
+      &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
+      &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
+      &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
+      &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
+      &lt;BindEnable&gt;&lt;![CDATA[]]&gt;&lt;/BindEnable&gt;
+      &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
+      &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
+      &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
+      &lt;InputType&gt;dropdown-autocomplete&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:Status]&quot;,&quot;DisplayNumber&quot;:&quot;5&quot;,&quot;DataSource&quot;:{&quot;Value&quot;:&quot;SQL Query&quot;,&quot;Parameters&quot;:{&quot;SqlQuery&quot;:&quot;SELECT [Id] AS [Value], [Name] AS [Text] FROM [app].[Status]&quot;}},&quot;DisableDropdownOnClick&quot;:&quot;&quot;}&lt;/InputData&gt;
+      &lt;DisplayNumber&gt;5&lt;/DisplayNumber&gt;
+      &lt;DataSource&gt;
+        &lt;Value&gt;SQL Query&lt;/Value&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/DataSource&gt;
+      &lt;DisableDropdownOnClick /&gt;
+      &lt;Flag&gt;dropdown&lt;/Flag&gt;
+      &lt;Value&gt;&lt;![CDATA[[original:Status]]]&gt;&lt;/Value&gt;
+      &lt;IsRequired&gt;False&lt;/IsRequired&gt;
+      &lt;IsActive&gt;True&lt;/IsActive&gt;
+      &lt;EnableCondition /&gt;
+      &lt;CssClass&gt;&lt;![CDATA[]]&gt;&lt;/CssClass&gt;
+      &lt;FirstCssClass&gt;&lt;![CDATA[]]&gt;&lt;/FirstCssClass&gt;
+      &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
+      &lt;LabelCssClass&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssClass&gt;
+      &lt;LabelCssStyles&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssStyles&gt;
+      &lt;CustomValidator1 /&gt;
+      &lt;CustomValidator2 /&gt;
+      &lt;ValidationGroup /&gt;
+      &lt;GroupValidator /&gt;
+      &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
+      &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;15&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;12&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;0&lt;/ColOffset&gt;
+    &lt;/Field&gt;
+    &lt;Field&gt;
+      &lt;Id&gt;&lt;![CDATA[75]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[bar]]&gt;&lt;/Title&gt;
+      &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
+      &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
+      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;OverrideName&gt;p_bar&lt;/OverrideName&gt;
+      &lt;Name&gt;p_bar&lt;/Name&gt;
       &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
       &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
       &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
@@ -883,7 +929,7 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;open-text&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:foo]&quot;,&quot;AutocompleteUrl&quot;:&quot;&quot;,&quot;AutofillName&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;AutofillAttribute&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Mask&quot;:&quot;&quot;,&quot;MaskOptions&quot;:&quot;{}&quot;,&quot;ConfirmationOfTextBox&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;MaxLength&quot;:450,&quot;AllowTokens&quot;:&quot;&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:bar]&quot;,&quot;AutocompleteUrl&quot;:&quot;&quot;,&quot;AutofillName&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;AutofillAttribute&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Mask&quot;:&quot;&quot;,&quot;MaskOptions&quot;:&quot;{}&quot;,&quot;ConfirmationOfTextBox&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;MaxLength&quot;:450,&quot;AllowTokens&quot;:&quot;&quot;}&lt;/InputData&gt;
       &lt;AutocompleteUrl /&gt;
       &lt;AutofillName&gt;
         &lt;IsExpression&gt;False&lt;/IsExpression&gt;
@@ -907,7 +953,7 @@
       &lt;/ConfirmationOfTextBox&gt;
       &lt;MaxLength&gt;450&lt;/MaxLength&gt;
       &lt;AllowTokens /&gt;
-      &lt;Value&gt;&lt;![CDATA[[original:foo]]]&gt;&lt;/Value&gt;
+      &lt;Value&gt;&lt;![CDATA[[original:bar]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
       &lt;EnableCondition /&gt;
@@ -922,7 +968,7 @@
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
       &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
-      &lt;RowIndex&gt;14&lt;/RowIndex&gt;
+      &lt;RowIndex&gt;16&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
     &lt;/Field&gt;
@@ -988,7 +1034,7 @@
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
       &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
-      &lt;RowIndex&gt;15&lt;/RowIndex&gt;
+      &lt;RowIndex&gt;17&lt;/RowIndex&gt;
       &lt;ColSpan&gt;9&lt;/ColSpan&gt;
       &lt;ColOffset&gt;3&lt;/ColOffset&gt;
     &lt;/Field&gt;
@@ -1054,7 +1100,7 @@
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
       &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
-      &lt;RowIndex&gt;15&lt;/RowIndex&gt;
+      &lt;RowIndex&gt;17&lt;/RowIndex&gt;
       &lt;ColSpan&gt;9&lt;/ColSpan&gt;
       &lt;ColOffset&gt;3&lt;/ColOffset&gt;
     &lt;/Field&gt;
@@ -1124,7 +1170,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:5] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:7]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-01-27T12:54:00.887&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-27T12:59:58.843&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;404&lt;/ModuleId&gt;
@@ -1141,7 +1187,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:5] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:7]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-01-27T12:54:00.887&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-27T12:59:58.89&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;404&lt;/ModuleId&gt;
@@ -1158,7 +1204,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:5] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:7]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-01-27T12:54:00.9&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-27T12:59:58.923&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;404&lt;/ModuleId&gt;
@@ -1173,9 +1219,9 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-01-27T12:54:00.9&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-27T12:59:58.937&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Add Assessment&quot;},{&quot;name&quot;:&quot;original:Name&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:BuyCost&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Recommendation&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Employeesrequired&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:TimetoBuild&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Employeesalary&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Overhead&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Employeecost&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Daysofmaintenance&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Costtobuild&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Annualmaintenance&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Annualsavings&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Yearstoprofit&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:foo&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Add Assessment&quot;},{&quot;name&quot;:&quot;original:Name&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:BuyCost&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Recommendation&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Employeesrequired&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:TimetoBuild&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Employeesalary&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Overhead&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Employeecost&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Daysofmaintenance&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Costtobuild&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Annualmaintenance&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Annualsavings&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Yearstoprofit&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Status&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:bar&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;404&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
       &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.InitializeVariablesWithDefaultValues&quot;}&lt;/MetadataJson&gt;
@@ -1187,9 +1233,9 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.CreateEntity.0.Assessment&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-01-27T12:54:00.887&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-27T12:59:58.857&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;OutputToken&quot;:&quot;NewAssessmentId&quot;,&quot;Name&quot;:&quot;[p_Name]&quot;,&quot;BuyCost&quot;:&quot;[p_BuyCost]&quot;,&quot;Recommendation&quot;:&quot;[p_Recommendation]&quot;,&quot;Employeesrequired&quot;:&quot;[p_Employeesrequired]&quot;,&quot;TimetoBuild&quot;:&quot;[p_TimetoBuild]&quot;,&quot;Employeesalary&quot;:&quot;[p_Employeesalary]&quot;,&quot;Overhead&quot;:&quot;[p_Overhead]&quot;,&quot;Employeecost&quot;:&quot;[p_Employeecost]&quot;,&quot;Daysofmaintenance&quot;:&quot;[p_Daysofmaintenance]&quot;,&quot;Costtobuild&quot;:&quot;[p_Costtobuild]&quot;,&quot;Annualmaintenance&quot;:&quot;[p_Annualmaintenance]&quot;,&quot;Annualsavings&quot;:&quot;[p_Annualsavings]&quot;,&quot;Yearstoprofit&quot;:&quot;[p_Yearstoprofit]&quot;,&quot;foo&quot;:&quot;[p_foo]&quot;}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;OutputToken&quot;:&quot;NewAssessmentId&quot;,&quot;Name&quot;:&quot;[p_Name]&quot;,&quot;BuyCost&quot;:&quot;[p_BuyCost]&quot;,&quot;Recommendation&quot;:&quot;[p_Recommendation]&quot;,&quot;Employeesrequired&quot;:&quot;[p_Employeesrequired]&quot;,&quot;TimetoBuild&quot;:&quot;[p_TimetoBuild]&quot;,&quot;Employeesalary&quot;:&quot;[p_Employeesalary]&quot;,&quot;Overhead&quot;:&quot;[p_Overhead]&quot;,&quot;Employeecost&quot;:&quot;[p_Employeecost]&quot;,&quot;Daysofmaintenance&quot;:&quot;[p_Daysofmaintenance]&quot;,&quot;Costtobuild&quot;:&quot;[p_Costtobuild]&quot;,&quot;Annualmaintenance&quot;:&quot;[p_Annualmaintenance]&quot;,&quot;Annualsavings&quot;:&quot;[p_Annualsavings]&quot;,&quot;Yearstoprofit&quot;:&quot;[p_Yearstoprofit]&quot;,&quot;Status&quot;:&quot;[r_StatusId]&quot;,&quot;bar&quot;:&quot;[p_bar]&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;404&lt;/ModuleId&gt;
       &lt;FieldName&gt;Add&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
@@ -1203,9 +1249,9 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.UpdateEntity.0.Assessment&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-01-27T12:54:00.887&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-27T12:59:58.89&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:AssessmentId=]&quot;,&quot;Name&quot;:&quot;[p_Name]&quot;,&quot;BuyCost&quot;:&quot;[p_BuyCost]&quot;,&quot;Recommendation&quot;:&quot;[p_Recommendation]&quot;,&quot;Employeesrequired&quot;:&quot;[p_Employeesrequired]&quot;,&quot;TimetoBuild&quot;:&quot;[p_TimetoBuild]&quot;,&quot;Employeesalary&quot;:&quot;[p_Employeesalary]&quot;,&quot;Overhead&quot;:&quot;[p_Overhead]&quot;,&quot;Employeecost&quot;:&quot;[p_Employeecost]&quot;,&quot;Daysofmaintenance&quot;:&quot;[p_Daysofmaintenance]&quot;,&quot;Costtobuild&quot;:&quot;[p_Costtobuild]&quot;,&quot;Annualmaintenance&quot;:&quot;[p_Annualmaintenance]&quot;,&quot;Annualsavings&quot;:&quot;[p_Annualsavings]&quot;,&quot;Yearstoprofit&quot;:&quot;[p_Yearstoprofit]&quot;,&quot;foo&quot;:&quot;[p_foo]&quot;}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:AssessmentId=]&quot;,&quot;Name&quot;:&quot;[p_Name]&quot;,&quot;BuyCost&quot;:&quot;[p_BuyCost]&quot;,&quot;Recommendation&quot;:&quot;[p_Recommendation]&quot;,&quot;Employeesrequired&quot;:&quot;[p_Employeesrequired]&quot;,&quot;TimetoBuild&quot;:&quot;[p_TimetoBuild]&quot;,&quot;Employeesalary&quot;:&quot;[p_Employeesalary]&quot;,&quot;Overhead&quot;:&quot;[p_Overhead]&quot;,&quot;Employeecost&quot;:&quot;[p_Employeecost]&quot;,&quot;Daysofmaintenance&quot;:&quot;[p_Daysofmaintenance]&quot;,&quot;Costtobuild&quot;:&quot;[p_Costtobuild]&quot;,&quot;Annualmaintenance&quot;:&quot;[p_Annualmaintenance]&quot;,&quot;Annualsavings&quot;:&quot;[p_Annualsavings]&quot;,&quot;Yearstoprofit&quot;:&quot;[p_Yearstoprofit]&quot;,&quot;Status&quot;:&quot;[r_StatusId]&quot;,&quot;bar&quot;:&quot;[p_bar]&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;404&lt;/ModuleId&gt;
       &lt;FieldName&gt;Update&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
@@ -1220,7 +1266,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:5] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:7]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-01-27T12:54:00.9&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-27T12:59:58.937&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;404&lt;/ModuleId&gt;
@@ -1237,7 +1283,7 @@
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;Condition&gt;!string.IsNullOrWhiteSpace([QueryString:AssessmentId=])&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-01-27T12:54:00.9&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-27T12:59:58.937&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Edit Assessment&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;404&lt;/ModuleId&gt;
@@ -1253,7 +1299,7 @@
       &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition /&gt;
-      &lt;LastModified&gt;2021-01-27T12:54:00.887&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-27T12:59:58.857&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Assessments/Detail?AssessmentId=[NewAssessmentId]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;404&lt;/ModuleId&gt;
@@ -1269,7 +1315,7 @@
       &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-01-27T12:54:00.9&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-27T12:59:58.903&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;406&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;404&lt;/ModuleId&gt;
@@ -1285,7 +1331,7 @@
       &lt;ActionType&gt;PlantAnApp.ReadEntity.0.Assessment&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition&gt;[isEdit]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-01-27T12:54:00.9&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-27T12:59:58.95&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:AssessmentId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;404&lt;/ModuleId&gt;
@@ -1301,7 +1347,7 @@
       &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;Condition /&gt;
-      &lt;LastModified&gt;2021-01-27T12:54:00.887&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-27T12:59:58.873&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:403,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;404&lt;/ModuleId&gt;
@@ -1317,7 +1363,7 @@
       &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-01-27T12:54:00.9&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-27T12:59:58.903&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;405&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;404&lt;/ModuleId&gt;
@@ -1332,7 +1378,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-01-27T12:54:00.887&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-27T12:59:58.89&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:404,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;404&lt;/ModuleId&gt;
@@ -1348,7 +1394,7 @@
       &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
       &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-01-27T12:54:00.9&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-27T12:59:58.903&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Assessments/Detail?AssessmentId=[QueryString:AssessmentId=]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;404&lt;/ModuleId&gt;
@@ -1364,7 +1410,7 @@
       &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
       &lt;OrderIndex&gt;5&lt;/OrderIndex&gt;
       &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-01-27T12:54:00.9&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-27T12:59:58.923&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:403,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;404&lt;/ModuleId&gt;
@@ -1379,7 +1425,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;6&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-01-27T12:54:00.9&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-27T12:59:58.923&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:404,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;404&lt;/ModuleId&gt;
