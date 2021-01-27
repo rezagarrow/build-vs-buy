@@ -53,6 +53,50 @@
             "value": "[RecordId]"
           },
           {
+            "name": "Employeesrequired",
+            "value": "[Record:Employeesrequired]"
+          },
+          {
+            "name": "TimetoBuild",
+            "value": "[Record:TimetoBuild]"
+          },
+          {
+            "name": "Employeesalary",
+            "value": "[Record:Employeesalary]"
+          },
+          {
+            "name": "Overhead",
+            "value": "[Record:Overhead]"
+          },
+          {
+            "name": "Employeecost",
+            "value": "[Record:Employeecost]"
+          },
+          {
+            "name": "Daysofmaintenance",
+            "value": "[Record:Daysofmaintenance]"
+          },
+          {
+            "name": "Costtobuild",
+            "value": "[Record:Costtobuild]"
+          },
+          {
+            "name": "Annualmaintenance",
+            "value": "[Record:Annualmaintenance]"
+          },
+          {
+            "name": "Annualsavings",
+            "value": "[Record:Annualsavings]"
+          },
+          {
+            "name": "Yearstoprofit",
+            "value": "[Record:Yearstoprofit]"
+          },
+          {
+            "name": "foo",
+            "value": "[Record:foo]"
+          },
+          {
             "name": "Name",
             "value": "[Record:Name]"
           },
