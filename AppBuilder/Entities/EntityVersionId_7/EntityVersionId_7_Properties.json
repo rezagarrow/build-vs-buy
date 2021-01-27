@@ -286,9 +286,31 @@
     "OrderIndex": 13
   },
   {
-    "Id": 32,
+    "Id": 35,
     "EntityVersionId": 7,
-    "Name": "foo",
+    "Name": "Status",
+    "Type": {
+      "Id": "EntityRef",
+      "Name": "Entity Reference",
+      "InputType": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "ValueType": "EntityRef",
+        "Length": 4
+      }
+    },
+    "EntityVersionRefId": 9,
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 15
+  },
+  {
+    "Id": 36,
+    "EntityVersionId": 7,
+    "Name": "bar",
     "Type": {
       "Id": "Text",
       "Name": "Text",
@@ -305,6 +327,6 @@
     "IsSearchable": false,
     "IsFilterable": false,
     "IsSortable": false,
-    "OrderIndex": 14
+    "OrderIndex": 16
   }
 ]
