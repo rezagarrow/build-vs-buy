@@ -169,16 +169,25 @@
       "Name": "Status",
       "IsDeleted": false,
       "IsEnabled": false,
-      "OrderIndex": 15,
+      "OrderIndex": 14,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
     },
     {
-      "Name": "bar",
+      "Name": "Person",
       "IsDeleted": false,
       "IsEnabled": false,
       "OrderIndex": 16,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "bars",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 17,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
@@ -204,7 +213,8 @@
         "Annualsavings": "[Annualsavings]",
         "Yearstoprofit": "[Yearstoprofit]",
         "Status": "[Status]",
-        "bar": "[bar]"
+        "Person": "[Person]",
+        "bars": "[bars]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
