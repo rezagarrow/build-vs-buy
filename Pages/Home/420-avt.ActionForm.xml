@@ -13,7 +13,12 @@
     <displaytitle>true</displaytitle>
     <enddate>0001-01-01T00:00:00</enddate>
     <footer>&lt;/div&gt;</footer>
-    <header>&lt;div class="fitform"&gt;</header>
+    <header>&lt;div class="fitform"&gt;
+&lt;h1&gt;Build vs. Buy Calculator&lt;/h1&gt;
+
+&lt;div&gt;
+&lt;p&gt;Does it make any sense to build your own internal software tool, if someone else already did it, and wants you to buy it? You can find it out with this build vs. buy calculator. In just a few clicks, you will determine what allows you to save more in the long-term perspective: having your developers focus on creating a new piece of software, or paying the license fee.&lt;/p&gt;
+&lt;/div&gt;</header>
     <iconfile />
     <inheritviewpermissions>true</inheritviewpermissions>
     <modulepermissions>
