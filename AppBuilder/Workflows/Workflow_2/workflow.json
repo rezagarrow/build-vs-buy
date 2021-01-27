@@ -1,0 +1,276 @@
+{
+  "Id": 2,
+  "Name": "Calculate Build or Buy",
+  "Description": "Takes in an AssessementId and determines the Build or Buy recommendation based on the Years to Profit  ",
+  "IsDebug": false,
+  "ActionList": {
+    "Id": 2,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 4,
+        "Description": "",
+        "ActionErrorMessage": "",
+        "Condition": "",
+        "ActionType": "PlantAnApp.ExecuteConditionally",
+        "OrderIndex": 0,
+        "ActionParameters": [
+          {
+            "Id": 4,
+            "Name": "ConditionedActions",
+            "Value": [
+              {
+                "Condition": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "[Calc:Yearstoprofit=1000]=1000"
+                },
+                "Actions": {
+                  "Id": 3,
+                  "EventName": "click",
+                  "Actions": [
+                    {
+                      "Id": 5,
+                      "ActionType": "InjectData",
+                      "OrderIndex": 0,
+                      "ActionParameters": [
+                        {
+                          "Id": 6,
+                          "Name": "Data",
+                          "Value": [
+                            {
+                              "value": "Error",
+                              "$$hashKey": "object:17",
+                              "name": "WF_Status"
+                            },
+                            {
+                              "value": "Rating not set",
+                              "$$hashKey": "object:23",
+                              "name": "WF_Description"
+                            }
+                          ],
+                          "IsExpression": false,
+                          "ActionId": 5,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        }
+                      ],
+                      "DiagramUID": "Activity_1q1j4x3"
+                    }
+                  ]
+                }
+              },
+              {
+                "Condition": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "[Calc:Yearstoprofit=1000]<=3.2"
+                },
+                "Actions": {
+                  "Id": 4,
+                  "EventName": "click",
+                  "Actions": [
+                    {
+                      "Id": 6,
+                      "ActionType": "InjectData",
+                      "OrderIndex": 0,
+                      "ActionParameters": [
+                        {
+                          "Id": 9,
+                          "Name": "Data",
+                          "Value": [
+                            {
+                              "value": "Build",
+                              "$$hashKey": "object:17",
+                              "name": "BuildOrBuy"
+                            }
+                          ],
+                          "IsExpression": false,
+                          "ActionId": 6,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        }
+                      ],
+                      "DiagramUID": "Activity_14rgeau"
+                    }
+                  ]
+                }
+              },
+              {
+                "Condition": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "[Calc:Yearstoprofit=1000]>3.2"
+                },
+                "Actions": {
+                  "Id": 5,
+                  "EventName": "click",
+                  "Actions": [
+                    {
+                      "Id": 7,
+                      "ActionType": "InjectData",
+                      "OrderIndex": 0,
+                      "ActionParameters": [
+                        {
+                          "Id": 12,
+                          "Name": "Data",
+                          "Value": [
+                            {
+                              "value": "Buy",
+                              "$$hashKey": "object:17",
+                              "name": "BuildOrBuy"
+                            }
+                          ],
+                          "IsExpression": false,
+                          "ActionId": 7,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        }
+                      ],
+                      "DiagramUID": "Activity_0dzptcm"
+                    }
+                  ]
+                }
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 4,
+            "OrderIndex": 0,
+            "SubParameters": [
+              {
+                "Id": 5,
+                "Name": "Condition",
+                "Value": "[Calc:Yearstoprofit=1000]=1000",
+                "ParentParameterId": 4,
+                "IsExpression": false,
+                "ActionId": 4,
+                "OrderIndex": 0,
+                "SubParameters": []
+              },
+              {
+                "Id": 7,
+                "Name": "Actions",
+                "Value": "3",
+                "ParentParameterId": 4,
+                "IsExpression": false,
+                "ActionId": 4,
+                "OrderIndex": 0,
+                "SubParameters": []
+              },
+              {
+                "Id": 8,
+                "Name": "Condition",
+                "Value": "[Calc:Yearstoprofit=1000]<=3.2",
+                "ParentParameterId": 4,
+                "IsExpression": false,
+                "ActionId": 4,
+                "OrderIndex": 1,
+                "SubParameters": []
+              },
+              {
+                "Id": 10,
+                "Name": "Actions",
+                "Value": "4",
+                "ParentParameterId": 4,
+                "IsExpression": false,
+                "ActionId": 4,
+                "OrderIndex": 1,
+                "SubParameters": []
+              },
+              {
+                "Id": 11,
+                "Name": "Condition",
+                "Value": "[Calc:Yearstoprofit=1000]>3.2",
+                "ParentParameterId": 4,
+                "IsExpression": false,
+                "ActionId": 4,
+                "OrderIndex": 2,
+                "SubParameters": []
+              },
+              {
+                "Id": 13,
+                "Name": "Actions",
+                "Value": "5",
+                "ParentParameterId": 4,
+                "IsExpression": false,
+                "ActionId": 4,
+                "OrderIndex": 2,
+                "SubParameters": []
+              }
+            ]
+          }
+        ],
+        "DiagramUID": "Gateway_1q7s0pn"
+      },
+      {
+        "Id": 8,
+        "Condition": "[WF_Status=Error]!=\"Error\"",
+        "ActionType": "InjectData",
+        "OrderIndex": 1,
+        "ActionParameters": [
+          {
+            "Id": 14,
+            "Name": "Data",
+            "Value": [
+              {
+                "value": "Success",
+                "$$hashKey": "object:17",
+                "name": "WF_Status"
+              },
+              {
+                "value": "Rating Set to [BuildOrBuy]",
+                "$$hashKey": "object:23",
+                "name": "WF_Description"
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 8,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_01g18ra"
+      }
+    ]
+  },
+  "CreatedBy": "Reza Garrow",
+  "CreatedOn": "2021-01-27T22:40:09.2018989+00:00",
+  "LastModifiedBy": "Reza Garrow",
+  "LastModifiedOn": "2021-01-27T22:40:09.2018989+00:00",
+  "InputFields": [
+    {
+      "Id": 10,
+      "Name": "Calc",
+      "InputType": "EntityRef",
+      "EntityVersionId": 7,
+      "WorkflowId": 2,
+      "IsDeleted": false
+    }
+  ],
+  "OutputFields": [
+    {
+      "Value": "[WF_Status]",
+      "Id": 11,
+      "Name": "WF_Status",
+      "InputType": "Text",
+      "WorkflowId": 2,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[WF_Description]",
+      "Id": 12,
+      "Name": "WF_Description",
+      "InputType": "Text",
+      "WorkflowId": 2,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[BuildOrBuy]",
+      "Id": 13,
+      "Name": "BuildOrBuy",
+      "InputType": "Text",
+      "WorkflowId": 2,
+      "IsDeleted": false
+    }
+  ]
+}
