@@ -18,12 +18,12 @@
             "Name": "Data",
             "Value": [
               {
-                "value": "[DoMath:Eval([EmployeesRequired]*[TimetoBuild]*[EmployeeCost])]",
+                "value": "[DoMath:Eval(expression=[EmployeesRequired]*[TimetoBuild]*[EmployeeCost])]",
                 "name": "CostToBuild",
                 "$$hashKey": "object:14"
               },
               {
-                "value": "[DoMath:Eval([DaysOfMaintenance] * ([EmployeeCost]/22)) * 12)]",
+                "value": "[DoMath:Eval(expression=[DaysOfMaintenance] * ([EmployeeCost]/22)) * 12)]",
                 "name": "AnnualCost",
                 "$$hashKey": "object:15"
               }
@@ -48,7 +48,7 @@
             "Name": "Data",
             "Value": [
               {
-                "value": "DoMath([p_BuyCost]-[AnnualCost])",
+                "value": "DoMath(expression=[p_BuyCost]-[AnnualCost])",
                 "name": "AnnualSavings",
                 "$$hashKey": "object:14"
               }
@@ -73,7 +73,7 @@
             "Name": "Data",
             "Value": [
               {
-                "value": "DoMath([CostToBuild]/[AnnualSavings])",
+                "value": "DoMath(expression=[CostToBuild]/[AnnualSavings])",
                 "name": "BreakEven",
                 "$$hashKey": "object:14"
               }
@@ -91,7 +91,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T17:00:27.0331659+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-27T17:10:30.5895619+00:00",
+  "LastModifiedOn": "2021-01-27T17:26:10.6969187+00:00",
   "InputFields": [
     {
       "Id": 1,
