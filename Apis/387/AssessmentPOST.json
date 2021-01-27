@@ -158,16 +158,7 @@
       "Name": "Person",
       "IsDeleted": false,
       "IsEnabled": false,
-      "OrderIndex": 15,
-      "Parameters": {},
-      "InputTypeStr": "text",
-      "Validations": []
-    },
-    {
-      "Name": "bars",
-      "IsDeleted": false,
-      "IsEnabled": false,
-      "OrderIndex": 16,
+      "OrderIndex": 14,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
@@ -193,8 +184,7 @@
         "Annualsavings": "[Annualsavings]",
         "Yearstoprofit": "[Yearstoprofit]",
         "Status": "[Status]",
-        "Person": "[Person]",
-        "bars": "[bars]"
+        "Person": "[Person]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -226,14 +216,6 @@
           {
             "name": "Id",
             "value": "[CreatedRecordId]"
-          },
-          {
-            "name": "Person",
-            "value": "[CreatedRecord:Person]"
-          },
-          {
-            "name": "bars",
-            "value": "[CreatedRecord:bars]"
           },
           {
             "name": "Name",
@@ -290,6 +272,10 @@
           {
             "name": "Status",
             "value": "[CreatedRecord:Status]"
+          },
+          {
+            "name": "Person",
+            "value": "[CreatedRecord:Person]"
           }
         ],
         "Headers": [
