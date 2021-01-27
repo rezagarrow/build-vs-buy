@@ -53,6 +53,26 @@
             "value": "[RecordId]"
           },
           {
+            "name": "Status",
+            "value": "[Record:Status]"
+          },
+          {
+            "name": "bar",
+            "value": "[Record:bar]"
+          },
+          {
+            "name": "Name",
+            "value": "[Record:Name]"
+          },
+          {
+            "name": "BuyCost",
+            "value": "[Record:BuyCost]"
+          },
+          {
+            "name": "Recommendation",
+            "value": "[Record:Recommendation]"
+          },
+          {
             "name": "Employeesrequired",
             "value": "[Record:Employeesrequired]"
           },
@@ -91,22 +111,6 @@
           {
             "name": "Yearstoprofit",
             "value": "[Record:Yearstoprofit]"
-          },
-          {
-            "name": "foo",
-            "value": "[Record:foo]"
-          },
-          {
-            "name": "Name",
-            "value": "[Record:Name]"
-          },
-          {
-            "name": "BuyCost",
-            "value": "[Record:BuyCost]"
-          },
-          {
-            "name": "Recommendation",
-            "value": "[Record:Recommendation]"
           }
         ],
         "Headers": []
