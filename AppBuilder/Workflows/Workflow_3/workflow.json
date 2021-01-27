@@ -8,205 +8,10 @@
     "EventName": "Event",
     "Actions": [
       {
-        "Id": 9,
-        "Description": "",
-        "ActionErrorMessage": "",
-        "Condition": "",
-        "ActionType": "PlantAnApp.ExecuteConditionally",
-        "OrderIndex": 0,
-        "ActionParameters": [
-          {
-            "Id": 15,
-            "Name": "ConditionedActions",
-            "Value": [
-              {
-                "Condition": {
-                  "IsExpression": false,
-                  "Expression": "",
-                  "Value": "[Calc:Yearstoprofit=1000]=1000"
-                },
-                "Actions": {
-                  "Id": 3,
-                  "EventName": "click",
-                  "Actions": [
-                    {
-                      "Id": 5,
-                      "ActionType": "InjectData",
-                      "OrderIndex": 0,
-                      "ActionParameters": [
-                        {
-                          "Id": 6,
-                          "Name": "Data",
-                          "Value": [
-                            {
-                              "value": "Error",
-                              "$$hashKey": "object:17",
-                              "name": "WF_Status"
-                            },
-                            {
-                              "value": "Rating not set",
-                              "$$hashKey": "object:23",
-                              "name": "WF_Description"
-                            }
-                          ],
-                          "IsExpression": false,
-                          "ActionId": 5,
-                          "OrderIndex": 0,
-                          "SubParameters": []
-                        }
-                      ],
-                      "DiagramUID": "Activity_1q1j4x3"
-                    }
-                  ]
-                }
-              },
-              {
-                "Condition": {
-                  "IsExpression": false,
-                  "Expression": "",
-                  "Value": "[Calc:Yearstoprofit=1000]<=3.2"
-                },
-                "Actions": {
-                  "Id": 4,
-                  "EventName": "click",
-                  "Actions": [
-                    {
-                      "Id": 6,
-                      "ActionType": "InjectData",
-                      "OrderIndex": 0,
-                      "ActionParameters": [
-                        {
-                          "Id": 9,
-                          "Name": "Data",
-                          "Value": [
-                            {
-                              "value": "Build",
-                              "$$hashKey": "object:17",
-                              "name": "BuildOrBuy"
-                            }
-                          ],
-                          "IsExpression": false,
-                          "ActionId": 6,
-                          "OrderIndex": 0,
-                          "SubParameters": []
-                        }
-                      ],
-                      "DiagramUID": "Activity_14rgeau"
-                    }
-                  ]
-                }
-              },
-              {
-                "Condition": {
-                  "IsExpression": false,
-                  "Expression": "",
-                  "Value": "[Calc:Yearstoprofit=1000]>3.2"
-                },
-                "Actions": {
-                  "Id": 5,
-                  "EventName": "click",
-                  "Actions": [
-                    {
-                      "Id": 7,
-                      "ActionType": "InjectData",
-                      "OrderIndex": 0,
-                      "ActionParameters": [
-                        {
-                          "Id": 12,
-                          "Name": "Data",
-                          "Value": [
-                            {
-                              "value": "Buy",
-                              "$$hashKey": "object:17",
-                              "name": "BuildOrBuy"
-                            }
-                          ],
-                          "IsExpression": false,
-                          "ActionId": 7,
-                          "OrderIndex": 0,
-                          "SubParameters": []
-                        }
-                      ],
-                      "DiagramUID": "Activity_0dzptcm"
-                    }
-                  ]
-                }
-              }
-            ],
-            "IsExpression": false,
-            "ActionId": 9,
-            "OrderIndex": 0,
-            "SubParameters": [
-              {
-                "Id": 16,
-                "Name": "Condition",
-                "Value": "[Calc:Yearstoprofit=1000]=1000",
-                "ParentParameterId": 15,
-                "IsExpression": false,
-                "ActionId": 9,
-                "OrderIndex": 0,
-                "SubParameters": []
-              },
-              {
-                "Id": 17,
-                "Name": "Actions",
-                "Value": "3",
-                "ParentParameterId": 15,
-                "IsExpression": false,
-                "ActionId": 9,
-                "OrderIndex": 0,
-                "SubParameters": []
-              },
-              {
-                "Id": 18,
-                "Name": "Condition",
-                "Value": "[Calc:Yearstoprofit=1000]<=3.2",
-                "ParentParameterId": 15,
-                "IsExpression": false,
-                "ActionId": 9,
-                "OrderIndex": 1,
-                "SubParameters": []
-              },
-              {
-                "Id": 19,
-                "Name": "Actions",
-                "Value": "4",
-                "ParentParameterId": 15,
-                "IsExpression": false,
-                "ActionId": 9,
-                "OrderIndex": 1,
-                "SubParameters": []
-              },
-              {
-                "Id": 20,
-                "Name": "Condition",
-                "Value": "[Calc:Yearstoprofit=1000]>3.2",
-                "ParentParameterId": 15,
-                "IsExpression": false,
-                "ActionId": 9,
-                "OrderIndex": 2,
-                "SubParameters": []
-              },
-              {
-                "Id": 21,
-                "Name": "Actions",
-                "Value": "5",
-                "ParentParameterId": 15,
-                "IsExpression": false,
-                "ActionId": 9,
-                "OrderIndex": 2,
-                "SubParameters": []
-              }
-            ]
-          }
-        ],
-        "DiagramUID": "Gateway_1q7s0pn"
-      },
-      {
         "Id": 10,
         "Condition": "[WF_Status=Error]!=\"Error\"",
         "ActionType": "InjectData",
-        "OrderIndex": 1,
+        "OrderIndex": 0,
         "ActionParameters": [
           {
             "Id": 22,
@@ -236,7 +41,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T22:41:23.2929536+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-27T22:41:23.2929536+00:00",
+  "LastModifiedOn": "2021-01-27T22:42:48.5398871+00:00",
   "InputFields": [
     {
       "Id": 14,
@@ -268,6 +73,14 @@
       "Value": "[BuildOrBuy]",
       "Id": 17,
       "Name": "BuildOrBuy",
+      "InputType": "Text",
+      "WorkflowId": 3,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[Calc:YearstoProfit]",
+      "Id": 18,
+      "Name": "Y2F",
       "InputType": "Text",
       "WorkflowId": 3,
       "IsDeleted": false
