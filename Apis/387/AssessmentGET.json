@@ -53,14 +53,6 @@
             "value": "[RecordId]"
           },
           {
-            "name": "Person",
-            "value": "[Record:Person]"
-          },
-          {
-            "name": "bars",
-            "value": "[Record:bars]"
-          },
-          {
             "name": "Name",
             "value": "[Record:Name]"
           },
@@ -115,6 +107,10 @@
           {
             "name": "Status",
             "value": "[Record:Status]"
+          },
+          {
+            "name": "Person",
+            "value": "[Record:Person]"
           }
         ],
         "Headers": []
