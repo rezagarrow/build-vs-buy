@@ -1,0 +1,12 @@
+{
+  "DisplayInMenu": true,
+  "ParentPageId": -1,
+  "RecordNamePropertyId": 13,
+  "Id": 7,
+  "VersionId": 7,
+  "Name": "Assessment",
+  "PluralName": "Assessments",
+  "Icon": "calculator",
+  "Type": "UserCreated",
+  "EnableIndexing": false
+}
