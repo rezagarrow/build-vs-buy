@@ -204,7 +204,7 @@
       },
       {
         "Id": 8,
-        "Condition": "[WF_Status=Error]!=\"Error\"",
+        "Condition": "[WF_Status=]!=\"Error\"",
         "ActionType": "InjectData",
         "OrderIndex": 1,
         "ActionParameters": [
@@ -236,7 +236,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T22:40:09.2018989+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-27T22:43:57.1155014+00:00",
+  "LastModifiedOn": "2021-01-27T22:44:59.7226688+00:00",
   "InputFields": [
     {
       "Id": 10,
@@ -268,6 +268,14 @@
       "Value": "[BuildOrBuy]",
       "Id": 13,
       "Name": "BuildOrBuy",
+      "InputType": "Text",
+      "WorkflowId": 2,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[Calc:YearsToProfit]",
+      "Id": 19,
+      "Name": "YearsToProfit",
       "InputType": "Text",
       "WorkflowId": 2,
       "IsDeleted": false
