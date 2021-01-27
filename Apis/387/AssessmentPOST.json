@@ -54,6 +54,105 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "Employeesrequired",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 3,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "TimetoBuild",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 4,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Employeesalary",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 5,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Overhead",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 6,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Employeecost",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 7,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Daysofmaintenance",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 8,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Costtobuild",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 9,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Annualmaintenance",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 10,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Annualsavings",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 11,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Yearstoprofit",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 12,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "foo",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 13,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -64,7 +163,18 @@
         "OutputToken": "CreatedRecordId",
         "Name": "[Name]",
         "BuyCost": "[BuyCost]",
-        "Recommendation": "[Recommendation]"
+        "Recommendation": "[Recommendation]",
+        "Employeesrequired": "[Employeesrequired]",
+        "TimetoBuild": "[TimetoBuild]",
+        "Employeesalary": "[Employeesalary]",
+        "Overhead": "[Overhead]",
+        "Employeecost": "[Employeecost]",
+        "Daysofmaintenance": "[Daysofmaintenance]",
+        "Costtobuild": "[Costtobuild]",
+        "Annualmaintenance": "[Annualmaintenance]",
+        "Annualsavings": "[Annualsavings]",
+        "Yearstoprofit": "[Yearstoprofit]",
+        "foo": "[foo]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -96,6 +206,50 @@
           {
             "name": "Id",
             "value": "[CreatedRecordId]"
+          },
+          {
+            "name": "Employeesrequired",
+            "value": "[CreatedRecord:Employeesrequired]"
+          },
+          {
+            "name": "TimetoBuild",
+            "value": "[CreatedRecord:TimetoBuild]"
+          },
+          {
+            "name": "Employeesalary",
+            "value": "[CreatedRecord:Employeesalary]"
+          },
+          {
+            "name": "Overhead",
+            "value": "[CreatedRecord:Overhead]"
+          },
+          {
+            "name": "Employeecost",
+            "value": "[CreatedRecord:Employeecost]"
+          },
+          {
+            "name": "Daysofmaintenance",
+            "value": "[CreatedRecord:Daysofmaintenance]"
+          },
+          {
+            "name": "Costtobuild",
+            "value": "[CreatedRecord:Costtobuild]"
+          },
+          {
+            "name": "Annualmaintenance",
+            "value": "[CreatedRecord:Annualmaintenance]"
+          },
+          {
+            "name": "Annualsavings",
+            "value": "[CreatedRecord:Annualsavings]"
+          },
+          {
+            "name": "Yearstoprofit",
+            "value": "[CreatedRecord:Yearstoprofit]"
+          },
+          {
+            "name": "foo",
+            "value": "[CreatedRecord:foo]"
           },
           {
             "name": "Name",
