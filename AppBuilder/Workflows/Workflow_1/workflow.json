@@ -90,7 +90,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T17:00:27.0331659+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-27T17:36:30.6752099+00:00",
+  "LastModifiedOn": "2021-01-27T17:37:52.8910099+00:00",
   "InputFields": [
     {
       "Id": 1,
@@ -141,6 +141,14 @@
       "Value": "[AnnualCost]",
       "Id": 7,
       "Name": "AnnualCost",
+      "InputType": "Text",
+      "WorkflowId": 1,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[AnnualSavings]",
+      "Id": 8,
+      "Name": "AnnualSavings",
       "InputType": "Text",
       "WorkflowId": 1,
       "IsDeleted": false
