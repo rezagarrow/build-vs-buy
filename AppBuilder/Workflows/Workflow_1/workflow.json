@@ -63,7 +63,6 @@
       {
         "Id": 3,
         "Description": "Calculate Break Even  = [CostToBuild]/([Annual Savings]",
-        "Condition": "0",
         "ActionType": "InjectData",
         "OrderIndex": 2,
         "ActionParameters": [
@@ -90,7 +89,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T17:00:27.0331659+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-27T17:37:52.8910099+00:00",
+  "LastModifiedOn": "2021-01-27T17:38:16.1089308+00:00",
   "InputFields": [
     {
       "Id": 1,
@@ -149,6 +148,14 @@
       "Value": "[AnnualSavings]",
       "Id": 8,
       "Name": "AnnualSavings",
+      "InputType": "Text",
+      "WorkflowId": 1,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[BreakEven]",
+      "Id": 9,
+      "Name": "BreakEven",
       "InputType": "Text",
       "WorkflowId": 1,
       "IsDeleted": false
