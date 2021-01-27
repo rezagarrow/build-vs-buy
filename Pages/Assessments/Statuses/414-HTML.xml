@@ -1,0 +1,25 @@
+<module type="DNNHTML" version="09.08.01.00">
+    <moduleID>414</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachetime>0</cachetime>
+    <color />
+    <displayprint>true</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <modulepermissions />
+    <title>Header</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>1f668faa-6a8d-48f7-8f0f-86ce01c56921</uniqueId>
+    <visibility>Maximized</visibility>
+    <modulesettings />
+    <tabmodulesettings />
+    <definition>DNN_HTML</definition>
+    <moduledefinition>Text/HTML</moduledefinition>
+</module>
