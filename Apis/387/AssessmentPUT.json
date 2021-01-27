@@ -74,6 +74,105 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "Employeesrequired",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 4,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "TimetoBuild",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 5,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Employeesalary",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 6,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Overhead",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 7,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Employeecost",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 8,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Daysofmaintenance",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 9,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Costtobuild",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 10,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Annualmaintenance",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 11,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Annualsavings",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 12,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Yearstoprofit",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 13,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "foo",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 14,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -84,7 +183,18 @@
         "RecordId": "[RecordId]",
         "Name": "[Name]",
         "BuyCost": "[BuyCost]",
-        "Recommendation": "[Recommendation]"
+        "Recommendation": "[Recommendation]",
+        "Employeesrequired": "[Employeesrequired]",
+        "TimetoBuild": "[TimetoBuild]",
+        "Employeesalary": "[Employeesalary]",
+        "Overhead": "[Overhead]",
+        "Employeecost": "[Employeecost]",
+        "Daysofmaintenance": "[Daysofmaintenance]",
+        "Costtobuild": "[Costtobuild]",
+        "Annualmaintenance": "[Annualmaintenance]",
+        "Annualsavings": "[Annualsavings]",
+        "Yearstoprofit": "[Yearstoprofit]",
+        "foo": "[foo]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
