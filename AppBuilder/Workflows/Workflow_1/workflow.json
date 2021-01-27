@@ -23,7 +23,7 @@
                 "$$hashKey": "object:14"
               },
               {
-                "value": "[DoMath:Eval(expression=[DaysOfMaintenance] * ([EmployeeCost]/22)) * 12)]",
+                "value": "[DoMath:Eval(expression=[DaysOfMaintenance] * ([EmployeeCost]/22) * 12)]",
                 "name": "AnnualCost",
                 "$$hashKey": "object:15"
               }
@@ -91,7 +91,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T17:00:27.0331659+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-27T17:26:10.6969187+00:00",
+  "LastModifiedOn": "2021-01-27T17:32:17.3561844+00:00",
   "InputFields": [
     {
       "Id": 1,
