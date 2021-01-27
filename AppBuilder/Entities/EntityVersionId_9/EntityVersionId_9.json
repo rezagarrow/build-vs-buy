@@ -1,0 +1,12 @@
+{
+  "DisplayInMenu": true,
+  "ParentPageId": 47,
+  "RecordNamePropertyId": 33,
+  "Id": 9,
+  "VersionId": 9,
+  "Name": "Status",
+  "PluralName": "Statuses",
+  "Icon": "list",
+  "Type": "UserCreated",
+  "EnableIndexing": false
+}

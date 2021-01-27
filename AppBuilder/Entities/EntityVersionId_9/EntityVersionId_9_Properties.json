@@ -1,0 +1,46 @@
+[
+  {
+    "Id": 33,
+    "EntityVersionId": 9,
+    "Name": "Name",
+    "Type": {
+      "Id": "Text",
+      "Name": "Text",
+      "InputType": {
+        "Id": "Text",
+        "Name": "Text",
+        "ValueType": "String",
+        "Length": 450,
+        "Icon": "short_text"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": true,
+    "IsSearchable": true,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 1
+  },
+  {
+    "Id": 34,
+    "EntityVersionId": 9,
+    "Name": "Icon",
+    "Type": {
+      "Id": "Text",
+      "Name": "Text",
+      "InputType": {
+        "Id": "Text",
+        "Name": "Text",
+        "ValueType": "String",
+        "Length": 450,
+        "Icon": "short_text"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 2
+  }
+]
