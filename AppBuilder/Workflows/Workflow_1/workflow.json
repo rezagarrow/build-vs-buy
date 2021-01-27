@@ -18,12 +18,12 @@
             "Name": "Data",
             "Value": [
               {
-                "value": "[DoMath([EmployeesRequired]*[TimetoBuild]*[EmployeeCost])]",
+                "value": "[DoMath:Eval([EmployeesRequired]*[TimetoBuild]*[EmployeeCost])]",
                 "name": "CostToBuild",
                 "$$hashKey": "object:14"
               },
               {
-                "value": "[DoMath([DaysOfMaintenance] * ([EmployeeCost]/22)) * 12)]",
+                "value": "[DoMath:Eval([DaysOfMaintenance] * ([EmployeeCost]/22)) * 12)]",
                 "name": "AnnualCost",
                 "$$hashKey": "object:15"
               }
@@ -91,7 +91,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T17:00:27.0331659+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-27T17:07:16.0496992+00:00",
+  "LastModifiedOn": "2021-01-27T17:10:30.5895619+00:00",
   "InputFields": [
     {
       "Id": 1,
