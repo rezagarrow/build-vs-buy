@@ -39,7 +39,6 @@
       {
         "Id": 2,
         "Description": "Calculate Annual Savings",
-        "Condition": "0",
         "ActionType": "InjectData",
         "OrderIndex": 1,
         "ActionParameters": [
@@ -48,7 +47,7 @@
             "Name": "Data",
             "Value": [
               {
-                "value": "DoMath(expression=[p_BuyCost]-[AnnualCost])",
+                "value": "[DoMath(expression=[p_BuyCost]-[AnnualCost])]",
                 "name": "AnnualSavings",
                 "$$hashKey": "object:14"
               }
@@ -73,7 +72,7 @@
             "Name": "Data",
             "Value": [
               {
-                "value": "DoMath(expression=[CostToBuild]/[AnnualSavings])",
+                "value": "[DoMath(expression=[CostToBuild]/[AnnualSavings])]",
                 "name": "BreakEven",
                 "$$hashKey": "object:14"
               }
@@ -91,7 +90,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T17:00:27.0331659+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-27T17:32:17.3561844+00:00",
+  "LastModifiedOn": "2021-01-27T17:36:30.6752099+00:00",
   "InputFields": [
     {
       "Id": 1,
