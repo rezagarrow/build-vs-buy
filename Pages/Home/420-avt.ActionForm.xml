@@ -4,7 +4,7 @@
     <alignment />
     <alltabs>false</alltabs>
     <border />
-    <cachemethod />
+    <cachemethod>MemoryModuleCachingProvider</cachemethod>
     <cachetime>0</cachetime>
     <color />
     <containersrc />
@@ -12,11 +12,18 @@
     <displaysyndicate>false</displaysyndicate>
     <displaytitle>true</displaytitle>
     <enddate>0001-01-01T00:00:00</enddate>
-    <footer />
-    <header />
+    <footer>&lt;/div&gt;</footer>
+    <header>&lt;div class="fitform"&gt;</header>
     <iconfile />
     <inheritviewpermissions>true</inheritviewpermissions>
-    <modulepermissions />
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+    </modulepermissions>
     <title>Build or Buy Form</title>
     <startdate>0001-01-01T00:00:00</startdate>
     <uniqueId>8633d4c4-7a32-40e5-a78b-b3e84a732d7d</uniqueId>
@@ -1366,7 +1373,7 @@
     &lt;LeftSidebarHtml /&gt;
     &lt;RightSidebarHtml /&gt;
     &lt;RootClasses /&gt;
-    &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
+    &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en-US&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
