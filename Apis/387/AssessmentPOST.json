@@ -146,10 +146,19 @@
       "Validations": []
     },
     {
-      "Name": "foo",
+      "Name": "Status",
       "IsDeleted": false,
       "IsEnabled": false,
-      "OrderIndex": 13,
+      "OrderIndex": 14,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "bar",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 15,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
@@ -174,7 +183,8 @@
         "Annualmaintenance": "[Annualmaintenance]",
         "Annualsavings": "[Annualsavings]",
         "Yearstoprofit": "[Yearstoprofit]",
-        "foo": "[foo]"
+        "Status": "[Status]",
+        "bar": "[bar]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -206,6 +216,26 @@
           {
             "name": "Id",
             "value": "[CreatedRecordId]"
+          },
+          {
+            "name": "Status",
+            "value": "[CreatedRecord:Status]"
+          },
+          {
+            "name": "bar",
+            "value": "[CreatedRecord:bar]"
+          },
+          {
+            "name": "Name",
+            "value": "[CreatedRecord:Name]"
+          },
+          {
+            "name": "BuyCost",
+            "value": "[CreatedRecord:BuyCost]"
+          },
+          {
+            "name": "Recommendation",
+            "value": "[CreatedRecord:Recommendation]"
           },
           {
             "name": "Employeesrequired",
@@ -246,22 +276,6 @@
           {
             "name": "Yearstoprofit",
             "value": "[CreatedRecord:Yearstoprofit]"
-          },
-          {
-            "name": "foo",
-            "value": "[CreatedRecord:foo]"
-          },
-          {
-            "name": "Name",
-            "value": "[CreatedRecord:Name]"
-          },
-          {
-            "name": "BuyCost",
-            "value": "[CreatedRecord:BuyCost]"
-          },
-          {
-            "name": "Recommendation",
-            "value": "[CreatedRecord:Recommendation]"
           }
         ],
         "Headers": [
