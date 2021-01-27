@@ -7,7 +7,6 @@
     <cachemethod />
     <cachetime>0</cachetime>
     <color />
-    <containersrc />
     <displayprint>true</displayprint>
     <displaysyndicate>false</displaysyndicate>
     <displaytitle>true</displaytitle>
@@ -46,7 +45,7 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;static-text&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cdiv class=\&quot;entity-details-container\&quot;\u003e\r\n    \u003cdiv class=\&quot;properties-container text\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eshort_text\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eName:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:Name=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container money\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eattach_money\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eBuy Cost:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:BuyCost=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container text\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eshort_text\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eRecommendation:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:Recommendation=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n\u003c/div\u003e&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cdiv class=\&quot;entity-details-container\&quot;\u003e\r\n    \u003cdiv class=\&quot;properties-container text\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eshort_text\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eName:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:Name=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container money\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eattach_money\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eBuy Cost:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:BuyCost=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container text\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eshort_text\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eRecommendation:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:Recommendation=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container integer\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003elooks_one\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eEmployees required:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:Employeesrequired=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container integer\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003elooks_one\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eTime to Build:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:TimetoBuild=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container money\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eattach_money\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eEmployee salary:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:Employeesalary=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container decimal\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003elooks_one\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eOverhead:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:Overhead=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container money\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eattach_money\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eEmployee cost:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:Employeecost=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container decimal\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003elooks_one\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eDays of maintenance:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:Daysofmaintenance=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container money\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eattach_money\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eCost to build:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:Costtobuild=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container money\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eattach_money\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eAnnual maintenance:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:Annualmaintenance=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container money\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eattach_money\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eAnnual savings:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:Annualsavings=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container decimal\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003elooks_one\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eYears to profit:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:Yearstoprofit=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container text\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eshort_text\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003efoo:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:foo=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n\u003c/div\u003e&quot;}&lt;/InputData&gt;
       &lt;Value&gt;&lt;![CDATA[&lt;div class=&quot;entity-details-container&quot;&gt;
     &lt;div class=&quot;properties-container text&quot;&gt;
         &lt;div class=&quot;entity-property&quot;&gt;
@@ -68,6 +67,83 @@
             &lt;span class=&quot;entity-property-name&quot;&gt;Recommendation:&lt;/span&gt;
         &lt;/div&gt;
         &lt;div class=&quot;entity-value&quot;&gt;[original:Recommendation=&#39;-&#39;]&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;properties-container integer&quot;&gt;
+        &lt;div class=&quot;entity-property&quot;&gt;
+            &lt;span class=&quot;material-icons&quot;&gt;looks_one&lt;/span&gt;
+            &lt;span class=&quot;entity-property-name&quot;&gt;Employees required:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;entity-value&quot;&gt;[original:Employeesrequired=&#39;-&#39;]&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;properties-container integer&quot;&gt;
+        &lt;div class=&quot;entity-property&quot;&gt;
+            &lt;span class=&quot;material-icons&quot;&gt;looks_one&lt;/span&gt;
+            &lt;span class=&quot;entity-property-name&quot;&gt;Time to Build:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;entity-value&quot;&gt;[original:TimetoBuild=&#39;-&#39;]&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;properties-container money&quot;&gt;
+        &lt;div class=&quot;entity-property&quot;&gt;
+            &lt;span class=&quot;material-icons&quot;&gt;attach_money&lt;/span&gt;
+            &lt;span class=&quot;entity-property-name&quot;&gt;Employee salary:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;entity-value&quot;&gt;[original:Employeesalary=&#39;-&#39;]&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;properties-container decimal&quot;&gt;
+        &lt;div class=&quot;entity-property&quot;&gt;
+            &lt;span class=&quot;material-icons&quot;&gt;looks_one&lt;/span&gt;
+            &lt;span class=&quot;entity-property-name&quot;&gt;Overhead:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;entity-value&quot;&gt;[original:Overhead=&#39;-&#39;]&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;properties-container money&quot;&gt;
+        &lt;div class=&quot;entity-property&quot;&gt;
+            &lt;span class=&quot;material-icons&quot;&gt;attach_money&lt;/span&gt;
+            &lt;span class=&quot;entity-property-name&quot;&gt;Employee cost:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;entity-value&quot;&gt;[original:Employeecost=&#39;-&#39;]&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;properties-container decimal&quot;&gt;
+        &lt;div class=&quot;entity-property&quot;&gt;
+            &lt;span class=&quot;material-icons&quot;&gt;looks_one&lt;/span&gt;
+            &lt;span class=&quot;entity-property-name&quot;&gt;Days of maintenance:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;entity-value&quot;&gt;[original:Daysofmaintenance=&#39;-&#39;]&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;properties-container money&quot;&gt;
+        &lt;div class=&quot;entity-property&quot;&gt;
+            &lt;span class=&quot;material-icons&quot;&gt;attach_money&lt;/span&gt;
+            &lt;span class=&quot;entity-property-name&quot;&gt;Cost to build:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;entity-value&quot;&gt;[original:Costtobuild=&#39;-&#39;]&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;properties-container money&quot;&gt;
+        &lt;div class=&quot;entity-property&quot;&gt;
+            &lt;span class=&quot;material-icons&quot;&gt;attach_money&lt;/span&gt;
+            &lt;span class=&quot;entity-property-name&quot;&gt;Annual maintenance:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;entity-value&quot;&gt;[original:Annualmaintenance=&#39;-&#39;]&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;properties-container money&quot;&gt;
+        &lt;div class=&quot;entity-property&quot;&gt;
+            &lt;span class=&quot;material-icons&quot;&gt;attach_money&lt;/span&gt;
+            &lt;span class=&quot;entity-property-name&quot;&gt;Annual savings:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;entity-value&quot;&gt;[original:Annualsavings=&#39;-&#39;]&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;properties-container decimal&quot;&gt;
+        &lt;div class=&quot;entity-property&quot;&gt;
+            &lt;span class=&quot;material-icons&quot;&gt;looks_one&lt;/span&gt;
+            &lt;span class=&quot;entity-property-name&quot;&gt;Years to profit:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;entity-value&quot;&gt;[original:Yearstoprofit=&#39;-&#39;]&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;properties-container text&quot;&gt;
+        &lt;div class=&quot;entity-property&quot;&gt;
+            &lt;span class=&quot;material-icons&quot;&gt;short_text&lt;/span&gt;
+            &lt;span class=&quot;entity-property-name&quot;&gt;foo:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;entity-value&quot;&gt;[original:foo=&#39;-&#39;]&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
@@ -154,7 +230,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![HasRole:8] &amp;amp;&amp;amp; ![HasRole:5] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:7]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-01-27T12:30:36.093&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-27T12:54:00.697&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to view this item.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;406&lt;/ModuleId&gt;
@@ -169,9 +245,9 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-01-27T12:30:36.093&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-27T12:54:00.697&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;original:Name&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:BuyCost&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Recommendation&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;original:Name&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:BuyCost&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Recommendation&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Employeesrequired&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:TimetoBuild&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Employeesalary&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Overhead&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Employeecost&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Daysofmaintenance&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Costtobuild&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Annualmaintenance&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Annualsavings&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Yearstoprofit&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:foo&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;406&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
       &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.InitializeVariablesWithDefaultValues&quot;}&lt;/MetadataJson&gt;
@@ -183,7 +259,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.ReadEntity.0.Assessment&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-01-27T12:30:36.093&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-01-27T12:54:00.697&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:AssessmentId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;406&lt;/ModuleId&gt;
