@@ -1,0 +1,421 @@
+<module type="ActionForm" version="05.12.09.00">
+    <moduleID>424</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachemethod />
+    <cachetime>0</cachetime>
+    <color />
+    <containersrc />
+    <displayprint>false</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Admins</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Citizen Developers</rolename>
+        </permission>
+    </modulepermissions>
+    <title>Move Page</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>d757e638-e049-45f3-bab6-407c265e51ed</uniqueId>
+    <visibility>Maximized</visibility>
+    <cultureCode />
+    <modulesettings />
+    <tabmodulesettings />
+    <definition>Action Form</definition>
+    <moduledefinition>avt.Action Form</moduledefinition>
+    <content type="ActionForm" version="05.12.09.00"><![CDATA[&lt;ActionForm&gt;
+  &lt;Fields&gt;
+    &lt;Field&gt;
+      &lt;Id&gt;&lt;![CDATA[109]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[Move Page under:]]&gt;&lt;/Title&gt;
+      &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
+      &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
+      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;OverrideName&gt;SourcePageTabId&lt;/OverrideName&gt;
+      &lt;Name&gt;SourcePageTabId&lt;/Name&gt;
+      &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
+      &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
+      &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
+      &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
+      &lt;BindEnable&gt;&lt;![CDATA[]]&gt;&lt;/BindEnable&gt;
+      &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
+      &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
+      &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
+      &lt;InputType&gt;item-picker-tree-view&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;InlineTree&quot;:true,&quot;DataSource&quot;:{&quot;Value&quot;:&quot;SQL Query&quot;,&quot;Parameters&quot;:{&quot;Items&quot;:&quot;First Item\nSecond Item|WithDifferentValue&quot;,&quot;SqlQuery&quot;:&quot;select * from (\n\tSelect T.TabName as Text,  CAST(T.TabId as nvarchar) as Value,  CAST(T.TabId as nvarchar) as ItemId,  isnull(T.ParentId,-1) as ParentId, iif(Count(HC.TabID) \u003e 0, \u0027true\u0027,\u0027false\u0027) as HasChildren, \u0027true\u0027 as IsSelectable, t.TabOrder from Tabs T\n\tleft join Tabs As HC on HC.ParentId = T.TabId and HC.TabId != \u0027[QueryString:MTabId]\u0027\n\twhere T.PortalID = 0 and T.IsDeleted = 0 and T.TabId != \u0027[QueryString:MTabId]\u0027 and\n\t(isnull(T.ParentId,\u0027-1\u0027) = @parentId or @searchText != \u0027\u0027)\n\tGroup By T.TabName , T.TabId , T.ParentId, T.TabOrder\n) as Pages\n\nOrder By TabOrder&quot;}},&quot;Value&quot;:&quot;&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;InlineTree&gt;True&lt;/InlineTree&gt;
+      &lt;DataSource&gt;
+        &lt;Value&gt;SQL Query&lt;/Value&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/DataSource&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;Flag&gt;checkbox&lt;/Flag&gt;
+      &lt;Value&gt;&lt;![CDATA[]]&gt;&lt;/Value&gt;
+      &lt;IsRequired&gt;True&lt;/IsRequired&gt;
+      &lt;IsActive&gt;True&lt;/IsActive&gt;
+      &lt;EnableCondition /&gt;
+      &lt;CssClass&gt;&lt;![CDATA[]]&gt;&lt;/CssClass&gt;
+      &lt;FirstCssClass&gt;&lt;![CDATA[]]&gt;&lt;/FirstCssClass&gt;
+      &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
+      &lt;LabelCssClass&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssClass&gt;
+      &lt;LabelCssStyles&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssStyles&gt;
+      &lt;CustomValidator1 /&gt;
+      &lt;CustomValidator2 /&gt;
+      &lt;ValidationGroup /&gt;
+      &lt;GroupValidator /&gt;
+      &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
+      &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;0&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;12&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;0&lt;/ColOffset&gt;
+    &lt;/Field&gt;
+    &lt;Field&gt;
+      &lt;Id&gt;&lt;![CDATA[110]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[Move ...... selected page]]&gt;&lt;/Title&gt;
+      &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
+      &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
+      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;OverrideName&gt;MoveOption&lt;/OverrideName&gt;
+      &lt;Name&gt;MoveOption&lt;/Name&gt;
+      &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
+      &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
+      &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
+      &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
+      &lt;BindEnable&gt;&lt;![CDATA[]]&gt;&lt;/BindEnable&gt;
+      &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
+      &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
+      &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
+      &lt;InputType&gt;closed-multiple-radio&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;Horizontal&quot;:false,&quot;LinkTo&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:[],&quot;IsExpression&quot;:false},&quot;DataSource&quot;:{&quot;Value&quot;:&quot;Items&quot;,&quot;Parameters&quot;:{&quot;Items&quot;:&quot;Above\nBelow\nUnder&quot;}},&quot;RadioType&quot;:false,&quot;BtnClass&quot;:&quot;btn-default&quot;,&quot;BtnStyles&quot;:&quot;&quot;,&quot;WordBetween&quot;:&quot;or&quot;,&quot;WordBetweenStyles&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;Horizontal&gt;False&lt;/Horizontal&gt;
+      &lt;LinkTo&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;System.Collections.ArrayList&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+      &lt;/LinkTo&gt;
+      &lt;DataSource&gt;
+        &lt;Value&gt;Items&lt;/Value&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/DataSource&gt;
+      &lt;RadioType&gt;False&lt;/RadioType&gt;
+      &lt;BtnClass&gt;btn-default&lt;/BtnClass&gt;
+      &lt;BtnStyles /&gt;
+      &lt;WordBetween&gt;or&lt;/WordBetween&gt;
+      &lt;WordBetweenStyles /&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;Flag&gt;radio&lt;/Flag&gt;
+      &lt;Value&gt;&lt;![CDATA[]]&gt;&lt;/Value&gt;
+      &lt;IsRequired&gt;True&lt;/IsRequired&gt;
+      &lt;IsActive&gt;True&lt;/IsActive&gt;
+      &lt;EnableCondition /&gt;
+      &lt;CssClass&gt;&lt;![CDATA[]]&gt;&lt;/CssClass&gt;
+      &lt;FirstCssClass&gt;&lt;![CDATA[]]&gt;&lt;/FirstCssClass&gt;
+      &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
+      &lt;LabelCssClass&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssClass&gt;
+      &lt;LabelCssStyles&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssStyles&gt;
+      &lt;CustomValidator1 /&gt;
+      &lt;CustomValidator2 /&gt;
+      &lt;ValidationGroup /&gt;
+      &lt;GroupValidator /&gt;
+      &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
+      &lt;ViewOrder&gt;1&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;1&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;12&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;0&lt;/ColOffset&gt;
+    &lt;/Field&gt;
+    &lt;Field&gt;
+      &lt;Id&gt;&lt;![CDATA[111]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[Move]]&gt;&lt;/Title&gt;
+      &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
+      &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
+      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;OverrideName /&gt;
+      &lt;Name&gt;Move&lt;/Name&gt;
+      &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
+      &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
+      &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
+      &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
+      &lt;BindEnable&gt;&lt;![CDATA[]]&gt;&lt;/BindEnable&gt;
+      &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
+      &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
+      &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
+      &lt;InputType&gt;button&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;CausesValidation&quot;:true,&quot;IsDefaultButton&quot;:true,&quot;ButtonSize&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;btn-normal&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ButtonType&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;btn-info&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ButtonAlign&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;center&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ButtonIcon&quot;:&quot;&quot;,&quot;ButtonExecutingActionMessage&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;localize&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ButtonWaitingMessage&quot;:&quot;Please wait...&quot;,&quot;ConnectedForms&quot;:&quot;&quot;,&quot;Actions&quot;:[]}&lt;/InputData&gt;
+      &lt;CausesValidation&gt;True&lt;/CausesValidation&gt;
+      &lt;IsDefaultButton&gt;True&lt;/IsDefaultButton&gt;
+      &lt;ButtonSize&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;btn-normal&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/ButtonSize&gt;
+      &lt;ButtonType&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;btn-info&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/ButtonType&gt;
+      &lt;ButtonAlign&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;center&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/ButtonAlign&gt;
+      &lt;ButtonIcon /&gt;
+      &lt;ButtonExecutingActionMessage&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;localize&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/ButtonExecutingActionMessage&gt;
+      &lt;ButtonWaitingMessage&gt;Please wait...&lt;/ButtonWaitingMessage&gt;
+      &lt;ConnectedForms /&gt;
+      &lt;Actions /&gt;
+      &lt;Value&gt;&lt;![CDATA[]]&gt;&lt;/Value&gt;
+      &lt;IsRequired&gt;False&lt;/IsRequired&gt;
+      &lt;IsActive&gt;True&lt;/IsActive&gt;
+      &lt;EnableCondition /&gt;
+      &lt;CssClass&gt;&lt;![CDATA[]]&gt;&lt;/CssClass&gt;
+      &lt;FirstCssClass&gt;&lt;![CDATA[]]&gt;&lt;/FirstCssClass&gt;
+      &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
+      &lt;LabelCssClass&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssClass&gt;
+      &lt;LabelCssStyles&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssStyles&gt;
+      &lt;CustomValidator1 /&gt;
+      &lt;CustomValidator2 /&gt;
+      &lt;ValidationGroup /&gt;
+      &lt;GroupValidator /&gt;
+      &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
+      &lt;ViewOrder&gt;2&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;2&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;12&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;0&lt;/ColOffset&gt;
+    &lt;/Field&gt;
+    &lt;Field&gt;
+      &lt;Id&gt;&lt;![CDATA[112]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[TabId]]&gt;&lt;/Title&gt;
+      &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
+      &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
+      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;OverrideName /&gt;
+      &lt;Name&gt;TabId&lt;/Name&gt;
+      &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
+      &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
+      &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
+      &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
+      &lt;BindEnable&gt;&lt;![CDATA[]]&gt;&lt;/BindEnable&gt;
+      &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
+      &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
+      &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
+      &lt;InputType&gt;hiden-constant&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[QueryString:MTabId]&quot;,&quot;SaveToReport&quot;:false,&quot;SecureInput&quot;:true}&lt;/InputData&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;SecureInput&gt;True&lt;/SecureInput&gt;
+      &lt;Value&gt;&lt;![CDATA[[QueryString:MTabId]]]&gt;&lt;/Value&gt;
+      &lt;IsRequired&gt;False&lt;/IsRequired&gt;
+      &lt;IsActive&gt;True&lt;/IsActive&gt;
+      &lt;EnableCondition /&gt;
+      &lt;CssClass&gt;&lt;![CDATA[]]&gt;&lt;/CssClass&gt;
+      &lt;FirstCssClass&gt;&lt;![CDATA[]]&gt;&lt;/FirstCssClass&gt;
+      &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
+      &lt;LabelCssClass&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssClass&gt;
+      &lt;LabelCssStyles&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssStyles&gt;
+      &lt;CustomValidator1 /&gt;
+      &lt;CustomValidator2 /&gt;
+      &lt;ValidationGroup /&gt;
+      &lt;GroupValidator /&gt;
+      &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
+      &lt;ViewOrder&gt;3&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;3&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;12&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;0&lt;/ColOffset&gt;
+    &lt;/Field&gt;
+  &lt;/Fields&gt;
+  &lt;Settings&gt;
+    &lt;Title&gt;Move Page&lt;/Title&gt;
+    &lt;CssName&gt;move-page&lt;/CssName&gt;
+    &lt;Version&gt;5.12.0&lt;/Version&gt;
+    &lt;Build&gt;5.12.9&lt;/Build&gt;
+    &lt;CultureCode&gt;en&lt;/CultureCode&gt;
+    &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
+    &lt;FrontEndTemplate&gt;&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div id=&quot;gtx-trans&quot; style=&quot;position: absolute; left: -183px; top: -20px;&quot;&amp;gt;
+&amp;lt;div class=&quot;gtx-trans-icon&quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/FrontEndTemplate&gt;
+    &lt;HasCustomLayout&gt;False&lt;/HasCustomLayout&gt;
+    &lt;ShowLoading&gt;False&lt;/ShowLoading&gt;
+    &lt;LoadingBarsColor&gt;#00c0ef&lt;/LoadingBarsColor&gt;
+    &lt;LoadingBackgroundColor&gt;#fff&lt;/LoadingBackgroundColor&gt;
+    &lt;LoadingText /&gt;
+    &lt;TabsProLoading&gt;False&lt;/TabsProLoading&gt;
+    &lt;LayoutHtml&gt;&lt;![CDATA[&amp;lt;div style=&amp;quot;width: 40%; float: left; margin: 0px 20px 0px 0px;&amp;quot;&amp;gt;[Fields:NewField]&amp;lt;/div&amp;gt;
+&amp;lt;div style=&amp;quot;width: 40%; float: left; margin: 0px 20px 0px 0px;&amp;quot;&amp;gt;[Fields:NewField]&amp;lt;/div&amp;gt;
+&amp;lt;div style=&amp;quot;clear: both;&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;]]&gt;&lt;/LayoutHtml&gt;
+    &lt;CurrentContext&gt;ExportImport&lt;/CurrentContext&gt;
+    &lt;LabelAlign&gt;top&lt;/LabelAlign&gt;
+    &lt;LabelWidth&gt;3&lt;/LabelWidth&gt;
+    &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
+    &lt;OpenFormMode&gt;Popup&lt;/OpenFormMode&gt;
+    &lt;ModuleId&gt;424&lt;/ModuleId&gt;
+    &lt;ModuleVersion&gt;5.12.9&lt;/ModuleVersion&gt;
+    &lt;TabId&gt;53&lt;/TabId&gt;
+    &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
+    &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
+    &lt;FormTemplate&gt;material&lt;/FormTemplate&gt;
+    &lt;FormTemplateFolder&gt;/DesktopModules/DnnSharp/ActionForm/templates/Form/material&lt;/FormTemplateFolder&gt;
+    &lt;ModuleId&gt;424&lt;/ModuleId&gt;
+    &lt;IsDebug&gt;False&lt;/IsDebug&gt;
+    &lt;EnableReports&gt;False&lt;/EnableReports&gt;
+    &lt;ClientSideValidation&gt;True&lt;/ClientSideValidation&gt;
+    &lt;RequiredFieldAllowsWhiteSpace&gt;False&lt;/RequiredFieldAllowsWhiteSpace&gt;
+    &lt;OnFocusoutValidation&gt;False&lt;/OnFocusoutValidation&gt;
+    &lt;ShowTooltips&gt;False&lt;/ShowTooltips&gt;
+    &lt;ShowTooltipTitle&gt;True&lt;/ShowTooltipTitle&gt;
+    &lt;ShowFormCondition /&gt;
+    &lt;InitJs&gt;&lt;![CDATA[]]&gt;&lt;/InitJs&gt;
+    &lt;PopupWidth&gt;500&lt;/PopupWidth&gt;
+    &lt;WidthCoordinate&gt;px&lt;/WidthCoordinate&gt;
+    &lt;PopupHeight&gt;300&lt;/PopupHeight&gt;
+    &lt;jQueryTheme&gt;sunny&lt;/jQueryTheme&gt;
+    &lt;SubmitHiddenFields&gt;False&lt;/SubmitHiddenFields&gt;
+    &lt;IncludeBootstrap&gt;True&lt;/IncludeBootstrap&gt;
+    &lt;IncludeFontAwesome&gt;True&lt;/IncludeFontAwesome&gt;
+    &lt;FloatingLabels&gt;False&lt;/FloatingLabels&gt;
+    &lt;EnableEmbed&gt;False&lt;/EnableEmbed&gt;
+    &lt;AngularnoConflict&gt;True&lt;/AngularnoConflict&gt;
+    &lt;Background /&gt;
+    &lt;TextColor /&gt;
+    &lt;Padding&gt;0&lt;/Padding&gt;
+    &lt;DateFormat&gt;m/d/yy&lt;/DateFormat&gt;
+    &lt;BaseId&gt;dnn424&lt;/BaseId&gt;
+    &lt;PopupName&gt;Move &quot;[TabName]&quot;&lt;/PopupName&gt;
+    &lt;LeftSidebarHtml /&gt;
+    &lt;RightSidebarHtml /&gt;
+    &lt;RootClasses /&gt;
+    &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en-US&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
+    &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
+  &lt;/Settings&gt;
+  &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+    &lt;ActionInfo&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+      &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
+      &lt;LastModified&gt;2021-01-30T23:47:22.04&lt;/LastModified&gt;
+      &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
+      &lt;ActionData&gt;{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;select TabName from Tabs where TabId = @TabId&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[QueryString:MTabId]&quot;,&quot;name&quot;:&quot;TabId&quot;}],&quot;OutputTokenName&quot;:&quot;TabName&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false}&lt;/ActionData&gt;
+      &lt;ModuleId&gt;424&lt;/ModuleId&gt;
+      &lt;EventName&gt;preinit&lt;/EventName&gt;
+      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
+      &lt;Metadata /&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+      &lt;Description /&gt;
+      &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
+      &lt;LastModified&gt;2021-01-30T23:47:22.067&lt;/LastModified&gt;
+      &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
+      &lt;ActionData&gt;{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;select isnull(ParentId,-1) from tabs\nwhere TabId = @TabId\n&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[TabId]&quot;,&quot;name&quot;:&quot;TabId&quot;}],&quot;OutputTokenName&quot;:&quot;ParentId&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false}&lt;/ActionData&gt;
+      &lt;ModuleId&gt;424&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Move&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
+      &lt;Metadata /&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+      &lt;Description /&gt;
+      &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
+      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
+      &lt;LastModified&gt;2021-01-30T23:47:22.067&lt;/LastModified&gt;
+      &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
+      &lt;ActionData&gt;{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;select isnull(ParentId,-1) from tabs\nwhere TabId = @TabId\n&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[SourcePageTabId]&quot;,&quot;name&quot;:&quot;TabId&quot;}],&quot;OutputTokenName&quot;:&quot;SourcePageParentId&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false}&lt;/ActionData&gt;
+      &lt;ModuleId&gt;424&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Move&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
+      &lt;Metadata /&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+      &lt;Description&gt;Above / Below&lt;/Description&gt;
+      &lt;ActionType&gt;ExecuteActions&lt;/ActionType&gt;
+      &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
+      &lt;Condition&gt;[MoveOption] == &quot;Above&quot; || [MoveOption] == &quot;Below&quot;&lt;/Condition&gt;
+      &lt;LastModified&gt;2021-01-30T23:47:22.067&lt;/LastModified&gt;
+      &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
+      &lt;ActionData&gt;{&quot;ActionList&quot;:[{&quot;Title&quot;:&quot;Update Page&quot;,&quot;ActionType&quot;:&quot;UpdatePage&quot;,&quot;Description&quot;:&quot;Move Page under if need it&quot;,&quot;Condition&quot;:&quot;[SourcePageParentId] != [ParentId]&quot;,&quot;Parameters&quot;:{&quot;PageId&quot;:&quot;[TabId]&quot;,&quot;PageName&quot;:&quot;&quot;,&quot;PageTitle&quot;:&quot;&quot;,&quot;ParentPageId&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ParentPageToken&quot;:&quot;[SourcePageParentId]&quot;,&quot;PageDesc&quot;:&quot;&quot;,&quot;PageKeywords&quot;:&quot;&quot;,&quot;DateStart&quot;:&quot;&quot;,&quot;DateEnd&quot;:&quot;&quot;,&quot;Permissions&quot;:&quot;&quot;,&quot;OtherSettings&quot;:&quot;&quot;,&quot;TokenNameForUrl&quot;:&quot;&quot;},&quot;$_uid&quot;:&quot;action16116819498675455&quot;,&quot;$_isOpen&quot;:false,&quot;$_isLoaded&quot;:true,&quot;$_isFocus&quot;:true,&quot;EventName&quot;:&quot;click&quot;},{&quot;Title&quot;:&quot;Execute Actions&quot;,&quot;ActionType&quot;:&quot;ExecuteActions&quot;,&quot;Description&quot;:&quot;ABOVE&quot;,&quot;Condition&quot;:&quot;[MoveOption] == \&quot;Above\&quot;&quot;,&quot;Parameters&quot;:{&quot;ActionList&quot;:[{&quot;Title&quot;:&quot;Run SQL Query&quot;,&quot;ActionType&quot;:&quot;RunSql&quot;,&quot;Parameters&quot;:{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;select TabOrder from tabs\nwhere TabId = @TabId\n&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[TabId]&quot;,&quot;name&quot;:&quot;TabId&quot;}],&quot;OutputTokenName&quot;:&quot;TabOrder&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false},&quot;$_uid&quot;:&quot;action16116819502129813&quot;,&quot;$_isOpen&quot;:false,&quot;$_isLoaded&quot;:true,&quot;$_isFocus&quot;:true,&quot;EventName&quot;:&quot;click&quot;,&quot;IsDeleted&quot;:false,&quot;Description&quot;:&quot;Curent Tab Order&quot;},{&quot;Title&quot;:&quot;Run SQL Query&quot;,&quot;ActionType&quot;:&quot;RunSql&quot;,&quot;Parameters&quot;:{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;select TabOrder from tabs\nwhere TabId = @TabId\n&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[SourcePageTabId]&quot;,&quot;name&quot;:&quot;TabId&quot;}],&quot;OutputTokenName&quot;:&quot;SourcePageOrderTab&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false},&quot;$_uid&quot;:&quot;action16116819502129055&quot;,&quot;$_isOpen&quot;:false,&quot;$_isLoaded&quot;:true,&quot;$_isFocus&quot;:true,&quot;EventName&quot;:&quot;click&quot;,&quot;IsDeleted&quot;:false,&quot;Id&quot;:-1,&quot;Description&quot;:&quot;To Move Tab Order&quot;},{&quot;Id&quot;:-1,&quot;$_uid&quot;:&quot;action16116819502128084&quot;,&quot;EventName&quot;:&quot;click&quot;,&quot;Parameters&quot;:{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;Update Tabs \nSet TabOrder = @SourcePageOrderTab\nWhere TabId = @CurentTabId and PortalId = @PortalId\n\nUpdate Tabs\nset TabOrder = TabOrder + 2\nWHERE TabOrder &amp;gt;= @SourcePageOrderTab and TabId != @CurentTabId\nand PortalId = @PortalId&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[TabId]&quot;,&quot;name&quot;:&quot;CurentTabId&quot;},{&quot;value&quot;:&quot;[TabOrder]&quot;,&quot;name&quot;:&quot;CurentOrderTab&quot;},{&quot;value&quot;:&quot;[SourcePageTabId]&quot;,&quot;name&quot;:&quot;SourcePageTabId&quot;},{&quot;value&quot;:&quot;[SourcePageOrderTab]&quot;,&quot;name&quot;:&quot;SourcePageOrderTab&quot;},{&quot;value&quot;:&quot;[Portal:PortalId]&quot;,&quot;name&quot;:&quot;PortalId&quot;}],&quot;OutputTokenName&quot;:&quot;&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false},&quot;ActionType&quot;:&quot;RunSql&quot;,&quot;$_isOpen&quot;:false,&quot;$_isLoaded&quot;:true,&quot;$_isFocus&quot;:true,&quot;Definition&quot;:{&quot;IsClientAction&quot;:false,&quot;Settings&quot;:{&quot;Group&quot;:&quot;Data&quot;}},&quot;Description&quot;:&quot;Move&quot;},{&quot;Id&quot;:-1,&quot;$_uid&quot;:&quot;action16116819502124372&quot;,&quot;EventName&quot;:&quot;click&quot;,&quot;Parameters&quot;:{&quot;ClearAllCache&quot;:false,&quot;ClearTabsCache&quot;:true,&quot;ClearPortalsCache&quot;:&quot;&quot;,&quot;PortalIds&quot;:&quot;[Portal:PortalId]&quot;,&quot;CacheKey&quot;:&quot;Tab_Tabs&quot;},&quot;ActionType&quot;:&quot;ClearCacheItem&quot;,&quot;$_isOpen&quot;:false,&quot;$_isLoaded&quot;:true,&quot;$_isFocus&quot;:true,&quot;Definition&quot;:{&quot;IsClientAction&quot;:false,&quot;Settings&quot;:{&quot;Group&quot;:&quot;Data&quot;}}}]},&quot;$_uid&quot;:&quot;action16116819498675900&quot;,&quot;$_isOpen&quot;:false,&quot;$_isLoaded&quot;:true,&quot;$_isFocus&quot;:true,&quot;EventName&quot;:&quot;click&quot;},{&quot;Title&quot;:&quot;Execute Actions&quot;,&quot;ActionType&quot;:&quot;ExecuteActions&quot;,&quot;Description&quot;:&quot;BELOW&quot;,&quot;Condition&quot;:&quot;[MoveOption] == \&quot;Below\&quot;&quot;,&quot;Parameters&quot;:{&quot;ActionList&quot;:[{&quot;Title&quot;:&quot;Run SQL Query&quot;,&quot;ActionType&quot;:&quot;RunSql&quot;,&quot;Parameters&quot;:{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;select TabOrder from tabs\nwhere TabId = @TabId\n&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[TabId]&quot;,&quot;name&quot;:&quot;TabId&quot;}],&quot;OutputTokenName&quot;:&quot;TabOrder&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false},&quot;$_uid&quot;:&quot;action161168195034047&quot;,&quot;$_isOpen&quot;:false,&quot;$_isLoaded&quot;:true,&quot;$_isFocus&quot;:true,&quot;EventName&quot;:&quot;click&quot;,&quot;IsDeleted&quot;:false,&quot;Description&quot;:&quot;Curent Tab Order&quot;},{&quot;Title&quot;:&quot;Run SQL Query&quot;,&quot;ActionType&quot;:&quot;RunSql&quot;,&quot;Parameters&quot;:{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;select TabOrder from tabs\nwhere TabId = @TabId\n&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[SourcePageTabId]&quot;,&quot;name&quot;:&quot;TabId&quot;}],&quot;OutputTokenName&quot;:&quot;SourcePageOrderTab&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false},&quot;$_uid&quot;:&quot;action16116819503402046&quot;,&quot;$_isOpen&quot;:false,&quot;$_isLoaded&quot;:true,&quot;$_isFocus&quot;:true,&quot;EventName&quot;:&quot;click&quot;,&quot;IsDeleted&quot;:false,&quot;Id&quot;:-1,&quot;Description&quot;:&quot;To Move Tab Order&quot;},{&quot;Id&quot;:-1,&quot;$_uid&quot;:&quot;action1611681950340193&quot;,&quot;EventName&quot;:&quot;click&quot;,&quot;Parameters&quot;:{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;Update Tabs \nSet TabOrder = @SourcePageOrderTab\nWhere TabId = @CurentTabId and PortalId = @PortalId\n\nUpdate Tabs\nset TabOrder = TabOrder + 2\nWHERE TabOrder &amp;gt;= @SourcePageOrderTab and TabId != @SourcePageTabId\nand PortalId = @PortalId&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[TabId]&quot;,&quot;name&quot;:&quot;CurentTabId&quot;},{&quot;value&quot;:&quot;[TabOrder]&quot;,&quot;name&quot;:&quot;CurentOrderTab&quot;},{&quot;value&quot;:&quot;[SourcePageTabId]&quot;,&quot;name&quot;:&quot;SourcePageTabId&quot;},{&quot;value&quot;:&quot;[SourcePageOrderTab]&quot;,&quot;name&quot;:&quot;SourcePageOrderTab&quot;},{&quot;value&quot;:&quot;[Portal:PortalId]&quot;,&quot;name&quot;:&quot;PortalId&quot;}],&quot;OutputTokenName&quot;:&quot;&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false},&quot;ActionType&quot;:&quot;RunSql&quot;,&quot;$_isOpen&quot;:false,&quot;$_isLoaded&quot;:true,&quot;$_isFocus&quot;:true,&quot;Definition&quot;:{&quot;IsClientAction&quot;:false,&quot;Settings&quot;:{&quot;Group&quot;:&quot;Data&quot;}},&quot;Description&quot;:&quot;Move&quot;},{&quot;Id&quot;:-1,&quot;$_uid&quot;:&quot;action16116819503402671&quot;,&quot;EventName&quot;:&quot;click&quot;,&quot;Parameters&quot;:{&quot;ClearAllCache&quot;:false,&quot;ClearTabsCache&quot;:true,&quot;ClearPortalsCache&quot;:&quot;&quot;,&quot;PortalIds&quot;:&quot;[Portal:PortalId]&quot;,&quot;CacheKey&quot;:&quot;Tab_Tabs&quot;},&quot;ActionType&quot;:&quot;ClearCacheItem&quot;,&quot;$_isOpen&quot;:false,&quot;$_isLoaded&quot;:true,&quot;$_isFocus&quot;:true,&quot;Definition&quot;:{&quot;IsClientAction&quot;:false,&quot;Settings&quot;:{&quot;Group&quot;:&quot;Data&quot;}}}]},&quot;$_uid&quot;:&quot;action16116819498672293&quot;,&quot;$_isOpen&quot;:false,&quot;$_isLoaded&quot;:true,&quot;$_isFocus&quot;:true,&quot;EventName&quot;:&quot;click&quot;}]}&lt;/ActionData&gt;
+      &lt;ModuleId&gt;424&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Move&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
+      &lt;Metadata /&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+      &lt;Description&gt;Under&lt;/Description&gt;
+      &lt;ActionType&gt;ExecuteActions&lt;/ActionType&gt;
+      &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
+      &lt;Condition&gt;[MoveOption] == &quot;Under&quot;&lt;/Condition&gt;
+      &lt;LastModified&gt;2021-01-30T23:47:22.067&lt;/LastModified&gt;
+      &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
+      &lt;ActionData&gt;{&quot;ActionList&quot;:[{&quot;Id&quot;:-1,&quot;$_uid&quot;:&quot;action1611918886155983&quot;,&quot;EventName&quot;:&quot;click&quot;,&quot;Parameters&quot;:{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;update Tabs\nset TabOrder = (select isNULL((max(TabOrder) + 2),0) from Tabs where ParentId = @ParentId)\nwhere TabId = @TabId&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[TabId]&quot;,&quot;name&quot;:&quot;TabId&quot;},{&quot;value&quot;:&quot;[SourcePageTabId]&quot;,&quot;name&quot;:&quot;ParentId&quot;}],&quot;OutputTokenName&quot;:&quot;&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false},&quot;ActionType&quot;:&quot;RunSql&quot;,&quot;$_isOpen&quot;:false,&quot;$_isLoaded&quot;:true,&quot;$_isFocus&quot;:true,&quot;Definition&quot;:{&quot;IsClientAction&quot;:false,&quot;Settings&quot;:{&quot;Group&quot;:&quot;Data&quot;}}},{&quot;Title&quot;:&quot;Update Page&quot;,&quot;ActionType&quot;:&quot;UpdatePage&quot;,&quot;Description&quot;:&quot;Move Page under if need it&quot;,&quot;Condition&quot;:&quot;&quot;,&quot;Parameters&quot;:{&quot;PageId&quot;:&quot;[TabId]&quot;,&quot;PageName&quot;:&quot;&quot;,&quot;PageTitle&quot;:&quot;&quot;,&quot;ParentPageId&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ParentPageToken&quot;:&quot;[SourcePageTabId]&quot;,&quot;PageDesc&quot;:&quot;&quot;,&quot;PageKeywords&quot;:&quot;&quot;,&quot;DateStart&quot;:&quot;&quot;,&quot;DateEnd&quot;:&quot;&quot;,&quot;Permissions&quot;:&quot;&quot;,&quot;OtherSettings&quot;:&quot;&quot;,&quot;TokenNameForUrl&quot;:&quot;&quot;},&quot;$_uid&quot;:&quot;action16119188861558276&quot;,&quot;$_isOpen&quot;:false,&quot;$_isLoaded&quot;:true,&quot;$_isFocus&quot;:true,&quot;EventName&quot;:&quot;click&quot;}]}&lt;/ActionData&gt;
+      &lt;ModuleId&gt;424&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Move&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
+      &lt;Metadata /&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+      &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
+      &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
+      &lt;LastModified&gt;2021-01-30T23:47:22.067&lt;/LastModified&gt;
+      &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
+      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:433,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
+      &lt;ModuleId&gt;424&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Move&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
+      &lt;Metadata /&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+      &lt;ActionType&gt;ExecuteJsCode&lt;/ActionType&gt;
+      &lt;OrderIndex&gt;5&lt;/OrderIndex&gt;
+      &lt;LastModified&gt;2021-01-30T23:47:22.067&lt;/LastModified&gt;
+      &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
+      &lt;ActionData&gt;{&quot;JavascriptCode&quot;:&quot;dnnsf.api.actionForm.closePopupById($(&#39;[ af-name*=\&quot;Move \\\\\&quot;[Tab&#39; + &#39;Name]\\\\\&quot;\&quot; ]&#39;)[0].getAttribute(&#39;data-moduleid&#39;));\ndnnsf.updateQueryStringParam(&#39;updated&#39;,new Date().toISOString());&quot;}&lt;/ActionData&gt;
+      &lt;ModuleId&gt;424&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Move&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
+      &lt;Metadata /&gt;
+    &lt;/ActionInfo&gt;
+  &lt;/Actions&gt;
+&lt;/ActionForm&gt;]]></content>
+</module>
