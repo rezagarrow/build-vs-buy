@@ -344,42 +344,6 @@
                                 "Expression": "",
                                 "Value": "[AnnualCost]"
                               }
-                            },
-                            {
-                              "PropertyName": {
-                                "IsExpression": false,
-                                "Expression": "",
-                                "Value": "Annualsavings"
-                              },
-                              "PropertyValue": {
-                                "IsExpression": false,
-                                "Expression": "",
-                                "Value": "[AnnualSavings]"
-                              }
-                            },
-                            {
-                              "PropertyName": {
-                                "IsExpression": false,
-                                "Expression": "",
-                                "Value": "Costtobuild"
-                              },
-                              "PropertyValue": {
-                                "IsExpression": false,
-                                "Expression": "",
-                                "Value": "[CostToBuild]"
-                              }
-                            },
-                            {
-                              "PropertyName": {
-                                "IsExpression": false,
-                                "Expression": "",
-                                "Value": "Yearstoprofit"
-                              },
-                              "PropertyValue": {
-                                "IsExpression": false,
-                                "Expression": "",
-                                "Value": "[BreakEven]"
-                              }
                             }
                           ],
                           "IsExpression": false,
@@ -404,66 +368,6 @@
                               "IsExpression": false,
                               "ActionId": 20,
                               "OrderIndex": 0,
-                              "SubParameters": []
-                            },
-                            {
-                              "Id": 61,
-                              "Name": "PropertyName",
-                              "Value": "Annualsavings",
-                              "ParentParameterId": 58,
-                              "IsExpression": false,
-                              "ActionId": 20,
-                              "OrderIndex": 1,
-                              "SubParameters": []
-                            },
-                            {
-                              "Id": 62,
-                              "Name": "PropertyValue",
-                              "Value": "[AnnualSavings]",
-                              "ParentParameterId": 58,
-                              "IsExpression": false,
-                              "ActionId": 20,
-                              "OrderIndex": 1,
-                              "SubParameters": []
-                            },
-                            {
-                              "Id": 63,
-                              "Name": "PropertyName",
-                              "Value": "Costtobuild",
-                              "ParentParameterId": 58,
-                              "IsExpression": false,
-                              "ActionId": 20,
-                              "OrderIndex": 2,
-                              "SubParameters": []
-                            },
-                            {
-                              "Id": 64,
-                              "Name": "PropertyValue",
-                              "Value": "[CostToBuild]",
-                              "ParentParameterId": 58,
-                              "IsExpression": false,
-                              "ActionId": 20,
-                              "OrderIndex": 2,
-                              "SubParameters": []
-                            },
-                            {
-                              "Id": 65,
-                              "Name": "PropertyName",
-                              "Value": "Yearstoprofit",
-                              "ParentParameterId": 58,
-                              "IsExpression": false,
-                              "ActionId": 20,
-                              "OrderIndex": 3,
-                              "SubParameters": []
-                            },
-                            {
-                              "Id": 66,
-                              "Name": "PropertyValue",
-                              "Value": "[BreakEven]",
-                              "ParentParameterId": 58,
-                              "IsExpression": false,
-                              "ActionId": 20,
-                              "OrderIndex": 3,
                               "SubParameters": []
                             }
                           ]
@@ -698,7 +602,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-31T01:43:31.301538+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-31T02:37:34.8101283+00:00",
+  "LastModifiedOn": "2021-01-31T02:38:13.8712539+00:00",
   "InputFields": [
     {
       "Id": 25,
