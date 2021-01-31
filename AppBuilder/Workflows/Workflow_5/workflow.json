@@ -337,12 +337,12 @@
                               "PropertyName": {
                                 "IsExpression": false,
                                 "Expression": "",
-                                "Value": "Annualmaintenance"
+                                "Value": "Costtobuild"
                               },
                               "PropertyValue": {
                                 "IsExpression": false,
                                 "Expression": "",
-                                "Value": "[AnnualCost]"
+                                "Value": "[CostToBuild]"
                               }
                             }
                           ],
@@ -353,7 +353,7 @@
                             {
                               "Id": 59,
                               "Name": "PropertyName",
-                              "Value": "Annualmaintenance",
+                              "Value": "Costtobuild",
                               "ParentParameterId": 58,
                               "IsExpression": false,
                               "ActionId": 20,
@@ -363,7 +363,7 @@
                             {
                               "Id": 60,
                               "Name": "PropertyValue",
-                              "Value": "[AnnualCost]",
+                              "Value": "[CostToBuild]",
                               "ParentParameterId": 58,
                               "IsExpression": false,
                               "ActionId": 20,
@@ -602,7 +602,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-31T01:43:31.301538+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-31T02:38:13.8712539+00:00",
+  "LastModifiedOn": "2021-01-31T02:40:00.6329982+00:00",
   "InputFields": [
     {
       "Id": 25,
