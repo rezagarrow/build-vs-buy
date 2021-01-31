@@ -309,7 +309,6 @@
                     },
                     {
                       "Id": 20,
-                      "Condition": "0",
                       "ActionType": "PlantAnApp.PartialUpdateEntity.0.Assessment",
                       "OrderIndex": 1,
                       "ActionParameters": [
@@ -699,7 +698,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-31T01:43:31.301538+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-31T02:36:28.031315+00:00",
+  "LastModifiedOn": "2021-01-31T02:37:34.8101283+00:00",
   "InputFields": [
     {
       "Id": 25,
@@ -747,6 +746,14 @@
       "Value": "[AssessId:Id]",
       "Id": 30,
       "Name": "AssessmentId",
+      "InputType": "Text",
+      "WorkflowId": 5,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[AssissId:AnnualSavings]",
+      "Id": 31,
+      "Name": "AnnualSavings",
       "InputType": "Text",
       "WorkflowId": 5,
       "IsDeleted": false
