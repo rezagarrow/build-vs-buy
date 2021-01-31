@@ -309,6 +309,7 @@
                     },
                     {
                       "Id": 20,
+                      "Condition": "0",
                       "ActionType": "PlantAnApp.PartialUpdateEntity.0.Assessment",
                       "OrderIndex": 1,
                       "ActionParameters": [
@@ -698,7 +699,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-31T01:43:31.301538+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-31T02:26:46.0833633+00:00",
+  "LastModifiedOn": "2021-01-31T02:27:05.629515+00:00",
   "InputFields": [
     {
       "Id": 25,
