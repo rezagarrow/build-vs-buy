@@ -9,7 +9,6 @@
     "Actions": [
       {
         "Id": 23,
-        "Condition": "0",
         "ActionType": "ExecuteJavascript",
         "OrderIndex": 0,
         "ActionParameters": [
@@ -147,7 +146,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T17:00:27.0331659+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-31T17:29:56.4328287+00:00",
+  "LastModifiedOn": "2021-01-31T17:30:34.3064301+00:00",
   "InputFields": [
     {
       "Id": 1,
