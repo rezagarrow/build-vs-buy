@@ -117,7 +117,7 @@
           {
             "Id": 88,
             "Name": "Code",
-            "Value": "var AS;\nAS = BuyCost- AnualCost;\nAS = AS.toFixed(2);\nreturn {AS};\n",
+            "Value": "var AS;\nAS = BuyCost- AnnualCost;\nAS = AS.toFixed(2);\nreturn {AS};\n",
             "IsExpression": false,
             "ActionId": 24,
             "OrderIndex": 0,
@@ -201,7 +201,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T17:00:27.0331659+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-31T17:50:11.734541+00:00",
+  "LastModifiedOn": "2021-01-31T17:51:24.2770758+00:00",
   "InputFields": [
     {
       "Id": 1,
