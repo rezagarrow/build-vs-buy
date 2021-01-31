@@ -32,7 +32,7 @@
           {
             "Id": 83,
             "Name": "Code",
-            "Value": "var CTB;\nvar AC;\nCTB = EmployeesRequired * TimetoBuild * EmployeeCost;\nAC = DaysOfMaintenance * ((EmployeeCost/22) * 12);\nCTB = CostToBuild.toFixed(2);\nAC = AnnualCost.toFixed(2);\nreturn {CTB,AC};\n",
+            "Value": "var CTB;\nvar AC;\nCTB = EmployeesRequired * TimeToBuild * EmployeeCost;\nAC = DaysOfMaintenance * ((EmployeeCost/22) * 12);\nCTB = CostToBuild.toFixed(2);\nAC = AnnualCost.toFixed(2);\nreturn {CTB,AC};\n",
             "IsExpression": false,
             "ActionId": 23,
             "OrderIndex": 0,
@@ -146,7 +146,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T17:00:27.0331659+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-31T17:35:31.3894519+00:00",
+  "LastModifiedOn": "2021-01-31T17:37:20.9010723+00:00",
   "InputFields": [
     {
       "Id": 1,
