@@ -117,7 +117,7 @@
           {
             "Id": 88,
             "Name": "Code",
-            "Value": "var AS;\nAS = BuyCost- AnnualCost;\nAS = AS.toFixed(2);\nreturn {AS};\n",
+            "Value": "var AS;\nvar BE;\nAS = BuyCost- AnnualCost;\nAS = AS.toFixed(2);\nBE = CostToBuild / AS;\nBE = BE.toFixed(2);\nreturn {AS,BE};\n",
             "IsExpression": false,
             "ActionId": 24,
             "OrderIndex": 0,
@@ -183,7 +183,7 @@
             "Name": "Data",
             "Value": [
               {
-                "value": "[DoMath:Eval(expression=[CostToBuild]/[AnnualSavings])]",
+                "value": "[jResult2:BE]",
                 "name": "BreakEven",
                 "$$hashKey": "object:14"
               }
@@ -201,7 +201,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T17:00:27.0331659+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-31T17:52:01.9944502+00:00",
+  "LastModifiedOn": "2021-01-31T17:55:27.9088627+00:00",
   "InputFields": [
     {
       "Id": 1,
