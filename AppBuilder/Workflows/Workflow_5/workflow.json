@@ -200,7 +200,7 @@
                 "Condition": {
                   "IsExpression": false,
                   "Expression": "",
-                  "Value": "1==1"
+                  "Value": "[AssessId:Employeecost=0]>0"
                 },
                 "Actions": {
                   "Id": 11,
@@ -231,7 +231,7 @@
                         {
                           "Id": 43,
                           "Name": "TimeToBuild",
-                          "Value": "[AssessId:TimetoBuild]",
+                          "Value": "[AssessId:Timetobuild]",
                           "IsExpression": false,
                           "ActionId": 18,
                           "OrderIndex": 0,
@@ -479,7 +479,7 @@
                 "Condition": {
                   "IsExpression": false,
                   "Expression": "",
-                  "Value": "1==2"
+                  "Value": "[AssessId:Employeecost=0]==0"
                 },
                 "Actions": {
                   "Id": 12,
@@ -519,7 +519,7 @@
               {
                 "Id": 40,
                 "Name": "Condition",
-                "Value": "1==1",
+                "Value": "[AssessId:Employeecost=0]>0",
                 "ParentParameterId": 39,
                 "IsExpression": false,
                 "ActionId": 17,
@@ -539,7 +539,7 @@
               {
                 "Id": 53,
                 "Name": "Condition",
-                "Value": "1==2",
+                "Value": "[AssessId:Employeecost=0]==0",
                 "ParentParameterId": 39,
                 "IsExpression": false,
                 "ActionId": 17,
@@ -566,7 +566,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-31T01:43:31.301538+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-31T02:08:36.028849+00:00",
+  "LastModifiedOn": "2021-01-31T02:12:27.3173161+00:00",
   "InputFields": [
     {
       "Id": 25,
