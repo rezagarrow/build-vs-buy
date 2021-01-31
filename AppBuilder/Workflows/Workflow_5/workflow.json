@@ -200,7 +200,7 @@
                 "Condition": {
                   "IsExpression": false,
                   "Expression": "",
-                  "Value": "[AssessId:EmployeeCost]!=-666"
+                  "Value": "[AssessId:EmployeeCost=666]!=666"
                 },
                 "Actions": {
                   "Id": 11,
@@ -478,7 +478,7 @@
                 "Condition": {
                   "IsExpression": false,
                   "Expression": "",
-                  "Value": "[AssessId:EmployeeCost]==-666"
+                  "Value": "[AssessId:EmployeeCost=666]==666"
                 },
                 "Actions": {
                   "Id": 12,
@@ -518,7 +518,7 @@
               {
                 "Id": 40,
                 "Name": "Condition",
-                "Value": "[AssessId:EmployeeCost]!=-666",
+                "Value": "[AssessId:EmployeeCost=666]!=666",
                 "ParentParameterId": 39,
                 "IsExpression": false,
                 "ActionId": 17,
@@ -538,7 +538,7 @@
               {
                 "Id": 53,
                 "Name": "Condition",
-                "Value": "[AssessId:EmployeeCost]==-666",
+                "Value": "[AssessId:EmployeeCost=666]==666",
                 "ParentParameterId": 39,
                 "IsExpression": false,
                 "ActionId": 17,
@@ -565,7 +565,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-31T01:43:31.301538+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-31T02:00:10.2831456+00:00",
+  "LastModifiedOn": "2021-01-31T02:05:37.7228002+00:00",
   "InputFields": [
     {
       "Id": 25,
