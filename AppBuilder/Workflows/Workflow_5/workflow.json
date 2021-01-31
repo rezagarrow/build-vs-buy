@@ -323,7 +323,7 @@
                         {
                           "Id": 57,
                           "Name": "RecordId",
-                          "Value": "[Calc:Id]",
+                          "Value": "[AssessId:Id]",
                           "IsExpression": false,
                           "ActionId": 20,
                           "OrderIndex": 0,
@@ -565,7 +565,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-31T01:43:31.301538+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-31T02:05:37.7228002+00:00",
+  "LastModifiedOn": "2021-01-31T02:05:55.9096496+00:00",
   "InputFields": [
     {
       "Id": 25,
