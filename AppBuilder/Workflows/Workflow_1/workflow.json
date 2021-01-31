@@ -66,7 +66,6 @@
       {
         "Id": 1,
         "Description": "Calculate Cost to Build",
-        "Condition": "0",
         "ActionType": "InjectData",
         "OrderIndex": 1,
         "ActionParameters": [
@@ -146,7 +145,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T17:00:27.0331659+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-31T17:43:54.8402141+00:00",
+  "LastModifiedOn": "2021-01-31T17:45:06.759482+00:00",
   "InputFields": [
     {
       "Id": 1,
