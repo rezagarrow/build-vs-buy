@@ -471,6 +471,139 @@
                         }
                       ],
                       "DiagramUID": "Activity_0mv8y05"
+                    },
+                    {
+                      "Id": 21,
+                      "ActionType": "PlantAnApp.ExecuteWorkflow.2",
+                      "OrderIndex": 2,
+                      "ActionParameters": [
+                        {
+                          "Id": 67,
+                          "Name": "InputHelpText",
+                          "IsExpression": false,
+                          "ActionId": 21,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 68,
+                          "Name": "Calc",
+                          "Value": "[AssessId:Id]",
+                          "IsExpression": false,
+                          "ActionId": 21,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 69,
+                          "Name": "OutputHelpText",
+                          "IsExpression": false,
+                          "ActionId": 21,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 70,
+                          "Name": "WF_Status",
+                          "IsExpression": false,
+                          "ActionId": 21,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 71,
+                          "Name": "WF_Description",
+                          "IsExpression": false,
+                          "ActionId": 21,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 72,
+                          "Name": "BuildOrBuy",
+                          "IsExpression": false,
+                          "ActionId": 21,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 73,
+                          "Name": "YearsToProfit",
+                          "IsExpression": false,
+                          "ActionId": 21,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        }
+                      ],
+                      "DiagramUID": "Activity_0a84oid"
+                    },
+                    {
+                      "Id": 22,
+                      "ActionType": "PlantAnApp.PartialUpdateEntity.0.Assessment",
+                      "OrderIndex": 3,
+                      "ActionParameters": [
+                        {
+                          "Id": 74,
+                          "Name": "ConnectionString",
+                          "IsExpression": false,
+                          "ActionId": 22,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 75,
+                          "Name": "RecordId",
+                          "Value": "[AssessId:Id]",
+                          "IsExpression": false,
+                          "ActionId": 22,
+                          "OrderIndex": 0,
+                          "SubParameters": []
+                        },
+                        {
+                          "Id": 76,
+                          "Name": "UpdatedProperties",
+                          "Value": [
+                            {
+                              "PropertyName": {
+                                "IsExpression": false,
+                                "Expression": "",
+                                "Value": "Recommendation"
+                              },
+                              "PropertyValue": {
+                                "IsExpression": false,
+                                "Expression": "",
+                                "Value": "[BuildOrBuy]"
+                              }
+                            }
+                          ],
+                          "IsExpression": false,
+                          "ActionId": 22,
+                          "OrderIndex": 0,
+                          "SubParameters": [
+                            {
+                              "Id": 77,
+                              "Name": "PropertyName",
+                              "Value": "Recommendation",
+                              "ParentParameterId": 76,
+                              "IsExpression": false,
+                              "ActionId": 22,
+                              "OrderIndex": 0,
+                              "SubParameters": []
+                            },
+                            {
+                              "Id": 78,
+                              "Name": "PropertyValue",
+                              "Value": "[BuildOrBuy]",
+                              "ParentParameterId": 76,
+                              "IsExpression": false,
+                              "ActionId": 22,
+                              "OrderIndex": 0,
+                              "SubParameters": []
+                            }
+                          ]
+                        }
+                      ],
+                      "DiagramUID": "Activity_09kyqxh"
                     }
                   ]
                 }
@@ -566,7 +699,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-31T01:43:31.301538+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-31T02:12:27.3173161+00:00",
+  "LastModifiedOn": "2021-01-31T02:16:35.7145769+00:00",
   "InputFields": [
     {
       "Id": 25,
