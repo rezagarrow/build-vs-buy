@@ -201,7 +201,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T17:00:27.0331659+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-31T17:55:27.9088627+00:00",
+  "LastModifiedOn": "2021-01-31T17:56:03.8450596+00:00",
   "InputFields": [
     {
       "Id": 1,
@@ -268,22 +268,6 @@
       "Value": "[BreakEven]",
       "Id": 9,
       "Name": "BreakEven",
-      "InputType": "Text",
-      "WorkflowId": 1,
-      "IsDeleted": false
-    },
-    {
-      "Value": "[jResult:CTB]",
-      "Id": 33,
-      "Name": "CTB",
-      "InputType": "Text",
-      "WorkflowId": 1,
-      "IsDeleted": false
-    },
-    {
-      "Value": "[jResult:AC]",
-      "Id": 34,
-      "Name": "AC",
       "InputType": "Text",
       "WorkflowId": 1,
       "IsDeleted": false
