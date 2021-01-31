@@ -344,6 +344,42 @@
                                 "Expression": "",
                                 "Value": "[CostToBuild]"
                               }
+                            },
+                            {
+                              "PropertyName": {
+                                "IsExpression": false,
+                                "Expression": "",
+                                "Value": "Annualsavings"
+                              },
+                              "PropertyValue": {
+                                "IsExpression": false,
+                                "Expression": "",
+                                "Value": "[AnnualSavings]"
+                              }
+                            },
+                            {
+                              "PropertyName": {
+                                "IsExpression": false,
+                                "Expression": "",
+                                "Value": "Annualmaintenance"
+                              },
+                              "PropertyValue": {
+                                "IsExpression": false,
+                                "Expression": "",
+                                "Value": "[AnnualCost]"
+                              }
+                            },
+                            {
+                              "PropertyName": {
+                                "IsExpression": false,
+                                "Expression": "",
+                                "Value": "Yearstoprofit"
+                              },
+                              "PropertyValue": {
+                                "IsExpression": false,
+                                "Expression": "",
+                                "Value": "[BreakEven]"
+                              }
                             }
                           ],
                           "IsExpression": false,
@@ -368,6 +404,66 @@
                               "IsExpression": false,
                               "ActionId": 20,
                               "OrderIndex": 0,
+                              "SubParameters": []
+                            },
+                            {
+                              "Id": 91,
+                              "Name": "PropertyName",
+                              "Value": "Annualsavings",
+                              "ParentParameterId": 58,
+                              "IsExpression": false,
+                              "ActionId": 20,
+                              "OrderIndex": 1,
+                              "SubParameters": []
+                            },
+                            {
+                              "Id": 92,
+                              "Name": "PropertyValue",
+                              "Value": "[AnnualSavings]",
+                              "ParentParameterId": 58,
+                              "IsExpression": false,
+                              "ActionId": 20,
+                              "OrderIndex": 1,
+                              "SubParameters": []
+                            },
+                            {
+                              "Id": 93,
+                              "Name": "PropertyName",
+                              "Value": "Annualmaintenance",
+                              "ParentParameterId": 58,
+                              "IsExpression": false,
+                              "ActionId": 20,
+                              "OrderIndex": 2,
+                              "SubParameters": []
+                            },
+                            {
+                              "Id": 94,
+                              "Name": "PropertyValue",
+                              "Value": "[AnnualCost]",
+                              "ParentParameterId": 58,
+                              "IsExpression": false,
+                              "ActionId": 20,
+                              "OrderIndex": 2,
+                              "SubParameters": []
+                            },
+                            {
+                              "Id": 95,
+                              "Name": "PropertyName",
+                              "Value": "Yearstoprofit",
+                              "ParentParameterId": 58,
+                              "IsExpression": false,
+                              "ActionId": 20,
+                              "OrderIndex": 3,
+                              "SubParameters": []
+                            },
+                            {
+                              "Id": 96,
+                              "Name": "PropertyValue",
+                              "Value": "[BreakEven]",
+                              "ParentParameterId": 58,
+                              "IsExpression": false,
+                              "ActionId": 20,
+                              "OrderIndex": 3,
                               "SubParameters": []
                             }
                           ]
@@ -602,7 +698,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-31T01:43:31.301538+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-31T16:35:20.4565792+00:00",
+  "LastModifiedOn": "2021-01-31T17:58:39.902238+00:00",
   "InputFields": [
     {
       "Id": 25,
