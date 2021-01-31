@@ -222,7 +222,7 @@
                         {
                           "Id": 42,
                           "Name": "EmployeesRequired",
-                          "Value": "[Calc:Employeesrequired]",
+                          "Value": "[AssessId:Employeesrequired]",
                           "IsExpression": false,
                           "ActionId": 18,
                           "OrderIndex": 0,
@@ -231,7 +231,7 @@
                         {
                           "Id": 43,
                           "Name": "TimeToBuild",
-                          "Value": "[Calc:TimetoBuild]",
+                          "Value": "[AssessId:TimetoBuild]",
                           "IsExpression": false,
                           "ActionId": 18,
                           "OrderIndex": 0,
@@ -240,7 +240,7 @@
                         {
                           "Id": 44,
                           "Name": "EmployeeCost",
-                          "Value": "[Calc:Employeecost]",
+                          "Value": "[AssessId:Employeecost]",
                           "IsExpression": false,
                           "ActionId": 18,
                           "OrderIndex": 0,
@@ -249,7 +249,7 @@
                         {
                           "Id": 45,
                           "Name": "BuyCost",
-                          "Value": "[Calc:BuyCost]",
+                          "Value": "[AssessId:BuyCost]",
                           "IsExpression": false,
                           "ActionId": 18,
                           "OrderIndex": 0,
@@ -258,7 +258,7 @@
                         {
                           "Id": 46,
                           "Name": "DaysOfMaintenance",
-                          "Value": "[Calc:Daysofmaintenance]",
+                          "Value": "[AssessId:Daysofmaintenance]",
                           "IsExpression": false,
                           "ActionId": 18,
                           "OrderIndex": 0,
@@ -565,7 +565,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-31T01:43:31.301538+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-31T01:57:54.0205632+00:00",
+  "LastModifiedOn": "2021-01-31T01:58:41.1751132+00:00",
   "InputFields": [
     {
       "Id": 25,
