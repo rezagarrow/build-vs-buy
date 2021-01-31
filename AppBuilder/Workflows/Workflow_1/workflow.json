@@ -104,7 +104,7 @@
             "Name": "Data",
             "Value": [
               {
-                "value": "[DoMath:Eval(expression=[BuyCost]-[AnnualCost])]",
+                "value": "[DoMath:Eval(expression=[BuyCost]-[jResult:AC])]",
                 "name": "AnnualSavings",
                 "$$hashKey": "object:14"
               }
@@ -146,7 +146,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T17:00:27.0331659+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-31T17:38:47.9916929+00:00",
+  "LastModifiedOn": "2021-01-31T17:40:33.1285192+00:00",
   "InputFields": [
     {
       "Id": 1,
@@ -213,6 +213,22 @@
       "Value": "[BreakEven]",
       "Id": 9,
       "Name": "BreakEven",
+      "InputType": "Text",
+      "WorkflowId": 1,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[C2B]",
+      "Id": 33,
+      "Name": "C2B",
+      "InputType": "Text",
+      "WorkflowId": 1,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[AC]",
+      "Id": 34,
+      "Name": "AC",
       "InputType": "Text",
       "WorkflowId": 1,
       "IsDeleted": false
