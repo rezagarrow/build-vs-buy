@@ -699,7 +699,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-31T01:43:31.301538+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-31T02:31:18.8077941+00:00",
+  "LastModifiedOn": "2021-01-31T02:36:28.031315+00:00",
   "InputFields": [
     {
       "Id": 25,
@@ -736,9 +736,17 @@
       "IsDeleted": false
     },
     {
-      "Value": "[AssessId:YearsToProfit]",
+      "Value": "[YearsToProfit]",
       "Id": 29,
       "Name": "YearsToProfit",
+      "InputType": "Text",
+      "WorkflowId": 5,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[AssessId:Id]",
+      "Id": 30,
+      "Name": "AssessmentId",
       "InputType": "Text",
       "WorkflowId": 5,
       "IsDeleted": false
