@@ -602,7 +602,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-31T01:43:31.301538+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-31T02:41:15.1771855+00:00",
+  "LastModifiedOn": "2021-01-31T02:41:48.722827+00:00",
   "InputFields": [
     {
       "Id": 25,
@@ -655,7 +655,7 @@
       "IsDeleted": false
     },
     {
-      "Value": "[AssissId:AnnualSavings]",
+      "Value": "[AnnualSavings]",
       "Id": 31,
       "Name": "AnnualSavings",
       "InputType": "Text",
