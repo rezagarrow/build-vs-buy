@@ -93,17 +93,73 @@
         "DiagramUID": "Activity_0jpp1ph"
       },
       {
+        "Id": 24,
+        "ActionType": "ExecuteJavascript",
+        "OrderIndex": 2,
+        "ActionParameters": [
+          {
+            "Id": 86,
+            "Name": "ScriptName",
+            "IsExpression": false,
+            "ActionId": 24,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 87,
+            "Name": "LocalVariables",
+            "Value": [],
+            "IsExpression": false,
+            "ActionId": 24,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 88,
+            "Name": "Code",
+            "Value": "var AS;\nAS = BuyCost- AnualCost;\nAS = AS.toFixed(2);\nreturn {AS};\n",
+            "IsExpression": false,
+            "ActionId": 24,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 89,
+            "Name": "OutputTokenName",
+            "Value": "jResult",
+            "IsExpression": false,
+            "ActionId": 24,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 90,
+            "Name": "OnError",
+            "Value": {
+              "Id": 14,
+              "EventName": "error",
+              "Actions": []
+            },
+            "IsExpression": false,
+            "ActionId": 24,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_1j1pl0n"
+      },
+      {
         "Id": 2,
         "Description": "Calculate Annual Savings",
         "ActionType": "InjectData",
-        "OrderIndex": 2,
+        "OrderIndex": 3,
         "ActionParameters": [
           {
             "Id": 2,
             "Name": "Data",
             "Value": [
               {
-                "value": "[DoMath:Eval(expression=[BuyCost]-[jResult:AC])]",
+                "value": "[jResult:AS]",
                 "name": "AnnualSavings",
                 "$$hashKey": "object:14"
               }
@@ -120,7 +176,7 @@
         "Id": 3,
         "Description": "Calculate Break Even  = [CostToBuild]/([Annual Savings]",
         "ActionType": "InjectData",
-        "OrderIndex": 3,
+        "OrderIndex": 4,
         "ActionParameters": [
           {
             "Id": 3,
@@ -145,7 +201,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T17:00:27.0331659+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-31T17:45:06.759482+00:00",
+  "LastModifiedOn": "2021-01-31T17:50:11.734541+00:00",
   "InputFields": [
     {
       "Id": 1,
