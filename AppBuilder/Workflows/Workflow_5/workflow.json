@@ -344,6 +344,18 @@
                                 "Expression": "",
                                 "Value": "[CostToBuild]"
                               }
+                            },
+                            {
+                              "PropertyName": {
+                                "IsExpression": false,
+                                "Expression": "",
+                                "Value": "Annualmaintenance"
+                              },
+                              "PropertyValue": {
+                                "IsExpression": false,
+                                "Expression": "",
+                                "Value": "[AnnualCost]"
+                              }
                             }
                           ],
                           "IsExpression": false,
@@ -368,6 +380,26 @@
                               "IsExpression": false,
                               "ActionId": 20,
                               "OrderIndex": 0,
+                              "SubParameters": []
+                            },
+                            {
+                              "Id": 79,
+                              "Name": "PropertyName",
+                              "Value": "Annualmaintenance",
+                              "ParentParameterId": 58,
+                              "IsExpression": false,
+                              "ActionId": 20,
+                              "OrderIndex": 1,
+                              "SubParameters": []
+                            },
+                            {
+                              "Id": 80,
+                              "Name": "PropertyValue",
+                              "Value": "[AnnualCost]",
+                              "ParentParameterId": 58,
+                              "IsExpression": false,
+                              "ActionId": 20,
+                              "OrderIndex": 1,
                               "SubParameters": []
                             }
                           ]
@@ -602,7 +634,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-31T01:43:31.301538+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-01-31T02:40:00.6329982+00:00",
+  "LastModifiedOn": "2021-01-31T02:40:28.9444845+00:00",
   "InputFields": [
     {
       "Id": 25,
