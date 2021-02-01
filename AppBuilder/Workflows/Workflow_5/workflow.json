@@ -714,7 +714,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-31T01:43:31.301538+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-02-01T01:20:23.4528594+00:00",
+  "LastModifiedOn": "2021-02-01T13:32:44.6915721+00:00",
   "InputFields": [
     {
       "Id": 25,
@@ -775,7 +775,7 @@
       "IsDeleted": false
     },
     {
-      "Value": "[AnnualCost]",
+      "Value": "[AC]",
       "Id": 32,
       "Name": "oAnnualCost",
       "InputType": "Text",
