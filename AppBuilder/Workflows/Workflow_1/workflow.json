@@ -250,7 +250,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T17:00:27.0331659+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-02-01T01:26:53.3298998+00:00",
+  "LastModifiedOn": "2021-02-01T01:28:36.3261766+00:00",
   "InputFields": [
     {
       "Id": 1,
@@ -333,6 +333,14 @@
       "Value": "[jResult:ECD]",
       "Id": 36,
       "Name": "EmployeeCostDaily",
+      "InputType": "Text",
+      "WorkflowId": 1,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[jResult2:AS]",
+      "Id": 38,
+      "Name": "AS",
       "InputType": "Text",
       "WorkflowId": 1,
       "IsDeleted": false
