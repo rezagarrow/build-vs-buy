@@ -714,7 +714,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-31T01:43:31.301538+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-02-01T01:19:06.049419+00:00",
+  "LastModifiedOn": "2021-02-01T01:20:23.4528594+00:00",
   "InputFields": [
     {
       "Id": 25,
@@ -783,7 +783,7 @@
       "IsDeleted": false
     },
     {
-      "Value": "Dom: [AssessId:Daysofmaintenance] EmpCost:[AssessId:Employeecost] EmpReq:[AssessId:Employeesrequired]",
+      "Value": "Dom: [AssessId:Daysofmaintenance] EmpCost:[AssessId:Employeecost] EmpReq:[AssessId:Employeesrequired] BuyCost:[AssessId:Buycost] Time2Build:[AssessId:Timetobuild]",
       "Id": 37,
       "Name": "dump",
       "InputType": "Text",
