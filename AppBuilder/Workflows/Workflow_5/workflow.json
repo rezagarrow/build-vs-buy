@@ -249,7 +249,7 @@
                         {
                           "Id": 45,
                           "Name": "BuyCost",
-                          "Value": "[AssessId:BuyCost]",
+                          "Value": "[AssessId:Buycost]",
                           "IsExpression": false,
                           "ActionId": 18,
                           "OrderIndex": 0,
@@ -698,7 +698,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-31T01:43:31.301538+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-02-01T00:46:14.979341+00:00",
+  "LastModifiedOn": "2021-02-01T00:47:28.7738765+00:00",
   "InputFields": [
     {
       "Id": 25,
