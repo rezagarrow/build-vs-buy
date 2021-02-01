@@ -108,16 +108,65 @@
           {
             "Id": 87,
             "Name": "LocalVariables",
-            "Value": [],
+            "Value": [
+              {
+                "Type": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "int"
+                },
+                "Name": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "AnnualCost"
+                },
+                "Value": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "[jResult:AC]"
+                }
+              }
+            ],
             "IsExpression": false,
             "ActionId": 24,
             "OrderIndex": 0,
-            "SubParameters": []
+            "SubParameters": [
+              {
+                "Id": 99,
+                "Name": "Type",
+                "Value": "int",
+                "ParentParameterId": 87,
+                "IsExpression": false,
+                "ActionId": 24,
+                "OrderIndex": 0,
+                "SubParameters": []
+              },
+              {
+                "Id": 100,
+                "Name": "Name",
+                "Value": "AnnualCost",
+                "ParentParameterId": 87,
+                "IsExpression": false,
+                "ActionId": 24,
+                "OrderIndex": 0,
+                "SubParameters": []
+              },
+              {
+                "Id": 101,
+                "Name": "Value",
+                "Value": "[jResult:AC]",
+                "ParentParameterId": 87,
+                "IsExpression": false,
+                "ActionId": 24,
+                "OrderIndex": 0,
+                "SubParameters": []
+              }
+            ]
           },
           {
             "Id": 88,
             "Name": "Code",
-            "Value": "var AS;\nvar BE;\nAS = BuyCost - AC;\nAS = AS.toFixed(2);\nBE = CostToBuild / AS;\nBE = BE.toFixed(2);\nreturn {AS,BE};\n",
+            "Value": "var AS;\nvar BE;\nAS = BuyCost - AnnualCost;\nAS = AS.toFixed(2);\nBE = CostToBuild / AS;\nBE = BE.toFixed(2);\nreturn {AS,BE};\n",
             "IsExpression": false,
             "ActionId": 24,
             "OrderIndex": 0,
@@ -201,7 +250,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T17:00:27.0331659+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-02-01T01:25:01.7245737+00:00",
+  "LastModifiedOn": "2021-02-01T01:26:53.3298998+00:00",
   "InputFields": [
     {
       "Id": 1,
