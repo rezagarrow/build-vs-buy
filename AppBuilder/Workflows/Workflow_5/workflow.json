@@ -366,7 +366,7 @@
                               "PropertyValue": {
                                 "IsExpression": false,
                                 "Expression": "",
-                                "Value": "[AnnualCost]"
+                                "Value": "[AC]"
                               }
                             },
                             {
@@ -439,7 +439,7 @@
                             {
                               "Id": 94,
                               "Name": "PropertyValue",
-                              "Value": "[AnnualCost]",
+                              "Value": "[AC]",
                               "ParentParameterId": 58,
                               "IsExpression": false,
                               "ActionId": 20,
@@ -698,7 +698,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-31T01:43:31.301538+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-02-01T01:01:51.6334625+00:00",
+  "LastModifiedOn": "2021-02-01T01:02:25.9290708+00:00",
   "InputFields": [
     {
       "Id": 25,
