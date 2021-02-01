@@ -166,7 +166,7 @@
           {
             "Id": 88,
             "Name": "Code",
-            "Value": "var AS;\nvar BE;\nAS = BuyCost - jAnnualCost;\nAS = AS.toFixed(2);\nBE = CostToBuild / AS;\nBE = BE.toFixed(2);\nreturn {AS,BE};\n",
+            "Value": "var AS;\nvar BE;\nvar t;\nt = 5 - 1;\nAS = BuyCost - jAnnualCost;\nAS = AS.toFixed(2);\nBE = CostToBuild / AS;\nBE = BE.toFixed(2);\nreturn {AS,BE,t};\n",
             "IsExpression": false,
             "ActionId": 24,
             "OrderIndex": 0,
@@ -250,7 +250,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T17:00:27.0331659+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-02-01T01:29:35.9045469+00:00",
+  "LastModifiedOn": "2021-02-01T01:31:34.554114+00:00",
   "InputFields": [
     {
       "Id": 1,
@@ -341,6 +341,14 @@
       "Value": "[jResult2:AS]",
       "Id": 38,
       "Name": "AS",
+      "InputType": "Text",
+      "WorkflowId": 1,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[jResult2:t]",
+      "Id": 39,
+      "Name": "t2",
       "InputType": "Text",
       "WorkflowId": 1,
       "IsDeleted": false
