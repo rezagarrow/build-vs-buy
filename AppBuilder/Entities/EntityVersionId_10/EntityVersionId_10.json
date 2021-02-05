@@ -1,0 +1,12 @@
+{
+  "DisplayInMenu": true,
+  "ParentPageId": -1,
+  "RecordNamePropertyId": 39,
+  "Id": 10,
+  "VersionId": 10,
+  "Name": "ToDo",
+  "PluralName": "ToDos",
+  "Icon": "table",
+  "Type": "UserCreated",
+  "EnableIndexing": false
+}
