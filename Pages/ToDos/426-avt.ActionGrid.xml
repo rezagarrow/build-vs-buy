@@ -1,0 +1,26 @@
+<module type="ActionGrid" version="05.12.04.00">
+    <moduleID>426</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachetime>0</cachetime>
+    <color />
+    <displayprint>true</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <modulepermissions />
+    <title>Listing</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>d66ebf23-4152-4e74-8b80-2d2dd188c642</uniqueId>
+    <visibility>Maximized</visibility>
+    <modulesettings />
+    <tabmodulesettings />
+    <definition>Action Grid</definition>
+    <moduledefinition>avt.ActionGrid</moduledefinition>
+    <content type="ActionGrid" version="05.12.04.00"><![CDATA[&lt;ActionGrid /&gt;]]></content>
+</module>
