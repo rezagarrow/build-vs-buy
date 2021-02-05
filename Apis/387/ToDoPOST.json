@@ -34,6 +34,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "Status",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 2,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -43,7 +52,8 @@
       "Parameters": {
         "OutputToken": "CreatedRecordId",
         "Task": "[Task]",
-        "DueDate": "[DueDate]"
+        "DueDate": "[DueDate]",
+        "Status": "[Status]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -75,6 +85,10 @@
           {
             "name": "Id",
             "value": "[CreatedRecordId]"
+          },
+          {
+            "name": "Status",
+            "value": "[CreatedRecord:Status]"
           },
           {
             "name": "Task",
