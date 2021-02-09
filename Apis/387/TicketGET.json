@@ -33,7 +33,8 @@
       "OrderIndex": 0,
       "Parameters": {
         "RecordId": "[RecordId]",
-        "OutputToken": "Record"
+        "OutputToken": "Record",
+        "ConnectionString": ""
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -69,7 +70,8 @@
             "value": "[Record:Email]"
           }
         ],
-        "Headers": []
+        "Headers": [],
+        "AllowJsonp": ""
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
