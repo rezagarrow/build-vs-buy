@@ -1,0 +1,90 @@
+[
+  {
+    "Id": 42,
+    "EntityVersionId": 11,
+    "Name": "Name",
+    "Type": {
+      "Id": "Text",
+      "Name": "Text",
+      "InputType": {
+        "Id": "Text",
+        "Name": "Text",
+        "ValueType": "String",
+        "Length": 450,
+        "Icon": "short_text"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": true,
+    "IsSearchable": true,
+    "IsFilterable": false,
+    "IsSortable": true,
+    "OrderIndex": 1
+  },
+  {
+    "Id": 43,
+    "EntityVersionId": 11,
+    "Name": "Due Date",
+    "Type": {
+      "Id": "Date",
+      "Name": "Date",
+      "InputType": {
+        "Id": "Date",
+        "Name": "Date",
+        "ValueType": "Date",
+        "Length": 3,
+        "Icon": "calendar_today"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 2
+  },
+  {
+    "Id": 44,
+    "EntityVersionId": 11,
+    "Name": "Owner",
+    "Type": {
+      "Id": "EntityRef",
+      "Name": "Entity Reference",
+      "InputType": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "ValueType": "EntityRef",
+        "Length": 4
+      }
+    },
+    "EntityVersionRefId": 1,
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": true,
+    "OrderIndex": 3
+  },
+  {
+    "Id": 45,
+    "EntityVersionId": 11,
+    "Name": "Email",
+    "Type": {
+      "Id": "Email",
+      "Name": "Email",
+      "InputType": {
+        "Id": "Email",
+        "Name": "Email",
+        "ValueType": "String",
+        "Length": 320,
+        "Icon": "mail_outline"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": true,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 4
+  }
+]
