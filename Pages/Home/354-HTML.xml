@@ -31,11 +31,11 @@
     <cultureCode />
     <modulesettings>
         <modulesetting>
-            <settingname>HtmlText_ReplaceTokens</settingname>
-            <settingvalue>False</settingvalue>
+            <settingname>HtmlText_UseDecorate</settingname>
+            <settingvalue>True</settingvalue>
         </modulesetting>
         <modulesetting>
-            <settingname>HtmlText_UseDecorate</settingname>
+            <settingname>HtmlText_ReplaceTokens</settingname>
             <settingvalue>True</settingvalue>
         </modulesetting>
         <modulesetting>
@@ -43,12 +43,12 @@
             <settingvalue>True</settingvalue>
         </modulesetting>
         <modulesetting>
-            <settingname>HtmlText_SearchDescLength</settingname>
-            <settingvalue>100</settingvalue>
-        </modulesetting>
-        <modulesetting>
             <settingname>WorkFlowID</settingname>
             <settingvalue>1</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>HtmlText_SearchDescLength</settingname>
+            <settingvalue>100</settingvalue>
         </modulesetting>
     </modulesettings>
     <tabmodulesettings>
@@ -59,17 +59,5 @@
     </tabmodulesettings>
     <definition>DNN_HTML</definition>
     <moduledefinition>Text/HTML</moduledefinition>
-    <content type="DNNHTML" version="09.08.01.00"><![CDATA[&lt;htmltext&gt;&lt;content&gt;&lt;![CDATA[&amp;lt;p&amp;gt;&amp;lt;iframe class=&amp;quot;youtube-video&amp;quot; allow=&amp;quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&amp;quot; allowfullscreen=&amp;quot;&amp;quot; frameborder=&amp;quot;0&amp;quot; src=&amp;quot;https://www.youtube.com/embed/-jNvXVm-8_I&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt;&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;If you haven&amp;amp;#39;t done so already, watch the Getting Started video and then go to Settings to start building your first app.&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;&amp;lt;a class=&amp;quot;btn btn-primary&amp;quot; href=&amp;quot;/Configuration/&amp;quot;&amp;gt;CONFIGURE FIRST APP&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
-&amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt;@media screen and (min-width: 600px) {
-.youtube-video{
-    min-width: 560px;
-    min-height: 315px;
-}
-}
-&amp;lt;/style&amp;gt;
-]]&gt;&lt;/content&gt;&lt;/htmltext&gt;]]></content>
+    <content type="DNNHTML" version="09.08.01.00"><![CDATA[&lt;htmltext&gt;&lt;content&gt;&lt;![CDATA[[Assessment:Overview]]]&gt;&lt;/content&gt;&lt;/htmltext&gt;]]></content>
 </module>
