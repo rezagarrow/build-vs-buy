@@ -1097,6 +1097,55 @@
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
     &lt;/Field&gt;
     &lt;Field&gt;
+      &lt;Id&gt;&lt;![CDATA[135]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[BuildBuy]]&gt;&lt;/Title&gt;
+      &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
+      &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
+      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;OverrideName /&gt;
+      &lt;Name&gt;BuildBuy&lt;/Name&gt;
+      &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[Show if assessment exists]]&gt;&lt;/ShowCondition&gt;
+      &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
+      &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
+      &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
+      &lt;BindEnable&gt;&lt;![CDATA[]]&gt;&lt;/BindEnable&gt;
+      &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
+      &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
+      &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
+      &lt;InputType&gt;static-text&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003ch3\u003eAnnual Savings: [original:Annualsavings]\u003c/h3\u003e\n\n\u003ch3\u003eYears to Profit: [p_Yearstoprofit]\u003c/h3\u003e\n\n\u003ch2\u003eRecommendation: [p_Recommendation]\u003c/h2\u003e&quot;,&quot;Align&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;Align&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;left&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/Align&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;Value&gt;&lt;![CDATA[&lt;h3&gt;Annual Savings: [original:Annualsavings]&lt;/h3&gt;
+
+&lt;h3&gt;Years to Profit: [p_Yearstoprofit]&lt;/h3&gt;
+
+&lt;h2&gt;Recommendation: [p_Recommendation]&lt;/h2&gt;]]&gt;&lt;/Value&gt;
+      &lt;IsRequired&gt;False&lt;/IsRequired&gt;
+      &lt;IsActive&gt;True&lt;/IsActive&gt;
+      &lt;EnableCondition&gt;!string.IsNullOrWhiteSpace([QueryString:AssessmentId=])&lt;/EnableCondition&gt;
+      &lt;CssClass&gt;&lt;![CDATA[]]&gt;&lt;/CssClass&gt;
+      &lt;FirstCssClass&gt;&lt;![CDATA[]]&gt;&lt;/FirstCssClass&gt;
+      &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
+      &lt;LabelCssClass&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssClass&gt;
+      &lt;LabelCssStyles&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssStyles&gt;
+      &lt;CustomValidator1 /&gt;
+      &lt;CustomValidator2 /&gt;
+      &lt;ValidationGroup /&gt;
+      &lt;GroupValidator /&gt;
+      &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
+      &lt;ViewOrder&gt;204&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;17&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;12&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;0&lt;/ColOffset&gt;
+    &lt;/Field&gt;
+    &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[95]]&gt;&lt;/Id&gt;
       &lt;Title&gt;&lt;![CDATA[Calculate]]&gt;&lt;/Title&gt;
       &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
@@ -1159,8 +1208,8 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;204&lt;/ViewOrder&gt;
-      &lt;RowIndex&gt;17&lt;/RowIndex&gt;
+      &lt;ViewOrder&gt;216&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;18&lt;/RowIndex&gt;
       &lt;ColSpan&gt;6&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
     &lt;/Field&gt;
@@ -1227,8 +1276,8 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;210&lt;/ViewOrder&gt;
-      &lt;RowIndex&gt;17&lt;/RowIndex&gt;
+      &lt;ViewOrder&gt;222&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;18&lt;/RowIndex&gt;
       &lt;ColSpan&gt;6&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
     &lt;/Field&gt;
@@ -1298,7 +1347,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:5] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:7]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.62&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.38&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1315,7 +1364,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:5] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:7]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.633&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.397&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1332,7 +1381,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:5] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:7]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.633&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.397&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1347,7 +1396,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.65&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.397&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Add Assessment&quot;},{&quot;name&quot;:&quot;original:Name&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:BuyCost&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Recommendation&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Employeesrequired&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:TimetoBuild&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Employeesalary&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Overhead&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Employeecost&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Daysofmaintenance&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Costtobuild&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Annualmaintenance&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Annualsavings&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Yearstoprofit&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Status&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Person&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:bars&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1361,7 +1410,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.CreateEntity.0.Assessment&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.62&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.38&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;OutputToken&quot;:&quot;NewAssessmentId&quot;,&quot;Name&quot;:&quot;[p_Name]&quot;,&quot;BuyCost&quot;:&quot;[p_BuyCost]&quot;,&quot;Recommendation&quot;:&quot;[p_Recommendation]&quot;,&quot;Employeesrequired&quot;:&quot;[p_Employeesrequired]&quot;,&quot;TimetoBuild&quot;:&quot;[p_TimetoBuild]&quot;,&quot;Employeesalary&quot;:&quot;[p_Employeesalary]&quot;,&quot;Overhead&quot;:&quot;[p_Overhead]&quot;,&quot;Employeecost&quot;:&quot;[p_Employeecost=0.00]&quot;,&quot;Daysofmaintenance&quot;:&quot;[p_Daysofmaintenance]&quot;,&quot;Costtobuild&quot;:&quot;[p_Costtobuild=0.00]&quot;,&quot;Annualmaintenance&quot;:&quot;[p_Annualmaintenance=0.00]&quot;,&quot;Annualsavings&quot;:&quot;[p_Annualsavings=0.00]&quot;,&quot;Yearstoprofit&quot;:&quot;[p_Yearstoprofit]&quot;,&quot;Status&quot;:&quot;[r_StatusId]&quot;,&quot;Person&quot;:&quot;[r_PersonId]&quot;,&quot;bars&quot;:&quot;[p_bars]&quot;,&quot;ConnectionString&quot;:&quot;&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1377,7 +1426,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.UpdateEntity.0.Assessment&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.633&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.397&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:AssessmentId=]&quot;,&quot;Name&quot;:&quot;[p_Name]&quot;,&quot;BuyCost&quot;:&quot;[p_BuyCost]&quot;,&quot;Recommendation&quot;:&quot;[p_Recommendation]&quot;,&quot;Employeesrequired&quot;:&quot;[p_Employeesrequired]&quot;,&quot;TimetoBuild&quot;:&quot;[p_TimetoBuild]&quot;,&quot;Employeesalary&quot;:&quot;[p_Employeesalary]&quot;,&quot;Overhead&quot;:&quot;[p_Overhead]&quot;,&quot;Employeecost&quot;:&quot;[p_Employeecost]&quot;,&quot;Daysofmaintenance&quot;:&quot;[p_Daysofmaintenance]&quot;,&quot;Costtobuild&quot;:&quot;[p_Costtobuild]&quot;,&quot;Annualmaintenance&quot;:&quot;[p_Annualmaintenance]&quot;,&quot;Annualsavings&quot;:&quot;[p_Annualsavings]&quot;,&quot;Yearstoprofit&quot;:&quot;[p_Yearstoprofit]&quot;,&quot;Status&quot;:&quot;[r_StatusId]&quot;,&quot;Person&quot;:&quot;[r_PersonId]&quot;,&quot;bars&quot;:&quot;[p_bars]&quot;,&quot;ConnectionString&quot;:&quot;&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1394,7 +1443,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:8] &amp;amp;&amp;amp; ![HasRole:5] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:7]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.633&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.397&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1411,7 +1460,7 @@
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;Condition&gt;!string.IsNullOrWhiteSpace([QueryString:AssessmentId=])&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.65&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.397&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Edit Assessment&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1427,7 +1476,7 @@
       &lt;ActionType&gt;PlantAnApp.ReadEntity.0.Assessment&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition&gt;[isEdit]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.65&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.413&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:AssessmentId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1442,7 +1491,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.ExecuteWorkflow.5&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.633&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.397&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;InputHelpText&quot;:&quot;&quot;,&quot;AssessId&quot;:&quot;[QueryString:AssessmentId=]&quot;,&quot;OutputHelpText&quot;:&quot;&quot;,&quot;WF_Status&quot;:&quot;&quot;,&quot;WF_Description&quot;:&quot;&quot;,&quot;BuildOrBuy&quot;:&quot;&quot;,&quot;YearsToProfit&quot;:&quot;&quot;,&quot;AssessmentId&quot;:&quot;&quot;,&quot;AnnualSavings&quot;:&quot;&quot;,&quot;oAnnualCost&quot;:&quot;&quot;,&quot;dump&quot;:&quot;&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1455,7 +1504,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.ExecuteWorkflow.5&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.62&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.38&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;InputHelpText&quot;:&quot;&quot;,&quot;AssessId&quot;:&quot;[NewAssessmentId]&quot;,&quot;OutputHelpText&quot;:&quot;&quot;,&quot;WF_Status&quot;:&quot;&quot;,&quot;WF_Description&quot;:&quot;&quot;,&quot;BuildOrBuy&quot;:&quot;&quot;,&quot;YearsToProfit&quot;:&quot;&quot;,&quot;AssessmentId&quot;:&quot;&quot;,&quot;AnnualSavings&quot;:&quot;&quot;,&quot;oAnnualCost&quot;:&quot;&quot;,&quot;dump&quot;:&quot;&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1469,7 +1518,7 @@
       &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.633&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.397&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;406&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1484,7 +1533,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;ShowMessage&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.62&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.38&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;&amp;lt;h4&amp;gt;Assessment Created.&amp;amp;nbsp; PDF and Email coming soon!&amp;lt;br&amp;gt;Result: [WF_Status] - [WF_Description]&amp;lt;/h4&amp;gt;&quot;,&quot;ButtonsList&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:[],&quot;IsExpression&quot;:false}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1498,7 +1547,7 @@
       &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
       &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.633&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.397&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;405&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1514,7 +1563,7 @@
       &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
       &lt;Condition /&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.62&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.38&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Assessments/Detail?AssessmentId=[NewAssessmentId]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;,&quot;BgColor&quot;:&quot;&quot;,&quot;CallBackJsCode&quot;:&quot;&quot;,&quot;TextAlignment&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1530,7 +1579,7 @@
       &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;5&lt;/OrderIndex&gt;
       &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.633&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.397&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Assessments/Detail?AssessmentId=[QueryString:AssessmentId=]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;,&quot;BgColor&quot;:&quot;&quot;,&quot;CallBackJsCode&quot;:&quot;&quot;,&quot;TextAlignment&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1545,7 +1594,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;ExecuteJsCode&lt;/ActionType&gt;
       &lt;OrderIndex&gt;5&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.62&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.38&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;JavascriptCode&quot;:&quot;console.log([CostToBuild]);\nconsole.log([AnnualCost]);\nconsole.log([AnnualSavings]);\nconsole.log([BreakEven]);\nreturn false;&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1559,7 +1608,7 @@
       &lt;Description&gt;Calculate Cost to Build&lt;/Description&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;6&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.62&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.38&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;value&quot;:&quot;[p_Employeesrequired]*[p_TimetoBuild]*[p_Employeecost]&quot;,&quot;name&quot;:&quot;CostToBuild&quot;},{&quot;value&quot;:&quot;([p_Daysofmaintenance] * ([p_Employeecost]/22)) * 12&quot;,&quot;name&quot;:&quot;AnnualCost&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1573,7 +1622,7 @@
       &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
       &lt;OrderIndex&gt;6&lt;/OrderIndex&gt;
       &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.633&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.397&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:403,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1589,7 +1638,7 @@
       &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;7&lt;/OrderIndex&gt;
       &lt;Condition&gt;0&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.633&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.397&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:420,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1605,7 +1654,7 @@
       &lt;Description&gt;Calculate Annual Savings&lt;/Description&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;7&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.62&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.38&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;value&quot;:&quot;[p_BuyCost]-[AnnualCost]&quot;,&quot;name&quot;:&quot;AnnualSavings&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1619,7 +1668,7 @@
       &lt;Description&gt;Calculate Break Even  = [CostToBuild]/([Annual Savings]&lt;/Description&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;8&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.62&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.38&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;value&quot;:&quot;[CostToBuild]/[AnnualSavings]&quot;,&quot;name&quot;:&quot;BreakEven&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1632,7 +1681,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InitActionForm&lt;/ActionType&gt;
       &lt;OrderIndex&gt;8&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.633&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.397&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:420,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;Params&quot;:[{&quot;value&quot;:&quot;[Get:assessmentId]&quot;,&quot;name&quot;:&quot;assessmentId&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1647,7 +1696,7 @@
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;9&lt;/OrderIndex&gt;
       &lt;Condition&gt;[BreakEven] &amp;lt;=3.1&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.62&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.38&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;value&quot;:&quot;Build&quot;,&quot;name&quot;:&quot;BuildBuy&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1663,7 +1712,7 @@
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;10&lt;/OrderIndex&gt;
       &lt;Condition&gt;[BreakEven] &amp;gt; 3.1&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.62&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.38&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;value&quot;:&quot;Buy&quot;,&quot;name&quot;:&quot;BuildBuy&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1679,7 +1728,7 @@
       &lt;ActionType&gt;PlantAnApp.PartialUpdateEntity.0.Assessment&lt;/ActionType&gt;
       &lt;OrderIndex&gt;11&lt;/OrderIndex&gt;
       &lt;Condition /&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.62&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.38&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ConnectionString&quot;:&quot;&quot;,&quot;RecordId&quot;:&quot;[NewAssessmentId]&quot;,&quot;UpdatedProperties&quot;:[{&quot;PropertyName&quot;:{&quot;Value&quot;:&quot;Annualmaintenance&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;PropertyValue&quot;:{&quot;Value&quot;:&quot;[AnnualCost]&quot;,&quot;IsExpression&quot;:false}},{&quot;PropertyName&quot;:{&quot;Value&quot;:&quot;Annualsavings&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;PropertyValue&quot;:{&quot;Value&quot;:&quot;[AnnualSavings]&quot;,&quot;IsExpression&quot;:false}},{&quot;PropertyName&quot;:{&quot;Value&quot;:&quot;Costtobuild&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;PropertyValue&quot;:{&quot;Value&quot;:&quot;[CostToBuild]&quot;,&quot;IsExpression&quot;:false}},{&quot;PropertyName&quot;:{&quot;Value&quot;:&quot;Yearstoprofit&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;PropertyValue&quot;:{&quot;Value&quot;:&quot;[BreakEven]&quot;,&quot;IsExpression&quot;:false}},{&quot;PropertyName&quot;:{&quot;Value&quot;:&quot;Recommendation&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;PropertyValue&quot;:{&quot;Value&quot;:&quot;[BuildBuy]&quot;,&quot;IsExpression&quot;:false}}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1692,7 +1741,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;GeneratePDF&lt;/ActionType&gt;
       &lt;OrderIndex&gt;12&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.62&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.38&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;HtmlInputType&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;richtext&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;HTMLCode&quot;:&quot;&quot;,&quot;PDFName&quot;:&quot;&quot;,&quot;PathDestination&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;OrientationLandscape&quot;:&quot;&quot;,&quot;PaperSize&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;A4&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;Grayscale&quot;:&quot;&quot;,&quot;OtherOptions&quot;:&quot;&quot;,&quot;StoreFileId&quot;:&quot;&quot;,&quot;StoreAbsoluteURL&quot;:&quot;&quot;,&quot;StoreRelativeURL&quot;:&quot;&quot;,&quot;StorePhysicalPath&quot;:&quot;&quot;,&quot;StoreLinkClick&quot;:&quot;&quot;,&quot;ForceDownload&quot;:&quot;&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
@@ -1706,7 +1755,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;RedirectToPage&lt;/ActionType&gt;
       &lt;OrderIndex&gt;13&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-02-10T15:51:50.633&lt;/LastModified&gt;
+      &lt;LastModified&gt;2021-02-10T15:53:43.38&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;PageId&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:21,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;EnforceCurrentLocale&quot;:&quot;&quot;,&quot;QueryString&quot;:&quot;AssessmentId=[NewAssessmentId]&quot;,&quot;QueryStringUseUrlProvider&quot;:true,&quot;OpenInPopup&quot;:&quot;&quot;,&quot;PopupTitle&quot;:&quot;&quot;,&quot;OpenInNewTab&quot;:&quot;&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;420&lt;/ModuleId&gt;
