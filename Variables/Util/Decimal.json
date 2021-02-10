@@ -1,0 +1,17 @@
+{
+  "id": 6,
+  "namespace": {
+    "id": 2,
+    "name": "Util"
+  },
+  "name": "Decimal",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "value": "[String:RegexReplace(Input=\"[TknParams:RoleId]\", Match=\"[(.|\\s)*\\S(.|\\s)*]\", Replacement=\"[\\d+(\\.\\d{1,2})?]\")]",
+    "type": "string"
+  }
+}
