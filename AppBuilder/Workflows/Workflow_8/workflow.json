@@ -1,0 +1,240 @@
+{
+  "Id": 8,
+  "Name": "Send Email",
+  "Description": "Takes standard email inputs and send the email",
+  "IsDebug": false,
+  "ActionList": {
+    "Id": 21,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 34,
+        "ActionType": "SendMail",
+        "OrderIndex": 0,
+        "ActionParameters": [
+          {
+            "Id": 145,
+            "Name": "From",
+            "Value": "[From=]",
+            "IsExpression": false,
+            "ActionId": 34,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 146,
+            "Name": "To",
+            "Value": "[To]",
+            "IsExpression": false,
+            "ActionId": 34,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 147,
+            "Name": "DetermineEmail",
+            "IsExpression": false,
+            "ActionId": 34,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 148,
+            "Name": "ToAllUsers",
+            "IsExpression": false,
+            "ActionId": 34,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 149,
+            "Name": "ReplyTo",
+            "IsExpression": false,
+            "ActionId": 34,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 150,
+            "Name": "Cc",
+            "Value": "[CC=]",
+            "IsExpression": false,
+            "ActionId": 34,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 151,
+            "Name": "Bcc",
+            "Value": "[BCC=]",
+            "IsExpression": false,
+            "ActionId": 34,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 152,
+            "Name": "Subject",
+            "Value": "[Subject]",
+            "IsExpression": false,
+            "ActionId": 34,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 153,
+            "Name": "Format",
+            "Value": "Html",
+            "IsExpression": false,
+            "ActionId": 34,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 154,
+            "Name": "Body",
+            "Value": "<p>[Body]</p>",
+            "IsExpression": false,
+            "ActionId": 34,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 155,
+            "Name": "Headers",
+            "IsExpression": false,
+            "ActionId": 34,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 156,
+            "Name": "PortalFiles",
+            "IsExpression": false,
+            "ActionId": 34,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 157,
+            "Name": "FileToken1",
+            "Value": "[File]",
+            "IsExpression": false,
+            "ActionId": 34,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_05epv5r"
+      },
+      {
+        "Id": 35,
+        "ActionType": "InjectData",
+        "OrderIndex": 1,
+        "ActionParameters": [
+          {
+            "Id": 158,
+            "Name": "Data",
+            "Value": [
+              {
+                "value": "Success",
+                "$$hashKey": "object:17",
+                "name": "Result"
+              },
+              {
+                "value": "Email Sent to [To]",
+                "$$hashKey": "object:23",
+                "name": "Message"
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 35,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_0nfpi01"
+      }
+    ]
+  },
+  "CreatedBy": "Reza Garrow",
+  "CreatedOn": "2021-02-10T15:04:11.3782064+00:00",
+  "LastModifiedBy": "Reza Garrow",
+  "LastModifiedOn": "2021-02-10T15:04:11.3782064+00:00",
+  "InputFields": [
+    {
+      "Required": true,
+      "Id": 59,
+      "Name": "To",
+      "InputType": "Text",
+      "WorkflowId": 8,
+      "IsDeleted": false
+    },
+    {
+      "Required": false,
+      "Id": 60,
+      "Name": "From",
+      "InputType": "Text",
+      "WorkflowId": 8,
+      "IsDeleted": false
+    },
+    {
+      "Required": true,
+      "Id": 61,
+      "Name": "Subject",
+      "InputType": "Text",
+      "WorkflowId": 8,
+      "IsDeleted": false
+    },
+    {
+      "Required": true,
+      "Id": 62,
+      "Name": "Body",
+      "InputType": "LargeText",
+      "WorkflowId": 8,
+      "IsDeleted": false
+    },
+    {
+      "Required": false,
+      "Id": 63,
+      "Name": "CC",
+      "InputType": "Text",
+      "WorkflowId": 8,
+      "IsDeleted": false
+    },
+    {
+      "Required": false,
+      "Id": 64,
+      "Name": "BCC",
+      "InputType": "Text",
+      "WorkflowId": 8,
+      "IsDeleted": false
+    },
+    {
+      "Required": false,
+      "Id": 65,
+      "Name": "File",
+      "InputType": "Text",
+      "WorkflowId": 8,
+      "IsDeleted": false
+    }
+  ],
+  "OutputFields": [
+    {
+      "Value": "[Result=Error]",
+      "Id": 66,
+      "Name": "Result",
+      "InputType": "Text",
+      "WorkflowId": 8,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[Message=]",
+      "Id": 67,
+      "Name": "Message",
+      "InputType": "Text",
+      "WorkflowId": 8,
+      "IsDeleted": false
+    }
+  ]
+}
