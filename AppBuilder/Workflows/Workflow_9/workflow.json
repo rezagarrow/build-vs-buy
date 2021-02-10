@@ -1,0 +1,114 @@
+{
+  "Id": 9,
+  "Name": "Update Assessment Status",
+  "Description": "Takes in Assessment Id and Status Id and updates the status.",
+  "IsDebug": false,
+  "ActionList": {
+    "Id": 22,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 36,
+        "ActionType": "PlantAnApp.PartialUpdateEntity.0.Assessment",
+        "OrderIndex": 0,
+        "ActionParameters": [
+          {
+            "Id": 159,
+            "Name": "ConnectionString",
+            "IsExpression": false,
+            "ActionId": 36,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 160,
+            "Name": "RecordId",
+            "Value": "[Assessment:Id]",
+            "IsExpression": false,
+            "ActionId": 36,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 161,
+            "Name": "UpdatedProperties",
+            "Value": [
+              {
+                "PropertyName": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "Status"
+                },
+                "PropertyValue": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "[Status:Id]"
+                }
+              }
+            ],
+            "IsExpression": false,
+            "ActionId": 36,
+            "OrderIndex": 0,
+            "SubParameters": [
+              {
+                "Id": 162,
+                "Name": "PropertyName",
+                "Value": "Status",
+                "ParentParameterId": 161,
+                "IsExpression": false,
+                "ActionId": 36,
+                "OrderIndex": 0,
+                "SubParameters": []
+              },
+              {
+                "Id": 163,
+                "Name": "PropertyValue",
+                "Value": "[Status:Id]",
+                "ParentParameterId": 161,
+                "IsExpression": false,
+                "ActionId": 36,
+                "OrderIndex": 0,
+                "SubParameters": []
+              }
+            ]
+          }
+        ],
+        "DiagramUID": "Activity_0v51qsk"
+      }
+    ]
+  },
+  "CreatedBy": "Reza Garrow",
+  "CreatedOn": "2021-02-10T15:40:59.5487476+00:00",
+  "LastModifiedBy": "Reza Garrow",
+  "LastModifiedOn": "2021-02-10T15:40:59.5487476+00:00",
+  "InputFields": [
+    {
+      "Required": true,
+      "Id": 68,
+      "Name": "Assessment",
+      "InputType": "EntityRef",
+      "EntityVersionId": 7,
+      "WorkflowId": 9,
+      "IsDeleted": false
+    },
+    {
+      "Required": true,
+      "Id": 69,
+      "Name": "Status",
+      "InputType": "EntityRef",
+      "EntityVersionId": 9,
+      "WorkflowId": 9,
+      "IsDeleted": false
+    }
+  ],
+  "OutputFields": [
+    {
+      "Value": "Success",
+      "Id": 70,
+      "Name": "Result",
+      "InputType": "Text",
+      "WorkflowId": 9,
+      "IsDeleted": false
+    }
+  ]
+}
