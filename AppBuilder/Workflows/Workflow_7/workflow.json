@@ -42,7 +42,7 @@
           {
             "Id": 127,
             "Name": "PathDestination",
-            "Value": "/Templates",
+            "Value": "/PDF",
             "IsExpression": false,
             "ActionId": 30,
             "OrderIndex": 0,
@@ -139,7 +139,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-02-10T14:41:00.9599601+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-02-10T14:43:05.4867289+00:00",
+  "LastModifiedOn": "2021-02-10T14:46:41.182002+00:00",
   "InputFields": [
     {
       "Required": true,
@@ -179,6 +179,14 @@
       "Value": "[AbsoluteURL]",
       "Id": 56,
       "Name": "AbsoluteURL",
+      "InputType": "Text",
+      "WorkflowId": 7,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[PDFName]",
+      "Id": 58,
+      "Name": "PDFName",
       "InputType": "Text",
       "WorkflowId": 7,
       "IsDeleted": false
