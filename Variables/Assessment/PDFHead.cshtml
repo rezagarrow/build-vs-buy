@@ -1,0 +1,242 @@
+@inherits avt.MyTokens.Core.ParsingEngine.RazorTemplate
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Decision Automation Readiness Test (DART)</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family='Roboto':ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&display=swap" rel="stylesheet">
+        <style>
+            @@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap'); 
+        
+                body {
+                    font-family: 'Roboto'!important;
+                    font-size: 12px!important;
+                    line-height: 1.57;
+                    color: #37373A!important;
+                    background-color: #fff;
+                    max-width: 660px;
+                    overflow-wrap: break-word!important;
+                }
+                .body-large {
+                    margin-top:28px;
+                    font-family: 'Roboto';
+                    font-size: 18px!important;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.78;
+                    letter-spacing: normal;
+                    color: #37373a;
+                }
+                p {
+                    
+                    font-family: 'Roboto';
+                    font-size: 12px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    text-align: left;
+                    line-height: 1.44!important;
+                    letter-spacing: normal;
+                    max-width: 640px;
+                    color: #37373a;
+                    overflow: hidden; /* this is what keep the <p> from wrapping */
+                   
+                }
+                .assessment-wrapper {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    width: 650px;
+                     overflow-wrap: break-word!important;
+                }
+                .assessment-body {
+                    width: 100%;
+                    max-width: 650px;
+                     overflow-wrap: break-word!important;
+                }
+                .assessment-cover {
+                    padding-top: 250px;
+                    margin-top:250px;
+                }
+                .bstrap3-material .c-form .form-group {
+                    max-width: 1200px;
+                    }
+                hr.hr-inrule {
+                  border: 1px solid #01759b;
+                }
+                .cover-date {
+                color: #757578;
+                }
+                .heading-large{
+                    font-family: 'Roboto'!important;
+                    font-size: 3px!important;
+                    font-weight: bold!important;
+                    font-stretch: normal!important;
+                    font-style: normal!important;
+                    line-height: 1.18!important;
+                    letter-spacing: normal!important;
+                    color: #017598!important;
+                }
+                
+                h1.assessment-title {
+                    font-family: 'Roboto';
+                    font-size: 22px!important;
+                    font-weight: 700;
+                    font-stretch: normal!important;
+                    font-style: normal!important;
+                    line-height: 1.25!important;
+                    margin:48px 0 16px 0;
+                    color: #017598!important;
+                }
+                h1.assessment-cover-title{
+                    font-family: 'Roboto'!important;
+                    font-size: 52px!important;
+                    font-weight: bold!important;
+                    font-stretch: normal!important;
+                    font-style: normal!important;
+                    line-height: 1.18!important;
+                    letter-spacing: normal!important;
+                    color: #017598!important;
+                }   
+                h2.inrule {
+                    font-family: 'Roboto'!important;
+                    font-size: 20px!important;
+                    font-weight: 700!important;
+                    font-stretch: normal!important;
+                    font-style: normal!important;
+                    line-height: 1.2!important;
+                    letter-spacing: normal!important;
+                    color: #017598!important;
+                    margin: 48px 0 16px 0;
+                    }
+                h2.stage {
+                    height: 24px!important;
+                    margin: 48px 1px 16px 0!important;
+                    font-family: 'Roboto'!important;
+                    font-size: 20px!important;
+                    font-weight: bold!important;
+                    font-stretch: normal!important;
+                    font-style: normal!important;
+                    line-height: 1.2!important;
+                    letter-spacing: normal!important;
+                    color: #017598!important;
+                    }
+                h3.stage {
+                    margin: 0 0 8px 0!important;
+                    font-family: 'Roboto'!important;
+                    font-style: normal!important;
+                    font-size: 16px!important;
+                    font-weight: 700!important;
+                    font-stretch: normal!important;
+                    font-style: normal!important;
+                    line-height: 1.38!important;
+                    letter-spacing: normal!important;
+                    color: #37373a!important;
+                    }
+                h3.insight {
+                    font-family: 'Roboto'!important;
+                    font-size: 14px!important;
+                    font-weight: 700!important;
+                    font-style: normal!important;
+                    line-height: 1.57!important;
+                    color: #47474a!important;
+                    margin: 0 0 4px 0;
+                }
+                h5.inrule {
+                    font-family: 'Roboto'!important;
+                    font-size: 26px!important;
+                    font-weight:450!important;
+                    font-stretch: normal!important;
+                    font-style: normal!important;
+                    line-height: 1.2!important;
+                    letter-spacing: 1.2px!important;
+                    background-color: #017598!important;
+                    color:#fff;
+                    }
+                p.indent {
+                    margin-left:24px!important;
+                }    
+                div .inrule-quote {
+                    border-left: 8px solid #56ABC7;
+                    margin-top: 35px;
+                    }
+                .inrule-quote p{
+                    font-family: 'Roboto';
+                    font-size: 18px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    margin-left: 12px; 
+                    line-height: 1.78;
+                    letter-spacing: normal;
+                    color: #37373a;
+                    text-align:left!important;
+                }
+                .inrule-address {
+                    font-family: 'Roboto';
+                    font-size: 14px!important;
+                    line-height: 1.57;
+                    text-align:center;
+                }
+                .inrule-copyright {
+                    font-family: 'Roboto';
+                    font-size: 12px!important;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: normal;
+                    margin:16px 0 16px 0;
+                }
+                .inrule-footer-name{
+                    font-size: 18px;
+                    line-height: 1.78;
+                    color:#01759b;
+                    margin: 48px 0 8px 0;
+                     text-align:center;
+                }
+                .img-stage {
+                    width: 600px;
+                    height: auto;
+                    margin: 0px 0 0px;
+                    }
+                    
+                @@media screen and (max-width: 400px) {    
+                .close-btn-pap, .navbar-toggle {display:none;}
+                
+                }
+                .footer {page-break-after: always;}
+
+                .img-text-container {
+                max-width: 100%;
+                margin-bottom: 48px;
+                display: flex;
+                }
+                .img-text-container-1 {
+                    max-width: 100%;
+                    margin: 48px 0 48px 0;
+                    display: flex;
+                }
+                .icon-block {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 48px;
+                    object-fit: contain;
+                    align-self: flex-start;
+                    margin: 0 16px 0 0;
+                }
+                .text-block {
+                    flex:  1 1 auto;
+                    overflow: hidden; /* this is what keep the <p> from wrapping */
+                }
+                .float {
+                    float: left;
+                }
+                 .floatdown {
+                    padding-top: 680px;
+                }
+                </style>
+    </head>
+    <body>
