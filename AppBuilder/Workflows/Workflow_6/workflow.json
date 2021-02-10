@@ -113,7 +113,7 @@
                 "Type": {
                   "IsExpression": false,
                   "Expression": "",
-                  "Value": "int"
+                  "Value": "double"
                 },
                 "Name": {
                   "IsExpression": false,
@@ -151,7 +151,7 @@
               {
                 "Id": 110,
                 "Name": "Type",
-                "Value": "int",
+                "Value": "double",
                 "ParentParameterId": 109,
                 "IsExpression": false,
                 "ActionId": 27,
@@ -297,7 +297,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-02-10T01:01:16.0148685+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-02-10T01:05:26.990174+00:00",
+  "LastModifiedOn": "2021-02-10T01:07:23.8609345+00:00",
   "InputFields": [
     {
       "Required": false,
