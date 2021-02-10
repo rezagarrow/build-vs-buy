@@ -1,0 +1,292 @@
+@inherits avt.MyTokens.Core.ParsingEngine.RazorTemplate
+@{
+  var AssessmentAnswersDetails = Assessment.AnswerDetails(AssessmentResultId:TknParams.AssessmentResultId.Value.ToString(),HideOutput:"");
+  var AssessmentDetails = Assessment.Details(AssessmentResultId:TknParams.AssessmentResultId.Value.ToString());       
+  var AssessmentDetailsOutput = Assessment.AnswerDetails(AssessmentResultId:TknParams.AssessmentResultId.Value.ToString(),HideOutput:"T");       
+
+  string CompanyName = @AssessmentDetails.CompanyName.ToString(); 
+  string aID = "0";
+  string qID = "0";
+  string pQuestion0 = "";
+  string pQuestion1 = "";
+  string pQuestion2 = "";
+  string pInsight2 = "";
+  string pQuestion3 = "";
+  string pQuestion4 = "";
+  string pStage = "";
+  string pStageImg = "";
+}
+
+
+@if (@AssessmentDetails.CompanyName.ToString().Length == 0) 
+  { 
+  CompanyName = "your organization";
+  }
+
+  @foreach (var AnswerDetail in AssessmentAnswersDetails) 
+  {
+  aID = AnswerDetail.Id.ToString();
+  qID = AnswerDetail.QuestionId.ToString();  
+    @if (@qID == "3") 
+            { 
+                pQuestion1 = @AnswerDetail.ReportValue.ToString();
+            }
+    @if (@qID == "1") 
+            { 
+                pQuestion2 = @AnswerDetail.Value.ToString();
+                pInsight2 = @AnswerDetail.ReportInsight.ToString();
+            }
+    @if (@qID == "2") 
+            { 
+                pQuestion3 = @AnswerDetail.ReportValue.ToString();
+            }
+    
+    @if (@qID == "15") 
+            { 
+                pStage = @AnswerDetail.ReportValue.ToString();
+                pStageImg = "[Helper:AppURL]/Portals/0/InRule/" + @AnswerDetail.Icon.ToString();
+            }
+  }
+   <div class="assessment-wrapper">
+            <div class="assessment-body assessment-cover footer clearfix">
+                <h1 class="assessment-cover-title">
+                    @AssessmentDetails.AssessmentName <br>Personalized Report for @AssessmentDetails.CompanyName
+                    <hr class="hr-inrule">
+                </h1>
+                <div class="body-large cover-date"><i>@AssessmentDetails.AssessmentDate</i></div>
+            </div>
+            <div class="assessment-body footer">
+                <h1 class="assessment-title">
+                    @AssessmentDetails.AssessmentName<br>Preview and Quick Insights
+                </h1>
+                <p>In response to our assessment questions, you answered that your organization, @AssessmentDetails.CompanyName, @pQuestion1 a BRMS or rule engine to review and manage @pQuestion2 rules that are updated @pQuestion3. 
+                </p>
+                <p>
+                    *This matches with a profile of our customers who saw a range of overall savings between $100,000 and $600,000 when considering implementation (and on-going maintenance) of the InRule® Decision Platform. This doesn’t include the business outcomes from the decisioning analytics that can drive additional bottom-line performance.                    
+                    <br> <br>
+                </p>
+                <h2 class="inrule">Quick Insights from the Report</h2>
+                    <div class="img-text-container">
+                        <img class="icon-block float" src= "[Helper:AppURL]/Portals/0/assets/ic-insight-1@2x.png" alt="Insight 1">  
+                        <div class="text-block">
+                            <h3 class="insight">Insight 1:</h3>
+                            <p>“@pInsight2...”</p>
+                        </div>
+                    </div>
+                    <div class="img-text-container">
+                        <img class="icon-block float" src= "[Helper:AppURL]/Portals/0/assets/ic-insight-2@2x.png" alt="Insight 2">  
+                        <div class="text-block">
+                            <h3 class="insight">Insight 2:</h3>
+                            <p>“For many organizations a gap in data—from underfunded or disparate sources—often results in poor decision outcomes, less reliable KPI figures, and missed opportunities for optimization and digital transformation…”</p>
+                        </div>
+                    </div>
+                    <div class="img-text-container">
+                        <img class="icon-block float" src= "[Helper:AppURL]/Portals/0/assets/ic-insight-3@2x.png" alt="Insight 3">
+                        <div class="text-block"> 
+                            <h3 class="insight">Insight 3:</h3>
+                            <p>“Whether it’s a rogue application using a set of business rules that are different from the rest of the applications in your enterprise stack, or another decentralized source of logic, you are likely losing out on the contribution of those benefits initially gained...”</p>
+                        </div>
+                    </div>
+                    <p>*Savings are an average reported from the 2019 InRule User Community Survey and represent a combined implementation and maintenance savings.</p>
+
+            </div>
+            <div class="assessment-body footer"> 
+                <h1 class="assessment-title">
+                    InRule’s @AssessmentDetails.AssessmentName<br>Personalized Report for @AssessmentDetails.CompanyName
+                </h1>
+                    <p>
+                        Managing business decisions is a task that’s never really complete. Some businesses revisit their progress monthly (if not weekly), while others are slower to revise and implement change. But regardless of where your organization falls on the automation readiness spectrum, there are always optimization opportunities to be explored—and chasms to be crossed.<br>
+                    </p>
+                    <p>  
+                        That’s why InRule created this personalized report, so that your organization would have a better understanding of your decision automation progress, and the opportunities available for greater operational efficiency and cost savings.<br>
+                    </p>
+                    <p>    
+                        From using collective knowledge to make business decisions, to embracing machine learning and decision platforms for predictive and adaptive decisioning, we’ll show you where you’re at, and the next steps you can take for continued growth and development.
+                    </p>                
+                <h2 class="inrule">Where Are You on the Journey?</h2>
+                    <p>The evolution from defining and deploying rules manually, to developing insightful, automated business logic is one with a myriad of benefits. One of the most noteworthy benefits is the competitive advantage that comes with responding to market signals in real time, while others in your industry react slowly.
+                    </p>
+                    <p>The chasms your organization will cross during this journey—the first one being the gap between manual and automated business logic, and the second being the graduation from a traditional business rules management system to a decision platform—can be major hurdles (and milestones) to progress.
+                    </p> 
+                <div class="inrule-quote">
+                    <p>Based on the information you provided, we put <b>@CompanyName</b><br> <b> at @pStage</b> in our Decision Automation Readiness Test.</p>
+                </div>
+                <img class="img-stage" src="@pStageImg" alt="@pStageImg">
+                <p>Take a look above at your stage. What are the “risks” and “returns” of your company’s current decision automation status? Consider the other stages, so that your company can be strategic about its decision automation advancement.</p>
+            </div>
+            <div class="assessment-body ">
+                <h2 class="inrule">
+                    Chasms & Stages: Major Milestones on the Decision Automation Journey
+                </h2>
+                    <p>
+                    One of the greatest challenges in progressing from stage to stage on the decision automation journey is maintaining the foundational programs that support each evolution. For example, providing a centralized location for business logic can reduce the overhead of maintenance that was required in Stages 0-2, while providing a wide range of benefits to application development and deployment overall.
+                    </p>
+                    <p>
+                    Say your organization is past the Data Capability Chasm, enjoying some of the advantages of Stage 4 and 5, but there’s a gap in the maintenance of business logic in a centralized location. Perhaps you’ve got a rogue application using a set of business rules that is different than (and out of sync with) the rest of the applications in your enterprise stack. You are likely losing out on the contribution of those benefits initially gained at Stage 3 or 4.
+                    </p>
+                    <p>
+                    Bottom line, the cumulative impact of the capabilities developed at each stage has a deep influence on how effective the later stages can be, increasing the leap required to overcome both the Automation Chasm and the Data Capability Chasm.
+                    </p>
+            </div>
+            <div class="assessment-body ">
+                <h2 class="inrule">
+                    The Automation Chasm
+                </h2>
+                    <p>
+                    The Automation Chasm is the first major hurdle to decision automation. This chasm represents the evolution from manual decision making (human reviewing) to automated decision making. For some, a shift is first made by adopting off-the-shelf software with built-in logic, often in the form of a settings page or a configuration during initial set up. And in many cases, companies find themselves facing the Automation Chasm when these software solutions begin to limit how businesses can operate or how they deliver superior digital customer experiences.
+                    </p>
+                    <p>
+                    This limitation usually leads to a custom software development initiative as an attempt to cross the chasm. In support of the initiative, key business logic is defined in software requirements documentation. However, once this bridge is crossed, there exists a scattered repository of business logic that may be inconsistently applied across multiple custom or semi-custom software solutions.
+                    </p>
+                    <p>   
+                    Regardless, approaching the Automation Chasm with a clear set of well-documented business logic ensures the crossing will be faster and smoother than without, and will prepare your business for future stages of evolution. 
+                    </p>
+            </div>
+            <div class="assessment-body footer">
+                <h2 class="inrule">
+                    The Data Capability Chasm
+                </h2>
+                    <p>
+                        The second major hurdle, the Data Capability Chasm, is about shrinking the time between rule execution and gathering the insights needed to improve operations. This hurdle requires capabilities to be developed both within an organization’s employee base, as well as within its enterprise technology stack.    
+                    </p>
+                    <p>
+                        Dynamic pricing rules are a particularly effective example where the time between rule execution and insight can make a difference, where demand can be tracked to take advantage of what the market is willing to transact that day, hour, or minute.  
+                    </p>
+                    <p> 
+                        Using that example, consider similar opportunities in your operations where using feedback from real-time rule executions, or data transactions, can impact a decision. Shining a spotlight on these areas can show where you may want to invest in. For example, 1) building the internal business analysis capability and 2) automating changes to business rules in response to the latest business rule executions. 
+                    </p>
+                    <p>  
+                        These initiatives are often more easily identified than completed and may take more time to implement than previous evolutionary steps on the journey.
+                    </p>   
+            </div>
+            <div class="assessment-body footer">
+                <h2 class="inrule">
+                    The Stages: Considering the Risks and Returns
+                </h2>
+                <p>
+                    While every organization is unique, we’ve compiled some common patterns of business behavior relative to each stage of the decision automation journey. In this report, risks and returns are presented with each stage, providing insight into the potential ROI impact from moving to the next step in your journey.
+                </p>
+        <!-- Stage 0 -->
+            <div class="img-text-container-1">
+                <img class="icon-block float" src= "[Helper:AppURL]/Portals/0/assets/ic-stage-0@2x.png" alt="Stage 0">  
+                <div class="text-block">
+                    <h3 class="stage">Stage 0 &mdash; Collective Knowledge</h3>
+                    <p>
+                        <b>A real-world example of Stage 0:</b> If long-time employee Mary retires abruptly, her knowledge leaves with her, creating a potential for major gaps in operations. 
+                    </p>
+                    <p class="indent">
+                        <b>Major risk:</b> Operational capability is tied to a specific person and their employment status.<br>
+                        <b>Potential return from moving to the next stage:</b> Reduced operational risk for the business due to employee turnover. No more privatizing knowledge.
+                    </p>
+                    <p>Do you want to learn more about taking the next step after Stage 0? Then check out our post on <a href="https://inrule.com/business-rules-engine/" onclick="window.open(this.href,_blank); return false;" onkeypress="window.open(this.href); return false;">What is the InRule Business Rules Engine?</a></p>
+                              </div>
+            </div>
+        <!-- Stage 1 -->
+            <div class="img-text-container">
+                <img class="icon-block float" src= "[Helper:AppURL]/Portals/0/assets/ic-stage-1@2x.png" alt="Stage 1">  
+                <div class="text-block">
+                    <h3 class="stage">Stage 1 &mdash; Documentation</h3>
+                    <p>
+                        <b>An explanation of Stage 1:</b> While your business logic may be written down in policy documents, Excel or other disconnected materials, there is no consistency of when, how or by whom these decisions are made. In addition, outdated versions of policies could still be in use by various departments as they are offline and siloed in their documentation. 
+                    </p>
+                    <p class="indent">
+                        <b>Major risk:</b> Misunderstanding of business logic resulting in inconsistent decision making.<br>
+                        <b>Potential return from moving to the next stage:</b> More predictable outcomes for business operations.
+                    </p>
+                    <p>Is your company at Stage 1 and you want to learn more about taking the next step? Then check out our case study for the <a href="https://inrule.com/resources/case-studies/state-of-michigan-doc/" target="_blank">Michigan Department of Corrections</a>. It explores how they ensure consistent application of complex rules and regulations for offender sentence calculation.</p>
+                </div>
+            </div>
+        <!-- Stage 2 -->
+            <div class="img-text-container footer">
+                <img class="icon-block float" src= "[Helper:AppURL]/Portals/0/assets/ic-stage-2@2x.png" alt="Stage 2">  
+                <div class="text-block">
+                    <h3 class="stage">Stage 2 &mdash; Operationalization </h3>
+                    <p>
+                        <b>An industry stat to explain Stage 2:</b> An overwhelming majority of consumers (84%) say they consider their experience of a brand as important as the product or service it provides. 
+                    </p>
+                    <p class="indent">
+                        <b>Major risk:</b> Misapplication or late adoption of updated business logic resulting in poor employee experiences, below par customer experiences, and slower reactions as business objectives shift.<br>
+                        <b>Potential return from moving to the next stage:</b> Consistency resulting in faster change cycles and improved customer interactions.
+                    </p>
+                    <p>
+                    Is your company at Stage 2 and you want to learn more about taking the next step? Then check out our white paper on <a href="https://inrule.com/resources/white-papers/inrule-dynamics365-powerplatform/" target="_blank">creating better business applications with InRule</a>, Microsoft Dynamics 365, and the Power Platform.
+                    </p>
+                </div>
+            </div>
+        <!-- Stage 3 -->
+            <div class="img-text-container">
+                <img class="icon-block float" src= "[Helper:AppURL]/Portals/0/assets/ic-stage-3@2x.png" alt="Stage 3">  
+                <div class="text-block">
+                    <h3 class="stage">Stage 3 &mdash; Centralized </h3>
+                    <p>
+                        <b>Stage 3 explained:</b> To shape an experience that is personalized across touchpoints, on average organizations are using data from 15 sources. As software organizations adopt off the shelf products that claim some level of decision automation or attempt to develop a decision engine in-house, often they find themselves struggling with significant maintenance, additional development costs, and difficulty maintaining logic in line with rapidly changing business and consumer expectations. 
+                    </p>
+                    <p class="indent">
+                        <b>Major risk:</b> Long change cycles for business logic across difficult to track business applications.<br>
+                        <b>Potential return from moving to the next stage:</b> Instant updates to business logic across all applications and lower operational overhead.
+                    </p>
+                    <p class="">
+                        Is your company at Stage 3 and you want to learn more about taking the next step? Then check out our case study on how <a href="https://inrule.com/resources/case-studies/wesleyan-reduces-crm-data-cleanse/" target="_blank">Wesleyan, an insurance and financial services organization, centralized their business logic with InRule.</a>
+                    </p>
+                </div>
+            </div>
+        <!-- Stage 4 -->
+            <div class="img-text-container">
+                <img class="icon-block float" src= "[Helper:AppURL]/Portals/0/assets/ic-stage-4@2x.png" alt="Stage 4">  
+                <div class="text-block">
+                    <h3 class="stage">Stage 4 &mdash; Analyzed </h3>
+                    <p>
+                        <b>Further information on Stage 4:</b> Without data-driven insight and analysis, it can be challenging for business leaders to quickly measure the impact of decision automation changes on business outcomes. By analyzing the results of automated decision changes, your organization can constantly and consistently improve decisions for increased opportunities and growth. 
+                    </p>
+                    <p class="indent">
+                        <b>Major risk:</b> Missed change opportunities due to lack of awareness—not tracking or reviewing decisions to ensure desired outcomes are optimized.<br>
+                        <b>Potential return from moving to the next stage:</b> Increased operational efficiency and competitive advantage.
+                    </p>
+                    <p>
+                        Is your company at Stage 4 and you want to learn more about taking the next step? Then check out our white paper, <a href="https://inrule.com/resources/white-papers/the-power-of-what-if/" target="_blank">The Power of What-If: Using Analytics to Understand Outcomes of Automated Decisions</a>.
+                    </p>
+                </div>
+            </div>
+        <!-- Stage 5 -->
+            <div class="img-text-container">
+                <img class="icon-block float" src= "[Helper:AppURL]/Portals/0/assets/ic-stage-5@2x.png" alt="Stage 5">  
+                <div class="text-block">
+                    <h3 class="stage">Stage 5 &mdash; Predictive </h3>
+                    <p>
+                        <b>Real world examples for Stage 5:</b> Agile customer service, lowered risk, fraud detection, and reduced attrition probability—just a few of the ways the marriage of machine learning and decision automation can maximize ROI while reducing the risk of human error. 
+                    </p>
+                    <p class="indent">
+                        <b>Major risk of Stage 5:</b> Decision management that excludes the most recent &mdash; and most accurate &mdash; insights into market dynamics and consumer behaviors.<br>
+                        <b>Potential return of Stage 5:</b> Reduced barriers to replication, increased competitive advantage, greater potential to explore value-driven relationships with customers and to develop previously unforeseen business models.
+                    </p>
+                    <p>
+                        Is your company at Stage 5 and you want to learn more about optimizing your decisions? Then check out our webinar on <a href="https://inrule.com/resources/e-books/report-why-ai-isnt-good-enough/" target="_blank">Why Artificial Intelligence Isn’t Good Enough</a>.
+                    </p>
+                </div>
+            </div>
+            </div>
+            <div class="assessment-body footer">
+                <h2 class="inrule">
+                    In Summary
+                </h2>
+                <p>
+                    Deeper insights, greater market responsiveness, and more effective collaboration… these are just a few of the positive aspects of centralizing and automating your business decisions. From freeing up team members for higher value tasks, to reducing risks and streamlining operations, propelling your organization forward on the digital decision journey is crucial to remaining competitive.
+                    </p>
+                    <p>
+                    And no matter what stage or chasm your organization is at currently, there’s always progress to be made and decisions to be optimized. That’s where we come in—InRule’s solutions and services are designed to meet you where you’re at—and to propel your organization forward. Our <a href="https://inrule.com/professional-services/custom-services/" target="_blank" id="">services team</a> can help define (and cross) the bridge to Stage 5 and beyond. <a href="https://inrule.com/contact-us/" target="_blank" id="">Contact InRule</a> today to learn more.
+                </p>
+            </div>
+            <div class="assessment-body">
+                <div class="floatdown fixed-bottom">
+                    <h2 class="inrule-footer-name">
+                        INRULE TECHNOLOGY
+                    </h2>
+                    <div class="inrule-address">
+                        651 W Washington Blvd #500 <br>Chicago, IL 60661<br><a onclick="javascript:windows.open('https://www.inrule.com/contact-us', '_blank');">www.inrule.com</a>
+                    </div>
+                    <div class="inrule-copyright">
+                        © 2021 InRule Technology, Inc. All rights reserved. InRule and InRule Technology are registered trademarks of InRule Technology, Inc. All other trademarks referenced herein belong to their respective companies.            
+                    </div>
+                </div>
+            </div>
+        </div>  

@@ -1,0 +1,19 @@
+{
+  "id": 1,
+  "namespace": {
+    "id": 1,
+    "name": "Assessment"
+  },
+  "name": "PDF",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "language": "csharp",
+    "additionalAssemblies": "",
+    "debug": false,
+    "type": "razor"
+  }
+}
