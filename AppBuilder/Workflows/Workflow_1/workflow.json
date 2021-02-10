@@ -113,7 +113,7 @@
                 "Type": {
                   "IsExpression": false,
                   "Expression": "",
-                  "Value": "int"
+                  "Value": "double"
                 },
                 "Name": {
                   "IsExpression": false,
@@ -134,7 +134,7 @@
               {
                 "Id": 99,
                 "Name": "Type",
-                "Value": "int",
+                "Value": "double",
                 "ParentParameterId": 87,
                 "IsExpression": false,
                 "ActionId": 24,
@@ -250,9 +250,10 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T17:00:27.0331659+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-02-03T00:11:55.6654198+00:00",
+  "LastModifiedOn": "2021-02-10T01:09:35.559271+00:00",
   "InputFields": [
     {
+      "Required": false,
       "Id": 1,
       "Name": "EmployeesRequired",
       "InputType": "Integer",
@@ -260,6 +261,7 @@
       "IsDeleted": false
     },
     {
+      "Required": false,
       "Id": 2,
       "Name": "TimeToBuild",
       "InputType": "Decimal",
@@ -267,6 +269,7 @@
       "IsDeleted": false
     },
     {
+      "Required": false,
       "Id": 3,
       "Name": "EmployeeCost",
       "InputType": "Decimal",
@@ -274,6 +277,7 @@
       "IsDeleted": false
     },
     {
+      "Required": false,
       "Id": 4,
       "Name": "BuyCost",
       "InputType": "Decimal",
@@ -281,6 +285,7 @@
       "IsDeleted": false
     },
     {
+      "Required": false,
       "Id": 5,
       "Name": "DaysOfMaintenance",
       "InputType": "Integer",
@@ -322,33 +327,9 @@
       "IsDeleted": false
     },
     {
-      "Value": "[jResult:AC]",
-      "Id": 35,
-      "Name": "AC",
-      "InputType": "Text",
-      "WorkflowId": 1,
-      "IsDeleted": false
-    },
-    {
       "Value": "[jResult:ECD]",
       "Id": 36,
       "Name": "EmployeeCostDaily",
-      "InputType": "Text",
-      "WorkflowId": 1,
-      "IsDeleted": false
-    },
-    {
-      "Value": "[jResult2:AS]",
-      "Id": 38,
-      "Name": "AS",
-      "InputType": "Text",
-      "WorkflowId": 1,
-      "IsDeleted": false
-    },
-    {
-      "Value": "[jResult2:t]",
-      "Id": 39,
-      "Name": "t2",
       "InputType": "Text",
       "WorkflowId": 1,
       "IsDeleted": false
