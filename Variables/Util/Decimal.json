@@ -11,7 +11,7 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "value": "[String:RegexReplace(Input=\"[TknParams:RoleId]\", Match=\"[(.|\\s)*\\S(.|\\s)*]\", Replacement=\"[\\d+(\\.\\d{1,2})?]\")]",
+    "value": "[String:RegexReplace(Input=\"[TknParams:Num]\", Match=\"[(.|\\s)*\\S(.|\\s)*]\", Replacement=\"[\\d+(\\.\\d{1,2})?]\")]",
     "type": "string"
   }
 }
