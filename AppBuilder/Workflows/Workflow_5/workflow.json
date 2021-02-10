@@ -706,7 +706,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-31T01:43:31.301538+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-02-10T02:18:31.4417558+00:00",
+  "LastModifiedOn": "2021-02-10T02:21:14.1077525+00:00",
   "InputFields": [
     {
       "Required": false,
@@ -768,7 +768,7 @@
       "IsDeleted": false
     },
     {
-      "Value": "[AC]",
+      "Value": "[AnnualCost]",
       "Id": 32,
       "Name": "oAnnualCost",
       "InputType": "Text",
@@ -776,7 +776,7 @@
       "IsDeleted": false
     },
     {
-      "Value": "Dom: [AssessId:Daysofmaintenance] EmpCost:[AssessId:Employeecost] EmpReq:[AssessId:Employeesrequired] BuyCost:[AssessId:Buycost] Time2Build:[AssessId:Timetobuild]",
+      "Value": "Dom: [AssessId:Daysofmaintenance] EmpCost:[AssessId:Employeecost] EmpReq:[AssessId:Employeesrequired] BuyCost:[AssessId:Buycost] Time2Build:[AssessId:Timetobuild] ",
       "Id": 37,
       "Name": "dump",
       "InputType": "Text",
