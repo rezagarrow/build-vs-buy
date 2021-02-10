@@ -1,7 +1,7 @@
 @inherits avt.MyTokens.Core.ParsingEngine.RazorTemplate
 @{
-    double num = [TknParams:num=2.5000];
-    double n = @num.toFixed(2);
+    double num = [TknParams:num];
+    var n = num.toFixed(2);
   
 }
 
