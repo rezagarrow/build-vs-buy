@@ -250,7 +250,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T17:00:27.0331659+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-02-10T01:42:06.5124893+00:00",
+  "LastModifiedOn": "2021-02-10T01:47:07.2907453+00:00",
   "InputFields": [
     {
       "Required": false,
@@ -264,7 +264,7 @@
       "Required": false,
       "Id": 2,
       "Name": "TimeToBuild",
-      "InputType": "Integer",
+      "InputType": "Decimal",
       "WorkflowId": 1,
       "IsDeleted": false
     },
@@ -288,7 +288,7 @@
       "Required": false,
       "Id": 5,
       "Name": "DaysOfMaintenance",
-      "InputType": "Integer",
+      "InputType": "Decimal",
       "WorkflowId": 1,
       "IsDeleted": false
     }
