@@ -1,0 +1,179 @@
+{
+  "Id": 7,
+  "Name": "Generate PDF",
+  "Description": "Creates a PDF and returns the path to the file",
+  "IsDebug": false,
+  "ActionList": {
+    "Id": 18,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 30,
+        "ActionType": "GeneratePDF",
+        "OrderIndex": 0,
+        "ActionParameters": [
+          {
+            "Id": 124,
+            "Name": "HtmlInputType",
+            "Value": "richtext",
+            "IsExpression": false,
+            "ActionId": 30,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 125,
+            "Name": "HTMLCode",
+            "Value": "<p>[Payload]</p>",
+            "IsExpression": false,
+            "ActionId": 30,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 126,
+            "Name": "PDFName",
+            "Value": "[FileName]",
+            "IsExpression": false,
+            "ActionId": 30,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 127,
+            "Name": "PathDestination",
+            "Value": "/Templates",
+            "IsExpression": false,
+            "ActionId": 30,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 128,
+            "Name": "OrientationLandscape",
+            "IsExpression": false,
+            "ActionId": 30,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 129,
+            "Name": "PaperSize",
+            "Value": "A4",
+            "IsExpression": false,
+            "ActionId": 30,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 130,
+            "Name": "Grayscale",
+            "IsExpression": false,
+            "ActionId": 30,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 131,
+            "Name": "OtherOptions",
+            "IsExpression": false,
+            "ActionId": 30,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 132,
+            "Name": "StoreFileId",
+            "IsExpression": false,
+            "ActionId": 30,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 133,
+            "Name": "StoreAbsoluteURL",
+            "Value": "AbsoluteURL",
+            "IsExpression": false,
+            "ActionId": 30,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 134,
+            "Name": "StoreRelativeURL",
+            "IsExpression": false,
+            "ActionId": 30,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 135,
+            "Name": "StorePhysicalPath",
+            "IsExpression": false,
+            "ActionId": 30,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 136,
+            "Name": "StoreLinkClick",
+            "Value": "LinkClickUrl",
+            "IsExpression": false,
+            "ActionId": 30,
+            "OrderIndex": 0,
+            "SubParameters": []
+          },
+          {
+            "Id": 137,
+            "Name": "ForceDownload",
+            "IsExpression": false,
+            "ActionId": 30,
+            "OrderIndex": 0,
+            "SubParameters": []
+          }
+        ],
+        "DiagramUID": "Activity_0jhiswb"
+      }
+    ]
+  },
+  "CreatedBy": "Reza Garrow",
+  "CreatedOn": "2021-02-10T14:41:00.9599601+00:00",
+  "LastModifiedBy": "Reza Garrow",
+  "LastModifiedOn": "2021-02-10T14:41:00.9599601+00:00",
+  "InputFields": [
+    {
+      "Required": true,
+      "Id": 53,
+      "Name": "Payload",
+      "InputType": "LargeText",
+      "WorkflowId": 7,
+      "IsDeleted": false
+    }
+  ],
+  "OutputFields": [
+    {
+      "Value": "[Result=Success]",
+      "Id": 54,
+      "Name": "Result",
+      "InputType": "Text",
+      "WorkflowId": 7,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[LinkClickUrl]",
+      "Id": 55,
+      "Name": "LinkClickUrl",
+      "InputType": "Text",
+      "WorkflowId": 7,
+      "IsDeleted": false
+    },
+    {
+      "Value": "[AbsoluteURL]",
+      "Id": 56,
+      "Name": "AbsoluteURL",
+      "InputType": "Text",
+      "WorkflowId": 7,
+      "IsDeleted": false
+    }
+  ]
+}
