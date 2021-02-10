@@ -33,7 +33,7 @@
           {
             "Id": 126,
             "Name": "PDFName",
-            "Value": "[FileName]",
+            "Value": "[FileName=[GUID:NewCompact]]",
             "IsExpression": false,
             "ActionId": 30,
             "OrderIndex": 0,
@@ -139,13 +139,21 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-02-10T14:41:00.9599601+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-02-10T14:41:00.9599601+00:00",
+  "LastModifiedOn": "2021-02-10T14:43:05.4867289+00:00",
   "InputFields": [
     {
       "Required": true,
       "Id": 53,
       "Name": "Payload",
       "InputType": "LargeText",
+      "WorkflowId": 7,
+      "IsDeleted": false
+    },
+    {
+      "Required": false,
+      "Id": 57,
+      "Name": "FileName",
+      "InputType": "Text",
       "WorkflowId": 7,
       "IsDeleted": false
     }
