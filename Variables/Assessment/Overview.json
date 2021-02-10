@@ -1,0 +1,19 @@
+{
+  "id": 4,
+  "namespace": {
+    "id": 1,
+    "name": "Assessment"
+  },
+  "name": "Overview",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 1000,
+  "cacheLayer": "Portal",
+  "src": {
+    "language": "csharp",
+    "additionalAssemblies": "",
+    "debug": false,
+    "type": "razor"
+  }
+}
