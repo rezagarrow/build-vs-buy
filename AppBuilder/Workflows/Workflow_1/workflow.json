@@ -250,7 +250,7 @@
   "CreatedBy": "Reza Garrow",
   "CreatedOn": "2021-01-27T17:00:27.0331659+00:00",
   "LastModifiedBy": "Reza Garrow",
-  "LastModifiedOn": "2021-02-10T01:09:35.559271+00:00",
+  "LastModifiedOn": "2021-02-10T01:42:06.5124893+00:00",
   "InputFields": [
     {
       "Required": false,
@@ -264,7 +264,7 @@
       "Required": false,
       "Id": 2,
       "Name": "TimeToBuild",
-      "InputType": "Decimal",
+      "InputType": "Integer",
       "WorkflowId": 1,
       "IsDeleted": false
     },
