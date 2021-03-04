@@ -7,7 +7,7 @@
     <cachemethod>MemoryModuleCachingProvider</cachemethod>
     <cachetime>0</cachetime>
     <color />
-    <containersrc>[G]Containers/PlantAnApp/CardNoTitle.ascx</containersrc>
+    <containersrc>[G]Containers/Xcillion/Title_h2_elegant.ascx</containersrc>
     <displayprint>false</displayprint>
     <displaysyndicate>false</displaysyndicate>
     <displaytitle>true</displaytitle>
@@ -31,11 +31,11 @@
     <cultureCode />
     <modulesettings>
         <modulesetting>
-            <settingname>HtmlText_ReplaceTokens</settingname>
+            <settingname>HtmlText_UseDecorate</settingname>
             <settingvalue>True</settingvalue>
         </modulesetting>
         <modulesetting>
-            <settingname>HtmlText_UseDecorate</settingname>
+            <settingname>HtmlText_ReplaceTokens</settingname>
             <settingvalue>True</settingvalue>
         </modulesetting>
         <modulesetting>
@@ -43,12 +43,12 @@
             <settingvalue>True</settingvalue>
         </modulesetting>
         <modulesetting>
-            <settingname>HtmlText_SearchDescLength</settingname>
-            <settingvalue>100</settingvalue>
-        </modulesetting>
-        <modulesetting>
             <settingname>WorkFlowID</settingname>
             <settingvalue>1</settingvalue>
+        </modulesetting>
+        <modulesetting>
+            <settingname>HtmlText_SearchDescLength</settingname>
+            <settingvalue>100</settingvalue>
         </modulesetting>
     </modulesettings>
     <tabmodulesettings>
